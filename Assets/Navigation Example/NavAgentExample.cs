@@ -11,6 +11,7 @@ public class NavAgentExample : MonoBehaviour {
     public bool hasPath = false;
     public bool pathPending = false;
     public NavMeshPathStatus pathStatus = NavMeshPathStatus.PathInvalid;
+    public AnimationCurve jumpCurve = new AnimationCurve();
 
     private NavMeshAgent navAgent = null;
 
@@ -50,10 +51,33 @@ public class NavAgentExample : MonoBehaviour {
         pathPending = navAgent.pathPending;
         pathStatus = navAgent.pathStatus;
 
+        if (navAgent.isOnOffMeshLink) {
+            StartCoroutine(Jump(1.0f));
+            return;
+        }
+
         if ((!hasPath && !pathPending) || pathStatus == NavMeshPathStatus.PathInvalid) {
             SetNextDestination(true);
         } else if (navAgent.isPathStale) {
             SetNextDestination(false);
         }
 	}
+
+    IEnumerator Jump(float duration) {
+        OffMeshLinkData data = navAgent.currentOffMeshLinkData;
+        Vector3 startPos = navAgent.transform.position;
+        Vector3 endPos = data.endPos + (navAgent.baseOffset * Vector3.up);
+
+        float time = 0.0f;
+
+        while (time <= duration) {
+            float t = time / duration;
+            navAgent.transform.position = Vector3.Lerp(startPos, endPos, t) + jumpCurve.Evaluate(t) * Vector3.up;
+            time += Time.deltaTime;
+            yield return null;
+        }
+
+        navAgent.CompleteOffMeshLink();
+    }
+
 }
