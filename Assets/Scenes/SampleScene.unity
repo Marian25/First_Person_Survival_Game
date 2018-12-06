@@ -1827,6 +1827,7 @@ GameObject:
   - component: {fileID: 2079885070}
   - component: {fileID: 2079885069}
   - component: {fileID: 2079885068}
+  - component: {fileID: 2079885072}
   m_Layer: 0
   m_Name: Agent
   m_TagString: Untagged
@@ -1904,9 +1905,25 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2079885067}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3, y: 1, z: 7}
+  m_LocalPosition: {x: -2.98, y: 0.94, z: 17.67}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2079885072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2079885067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2311f62efe40a445382931fea00a8174, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypointNetwork: {fileID: 1575692919}
+  currentIndex: 0
+  hasPath: 0
+  pathPending: 0
+  pathStatus: 2
