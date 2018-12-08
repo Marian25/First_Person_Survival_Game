@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: dffa50cfe77e0434bbfa71245b3dd529
+guid: bb141fc9a700c9c4ca7e6dadb8acf24b
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -85,74 +85,72 @@ ModelImporter:
     100158: Neck
     100160: neckProxy_geo
     100162: pelvisProxy_geo
-    100164: Pivot
-    100166: r_ankleProxy_geo
-    100168: r_ballProxy_geo
-    100170: r_clavicleProxy_geo
-    100172: r_erbowProxy_geo
-    100174: r_hipProxy_geo
-    100176: r_indexProxy_01_geo
-    100178: r_indexProxy_02_geo
-    100180: r_indexProxy_03_geo
-    100182: r_kneeProxy_geo
-    100184: r_middleProxy_01_geo
-    100186: r_middleProxy_02_geo
-    100188: r_middleProxy_03_geo
-    100190: r_pinkyProxy_01_geo
-    100192: r_pinkyProxy_02_geo
-    100194: r_pinkyProxy_03_geo
-    100196: r_ringProxy_01_geo
-    100198: r_ringProxy_02_geo
-    100200: r_ringProxy_03_geo
-    100202: r_shourderProxy_geo
-    100204: r_thumbProxy_01_geo
-    100206: r_thumbProxy_02_geo
-    100208: r_thumbProxy_03_geo
-    100210: r_UNI_eye
-    100212: r_wristProxy_geo
-    100214: Reference
-    100216: RightArm
-    100218: RightCheek
-    100220: RightEye
-    100222: RightEyelidLower
-    100224: RightEyelidUpper
-    100226: RightFoot
-    100228: RightForeArm
-    100230: RightHand
-    100232: RightHandIndex1
-    100234: RightHandIndex2
-    100236: RightHandIndex3
-    100238: RightHandMiddle1
-    100240: RightHandMiddle2
-    100242: RightHandMiddle3
-    100244: RightHandPinky1
-    100246: RightHandPinky2
-    100248: RightHandPinky3
-    100250: RightHandRing1
-    100252: RightHandRing2
-    100254: RightHandRing3
-    100256: RightHandThumb1
-    100258: RightHandThumb2
-    100260: RightHandThumb3
-    100262: RightInnerBrow
-    100264: RightIOuterBrow
-    100266: RightLeg
-    100268: RightLipCorner
-    100270: RightLipLower
-    100272: RightLipUpper
-    100274: RightNostril
-    100276: RightShoulder
-    100278: RightToes
-    100280: RightUpLeg
-    100282: Root
-    100284: Spine
-    100286: spineProxy_geo
-    100288: TongueBack
-    100290: TongueTip
-    100292: UNI_01_Lower_teethProxy
-    100294: UNI_01_TongueBaseProxy
-    100296: UNI_01_TongueTipProxy
-    100298: UNI_01_Upper_teethProxy
+    100164: r_ankleProxy_geo
+    100166: r_ballProxy_geo
+    100168: r_clavicleProxy_geo
+    100170: r_erbowProxy_geo
+    100172: r_hipProxy_geo
+    100174: r_indexProxy_01_geo
+    100176: r_indexProxy_02_geo
+    100178: r_indexProxy_03_geo
+    100180: r_kneeProxy_geo
+    100182: r_middleProxy_01_geo
+    100184: r_middleProxy_02_geo
+    100186: r_middleProxy_03_geo
+    100188: r_pinkyProxy_01_geo
+    100190: r_pinkyProxy_02_geo
+    100192: r_pinkyProxy_03_geo
+    100194: r_ringProxy_01_geo
+    100196: r_ringProxy_02_geo
+    100198: r_ringProxy_03_geo
+    100200: r_shourderProxy_geo
+    100202: r_thumbProxy_01_geo
+    100204: r_thumbProxy_02_geo
+    100206: r_thumbProxy_03_geo
+    100208: r_UNI_eye
+    100210: r_wristProxy_geo
+    100212: Reference
+    100214: RightArm
+    100216: RightCheek
+    100218: RightEye
+    100220: RightEyelidLower
+    100222: RightEyelidUpper
+    100224: RightFoot
+    100226: RightForeArm
+    100228: RightHand
+    100230: RightHandIndex1
+    100232: RightHandIndex2
+    100234: RightHandIndex3
+    100236: RightHandMiddle1
+    100238: RightHandMiddle2
+    100240: RightHandMiddle3
+    100242: RightHandPinky1
+    100244: RightHandPinky2
+    100246: RightHandPinky3
+    100248: RightHandRing1
+    100250: RightHandRing2
+    100252: RightHandRing3
+    100254: RightHandThumb1
+    100256: RightHandThumb2
+    100258: RightHandThumb3
+    100260: RightInnerBrow
+    100262: RightIOuterBrow
+    100264: RightLeg
+    100266: RightLipCorner
+    100268: RightLipLower
+    100270: RightLipUpper
+    100272: RightNostril
+    100274: RightShoulder
+    100276: RightToes
+    100278: RightUpLeg
+    100280: Spine
+    100282: spineProxy_geo
+    100284: TongueBack
+    100286: TongueTip
+    100288: UNI_01_Lower_teethProxy
+    100290: UNI_01_TongueBaseProxy
+    100292: UNI_01_TongueTipProxy
+    100294: UNI_01_Upper_teethProxy
     400000: Chest
     400002: chestProxy_geo
     400004: //RootNode
@@ -235,74 +233,72 @@ ModelImporter:
     400158: Neck
     400160: neckProxy_geo
     400162: pelvisProxy_geo
-    400164: Pivot
-    400166: r_ankleProxy_geo
-    400168: r_ballProxy_geo
-    400170: r_clavicleProxy_geo
-    400172: r_erbowProxy_geo
-    400174: r_hipProxy_geo
-    400176: r_indexProxy_01_geo
-    400178: r_indexProxy_02_geo
-    400180: r_indexProxy_03_geo
-    400182: r_kneeProxy_geo
-    400184: r_middleProxy_01_geo
-    400186: r_middleProxy_02_geo
-    400188: r_middleProxy_03_geo
-    400190: r_pinkyProxy_01_geo
-    400192: r_pinkyProxy_02_geo
-    400194: r_pinkyProxy_03_geo
-    400196: r_ringProxy_01_geo
-    400198: r_ringProxy_02_geo
-    400200: r_ringProxy_03_geo
-    400202: r_shourderProxy_geo
-    400204: r_thumbProxy_01_geo
-    400206: r_thumbProxy_02_geo
-    400208: r_thumbProxy_03_geo
-    400210: r_UNI_eye
-    400212: r_wristProxy_geo
-    400214: Reference
-    400216: RightArm
-    400218: RightCheek
-    400220: RightEye
-    400222: RightEyelidLower
-    400224: RightEyelidUpper
-    400226: RightFoot
-    400228: RightForeArm
-    400230: RightHand
-    400232: RightHandIndex1
-    400234: RightHandIndex2
-    400236: RightHandIndex3
-    400238: RightHandMiddle1
-    400240: RightHandMiddle2
-    400242: RightHandMiddle3
-    400244: RightHandPinky1
-    400246: RightHandPinky2
-    400248: RightHandPinky3
-    400250: RightHandRing1
-    400252: RightHandRing2
-    400254: RightHandRing3
-    400256: RightHandThumb1
-    400258: RightHandThumb2
-    400260: RightHandThumb3
-    400262: RightInnerBrow
-    400264: RightIOuterBrow
-    400266: RightLeg
-    400268: RightLipCorner
-    400270: RightLipLower
-    400272: RightLipUpper
-    400274: RightNostril
-    400276: RightShoulder
-    400278: RightToes
-    400280: RightUpLeg
-    400282: Root
-    400284: Spine
-    400286: spineProxy_geo
-    400288: TongueBack
-    400290: TongueTip
-    400292: UNI_01_Lower_teethProxy
-    400294: UNI_01_TongueBaseProxy
-    400296: UNI_01_TongueTipProxy
-    400298: UNI_01_Upper_teethProxy
+    400164: r_ankleProxy_geo
+    400166: r_ballProxy_geo
+    400168: r_clavicleProxy_geo
+    400170: r_erbowProxy_geo
+    400172: r_hipProxy_geo
+    400174: r_indexProxy_01_geo
+    400176: r_indexProxy_02_geo
+    400178: r_indexProxy_03_geo
+    400180: r_kneeProxy_geo
+    400182: r_middleProxy_01_geo
+    400184: r_middleProxy_02_geo
+    400186: r_middleProxy_03_geo
+    400188: r_pinkyProxy_01_geo
+    400190: r_pinkyProxy_02_geo
+    400192: r_pinkyProxy_03_geo
+    400194: r_ringProxy_01_geo
+    400196: r_ringProxy_02_geo
+    400198: r_ringProxy_03_geo
+    400200: r_shourderProxy_geo
+    400202: r_thumbProxy_01_geo
+    400204: r_thumbProxy_02_geo
+    400206: r_thumbProxy_03_geo
+    400208: r_UNI_eye
+    400210: r_wristProxy_geo
+    400212: Reference
+    400214: RightArm
+    400216: RightCheek
+    400218: RightEye
+    400220: RightEyelidLower
+    400222: RightEyelidUpper
+    400224: RightFoot
+    400226: RightForeArm
+    400228: RightHand
+    400230: RightHandIndex1
+    400232: RightHandIndex2
+    400234: RightHandIndex3
+    400236: RightHandMiddle1
+    400238: RightHandMiddle2
+    400240: RightHandMiddle3
+    400242: RightHandPinky1
+    400244: RightHandPinky2
+    400246: RightHandPinky3
+    400248: RightHandRing1
+    400250: RightHandRing2
+    400252: RightHandRing3
+    400254: RightHandThumb1
+    400256: RightHandThumb2
+    400258: RightHandThumb3
+    400260: RightInnerBrow
+    400262: RightIOuterBrow
+    400264: RightLeg
+    400266: RightLipCorner
+    400268: RightLipLower
+    400270: RightLipUpper
+    400272: RightNostril
+    400274: RightShoulder
+    400276: RightToes
+    400278: RightUpLeg
+    400280: Spine
+    400282: spineProxy_geo
+    400284: TongueBack
+    400286: TongueTip
+    400288: UNI_01_Lower_teethProxy
+    400290: UNI_01_TongueBaseProxy
+    400292: UNI_01_TongueTipProxy
+    400294: UNI_01_Upper_teethProxy
     2300000: chestProxy_geo
     2300002: headProxy_geo
     2300004: jawProxy_geo
@@ -477,7 +473,8 @@ ModelImporter:
     4300110: l_ankleProxy_geo
     4300112: l_kneeProxy_geo
     4300114: l_hipProxy_geo
-    7400000: Idle
+    7400000: WalkLeftShort
+    7400002: WalkRightShort
     9500000: //RootNode
     2186277476908879412: ImportLogs
   externalObjects: {}
@@ -493,11 +490,8 @@ ModelImporter:
     optimizeGameObjects: 0
     motionNodeName: 
     rigImportErrors: 
-    rigImportWarnings: "Copied Avatar Rig Configuration mis-match. Errors found in
-      old project file will be treated as a warnings. Configuration mis-match will
-      be ignored, but current Configuration needs to be fixed:\n\tTransform 'Pivot'
-      not found in HumanDescription.\nCopied Avatar Rig Configuration mis-match. Bone
-      length in copied configuration does not match position in animation file:\n\t'LeftLeg'
+    rigImportWarnings: "Copied Avatar Rig Configuration mis-match. Bone length in
+      copied configuration does not match position in animation file:\n\t'LeftLeg'
       : position error = 7.696520 mm\n\t'LeftFoot' : position error = 15.233778 mm\n"
     animationImportErrors: 
     animationImportWarnings: 
@@ -514,10 +508,10 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Idle
-      takeName: _87_a_U1_M_P_idle_Neutral__Fb_p0_No_1
-      firstFrame: 483
-      lastFrame: 576
+      name: WalkRightShort
+      takeName: _8_a_U1_M_P_WalkForwardTurnRight_NtrlShort__Fb_Dia1m_No_0_PJ_4
+      firstFrame: 53.3
+      lastFrame: 84
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -526,14 +520,42 @@ ModelImporter:
       hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 1
-      loopBlendOrientation: 1
+      loopBlendOrientation: 0
       loopBlendPositionY: 1
-      loopBlendPositionXZ: 1
+      loopBlendPositionXZ: 0
       keepOriginalOrientation: 0
       keepOriginalPositionY: 0
       keepOriginalPositionXZ: 0
       heightFromFeet: 1
       mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: WalkLeftShort
+      takeName: _8_a_U1_M_P_WalkForwardTurnRight_NtrlShort__Fb_Dia1m_No_0_PJ_4
+      firstFrame: 53.3
+      lastFrame: 84
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0.5
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 0
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 1
+      mirror: 1
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events: []
@@ -701,8 +723,8 @@ ModelImporter:
       limit:
         min: {x: -90, y: 0, z: -80}
         max: {x: 90, y: 0, z: 80}
-        value: {x: 0.19711143, y: 0, z: 0.098555714}
-        length: 0.24638936
+        value: {x: 0.19711134, y: 0, z: 0.09855567}
+        length: 0.24638924
         modified: 1
     - boneName: RightForeArm
       humanName: RightLowerArm
@@ -717,8 +739,8 @@ ModelImporter:
       limit:
         min: {x: 0, y: -40, z: -80}
         max: {x: 0, y: 40, z: 80}
-        value: {x: 0.098555714, y: 0, z: 0.049277857}
-        length: 0.12319468
+        value: {x: 0.09855567, y: 0, z: 0.049277835}
+        length: 0.12319462
         modified: 1
     - boneName: RightHand
       humanName: RightHand
@@ -781,16 +803,16 @@ ModelImporter:
       limit:
         min: {x: 0, y: 0, z: -40}
         max: {x: 0, y: 0, z: 35}
-        value: {x: 0.027018126, y: 0, z: 0.013509063}
-        length: 0.033772666
+        value: {x: 0.027018128, y: 0, z: 0.013509064}
+        length: 0.03377267
         modified: 1
     - boneName: LeftHandThumb3
       humanName: Left Thumb Distal
       limit:
         min: {x: 0, y: 0, z: -40}
         max: {x: 0, y: 0, z: 35}
-        value: {x: 0.020263594, y: 0, z: 0.010131797}
-        length: 0.0253295
+        value: {x: 0.020263596, y: 0, z: 0.010131798}
+        length: 0.025329502
         modified: 1
     - boneName: LeftHandIndex1
       humanName: Left Index Proximal
