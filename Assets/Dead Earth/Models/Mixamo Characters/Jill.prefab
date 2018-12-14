@@ -1846,6 +1846,7 @@ GameObject:
   - component: {fileID: 195520153488671624}
   - component: {fileID: 136275860557464936}
   - component: {fileID: 54004430781358248}
+  - component: {fileID: 114557015737656490}
   m_Layer: 8
   m_Name: Jill
   m_TagString: Untagged
@@ -3466,8 +3467,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1943277683394998}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -25.83, y: 0, z: 2.12}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4569554729779592}
@@ -3683,7 +3684,7 @@ Animator:
   m_GameObject: {fileID: 1943277683394998}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 1f887ce764ed248308902c0f214ab626, type: 3}
-  m_Controller: {fileID: 9100000, guid: 08bd324cf105c8b41bf013abd086246a, type: 2}
+  m_Controller: {fileID: 9100000, guid: 53cc5bbf045ac8a40a540edc6479abfc, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -3692,6 +3693,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114557015737656490
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1943277683394998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab7b6b668d26d334fbd24203648e64a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentStateType: 1
+  targetTrigger: {fileID: 0}
+  sensorTrigger: {fileID: 135257164315272872}
+  stoppingDistance: 1
 --- !u!135 &135257164315272872
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -4319,9 +4335,9 @@ NavMeshAgent:
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 1
+  m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 0
+  m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 2
   m_BaseOffset: 0
