@@ -76,7 +76,7 @@ public abstract class AIStateMachine : MonoBehaviour {
         }
     }
 
-    public float radius
+    public float sensorRadius
     {
         get
         {
