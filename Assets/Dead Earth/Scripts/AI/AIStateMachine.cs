@@ -49,6 +49,8 @@ public abstract class AIStateMachine : MonoBehaviour {
     protected AIState currentState = null;
     protected Dictionary<AIStateType, AIState> dictStates = new Dictionary<AIStateType, AIState>();
     protected AITarget target = new AITarget();
+    protected int rootPositionRefCount = 0;
+    protected int rootRotationRefCount = 0;
 
     [SerializeField] protected AIStateType currentStateType = AIStateType.Idle;
     [SerializeField] protected SphereCollider targetTrigger = null;
@@ -61,16 +63,64 @@ public abstract class AIStateMachine : MonoBehaviour {
 
     public Animator GetAnimator { get { return animator; } }
     public NavMeshAgent GetNavAgent { get { return navAgent; } }
+    public Vector3 sensorPosition
+    {
+        get {
+            if (sensorTrigger == null) return Vector3.zero;
+
+            Vector3 point = sensorTrigger.transform.position;
+            point.x += sensorTrigger.center.x * sensorTrigger.transform.lossyScale.x;
+            point.y += sensorTrigger.center.y * sensorTrigger.transform.lossyScale.y;
+            point.z += sensorTrigger.center.z * sensorTrigger.transform.lossyScale.z;
+            return point;
+        }
+    }
+
+    public float radius
+    {
+        get
+        {
+            if (sensorTrigger == null) return 0;
+
+            float radius = Mathf.Max(sensorTrigger.radius * sensorTrigger.transform.lossyScale.x,
+                                     sensorTrigger.radius * sensorTrigger.transform.lossyScale.y);
+            return Mathf.Max(radius, sensorTrigger.radius * sensorTrigger.transform.lossyScale.z);
+        }
+    }
+
+    public bool useRootPosition { get { return rootPositionRefCount > 0; } }
+    public bool useRootRotation { get { return rootRotationRefCount > 0; } }
 
     protected virtual void Awake()
     {
         animator = GetComponent<Animator>();
         navAgent = GetComponent<NavMeshAgent>();
         collider = GetComponent<Collider>();
+
+        if (GameSceneManager.GetInstance() != null)
+        {
+            if (collider != null)
+            {
+                GameSceneManager.GetInstance().RegisterAIStateMachine(collider.GetInstanceID(), this);
+            }
+            if (sensorTrigger != null)
+            {
+                GameSceneManager.GetInstance().RegisterAIStateMachine(sensorTrigger.GetInstanceID(), this);
+            }
+        }
     }
 
     protected virtual void Start()
     {
+        if (sensorTrigger != null)
+        {
+            AISensor script = sensorTrigger.GetComponent<AISensor>();
+            if (script != null)
+            {
+                script.SetParentStateMachine = this;
+            }
+        }
+
         AIState[] states = GetComponents<AIState>();
         foreach(AIState state in states)
         {
@@ -88,6 +138,15 @@ public abstract class AIStateMachine : MonoBehaviour {
         } else
         {
             currentState = null;
+        }
+
+        if (animator != null)
+        {
+            AIStateMachineLink[] scripts = animator.GetBehaviours<AIStateMachineLink>();
+            foreach(AIStateMachineLink script in scripts)
+            {
+                script.SetStateMachine = this;
+            }
         }
     }
 
@@ -172,4 +231,64 @@ public abstract class AIStateMachine : MonoBehaviour {
             currentStateType = newStateType;
         }
     }
+
+    protected virtual void OnTriggerEnter(Collider other)
+    {
+        if (targetTrigger == null || other != targetTrigger) return;
+
+        if (currentState != null)
+        {
+            currentState.OnDestinationReached(true);
+        }
+    }
+
+    public void OnTriggerExit(Collider other)
+    {
+        if (targetTrigger == null || other != targetTrigger) return;
+
+        if (currentState != null)
+        {
+            currentState.OnDestinationReached(false);
+        }
+    }
+
+    public virtual void OnTriggerEvent(AITriggerEventType type, Collider other)
+    {
+        if (currentState != null)
+        {
+            currentState.OnTriggerEvent(type, other);
+        }
+    }
+
+    protected virtual void OnAnimatorMove()
+    {
+        if (currentState != null)
+        {
+            currentState.OnAnimatorUpdated();
+        }
+    }
+
+    protected virtual void OnAnimatorIK(int layer)
+    {
+        if (currentState != null)
+        {
+            currentState.OnAnimatorIKUpdated();
+        }
+    }
+
+    public void NavAgentControl(bool positionUpdate, bool rotationUpdate)
+    {
+        if (navAgent != null)
+        {
+            navAgent.updatePosition = positionUpdate;
+            navAgent.updateRotation = rotationUpdate;
+        }
+    }
+
+    public void AddRootMotionRequest(int rootPosition, int rootRotation)
+    {
+        rootPositionRefCount += rootPosition;
+        rootRotationRefCount += rootRotation;
+    }
+
 }
