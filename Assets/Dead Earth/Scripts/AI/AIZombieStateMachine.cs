@@ -16,6 +16,7 @@ public class AIZombieStateMachine : AIStateMachine {
     private bool _feeding = false;
     private bool _crawling = false;
     private int _attackType = 0;
+    private float _speed = 0;
 
     // Hashes
     private int speedHash = Animator.StringToHash("speed");
@@ -35,15 +36,7 @@ public class AIZombieStateMachine : AIStateMachine {
     public int attackType       { get { return _attackType; } set { _attackType = value; } }
     public bool feeding         { get { return _feeding; } set { _feeding = value; } }
     public int seeking          { get { return _seeking; } set { _seeking = value; } }
-    public float speed
-    {
-        get {
-            return (navAgent != null) ? navAgent.speed : 0f;
-        }
-        set {
-            if (navAgent != null) navAgent.speed = value;
-        }
-    }
+    public float speed          { get { return _speed; } set { _speed = value; } }
 
     protected override void Update()
     {
@@ -51,7 +44,7 @@ public class AIZombieStateMachine : AIStateMachine {
 
         if (animator != null)
         {
-            animator.SetFloat(speedHash, navAgent.speed);
+            animator.SetFloat(speedHash, _speed);
             animator.SetBool(feedingHash, feeding);
             animator.SetInteger(seekingHash, seeking);
             animator.SetInteger(attackHash, attackType);

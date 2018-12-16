@@ -16,12 +16,12 @@ public abstract class AIZombieState : AIState {
         bodyPartLayer = LayerMask.NameToLayer("AI Body Part");
     }
 
-    public override void SetStateMachine(AIStateMachine stateMachine)
+    public override void SetStateMachine(AIStateMachine machine)
     {
-        if (stateMachine.GetType() == typeof(AIZombieStateMachine))
+        if (machine.GetType() == typeof(AIZombieStateMachine))
         {
-            base.SetStateMachine(stateMachine);
-            zombieStateMachine = (AIZombieStateMachine)stateMachine;
+            base.SetStateMachine(machine);
+            zombieStateMachine = (AIZombieStateMachine)machine;
         }
     }
 

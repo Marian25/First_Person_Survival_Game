@@ -11155,6 +11155,23 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 663087901}
   m_Mesh: {fileID: 4300972, guid: 8a2d23da643cb0d4a9ca6c6f1fffa66b, type: 3}
+--- !u!1 &663837620 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1943277683394998, guid: 727fb14999ef70a49a1c685963de120c,
+    type: 2}
+  m_PrefabInternal: {fileID: 2134069303}
+--- !u!114 &663837621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 663837620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d1fd8a9bf7b16b4ebb4d7e6bdf6dfc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idleTimeRange: {x: 5, y: 10}
 --- !u!1 &664883945
 GameObject:
   m_ObjectHideFlags: 0
@@ -33015,6 +33032,11 @@ Prefab:
     - target: {fileID: 1943277683394998, guid: 727fb14999ef70a49a1c685963de120c, type: 2}
       propertyPath: m_Name
       value: AI Entity
+      objectReference: {fileID: 0}
+    - target: {fileID: 195520153488671624, guid: 727fb14999ef70a49a1c685963de120c,
+        type: 2}
+      propertyPath: m_Speed
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 727fb14999ef70a49a1c685963de120c, type: 2}
