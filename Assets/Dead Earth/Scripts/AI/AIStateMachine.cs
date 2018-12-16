@@ -90,6 +90,7 @@ public abstract class AIStateMachine : MonoBehaviour {
 
     public bool useRootPosition { get { return rootPositionRefCount > 0; } }
     public bool useRootRotation { get { return rootRotationRefCount > 0; } }
+    public AITargetType targetType { get { return target.GetType; } }
 
     protected virtual void Awake()
     {
