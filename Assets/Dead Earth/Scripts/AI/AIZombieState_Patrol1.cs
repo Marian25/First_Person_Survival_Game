@@ -79,7 +79,7 @@ public class AIZombieState_Patrol1 : AIZombieState {
 
         if (zombieStateMachine.visualThreat.GetType == AITargetType.Visual_Food)
         {
-            if ((1.0f - zombieStateMachine.satifaction) > (zombieStateMachine.visualThreat.GetDistance / zombieStateMachine.sensorRadius))
+            if ((1.0f - zombieStateMachine.satisfaction) > (zombieStateMachine.visualThreat.GetDistance / zombieStateMachine.sensorRadius))
             {
                 zombieStateMachine.SetTarget(zombieStateMachine.visualThreat);
                 return AIStateType.Pursuit;
@@ -149,6 +149,16 @@ public class AIZombieState_Patrol1 : AIZombieState {
             NextWaypoint();
         }
 
+    }
+
+    public override void OnAnimatorIKUpdated()
+    {
+        base.OnAnimatorIKUpdated();
+
+        if (zombieStateMachine == null) return;
+
+        zombieStateMachine.GetAnimator.SetLookAtPosition(zombieStateMachine.targetPosition + Vector3.up);
+        zombieStateMachine.GetAnimator.SetLookAtWeight(0.55f);
     }
 
 }

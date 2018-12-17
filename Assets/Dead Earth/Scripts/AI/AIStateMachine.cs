@@ -12,7 +12,7 @@ public struct AITarget
     private AITargetType type;
     private Collider collider;
     private Vector3 position;
-    private float distance;
+    public float distance;
     private float time;
 
     public AITargetType GetType { get { return type; } }
@@ -91,6 +91,7 @@ public abstract class AIStateMachine : MonoBehaviour {
     public bool useRootPosition { get { return rootPositionRefCount > 0; } }
     public bool useRootRotation { get { return rootRotationRefCount > 0; } }
     public AITargetType targetType { get { return target.GetType; } }
+    public Vector3 targetPosition { get { return target.GetPosition; } }
 
     protected virtual void Awake()
     {

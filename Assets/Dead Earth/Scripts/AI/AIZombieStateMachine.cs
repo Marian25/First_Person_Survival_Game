@@ -30,7 +30,7 @@ public class AIZombieStateMachine : AIStateMachine {
     public float hearing        { get { return _hearing; } }
     public bool  crawling       { get { return _crawling; } }
     public float intelligence   { get { return _intelligence; } }
-    public float satifaction    { get { return _satisfaction; } set { _satisfaction = value; } }
+    public float satisfaction    { get { return _satisfaction; } set { _satisfaction = value; } }
     public float aggression     { get { return _aggression; } set { _aggression = value; } }
     public int health           { get { return _health; } set { _health = value; } }
     public int attackType       { get { return _attackType; } set { _attackType = value; } }
@@ -44,7 +44,7 @@ public class AIZombieStateMachine : AIStateMachine {
 
         if (animator != null)
         {
-            animator.SetFloat(speedHash, _speed);
+            animator.SetFloat(speedHash, speed);
             animator.SetBool(feedingHash, feeding);
             animator.SetInteger(seekingHash, seeking);
             animator.SetInteger(attackHash, attackType);

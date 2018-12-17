@@ -88,7 +88,7 @@ public abstract class AIZombieState : AIState {
             } else if ( other.CompareTag("AI Food") && 
                         curType != AITargetType.Visual_Player && 
                         curType != AITargetType.Visual_Light && 
-                        zombieStateMachine.satifaction <= 0.9f &&
+                        zombieStateMachine.satisfaction <= 0.9f &&
                         zombieStateMachine.audioThreat.GetType == AITargetType.None)
             {
                 float distanceToThreat = Vector3.Distance(other.transform.position, zombieStateMachine.sensorPosition);
