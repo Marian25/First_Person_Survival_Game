@@ -61,6 +61,7 @@ public abstract class AIStateMachine : MonoBehaviour {
     protected NavMeshAgent navAgent = null;
     protected Collider collider = null;
 
+    public bool inMeleeRange { get; set; }
     public Animator GetAnimator { get { return animator; } }
     public NavMeshAgent GetNavAgent { get { return navAgent; } }
     public Vector3 sensorPosition
@@ -92,6 +93,16 @@ public abstract class AIStateMachine : MonoBehaviour {
     public bool useRootRotation { get { return rootRotationRefCount > 0; } }
     public AITargetType targetType { get { return target.GetType; } }
     public Vector3 targetPosition { get { return target.GetPosition; } }
+    public int targetColliderID
+    {
+        get
+        {
+            if (target.GetCollider)
+                return target.GetCollider.GetInstanceID();
+            else
+                return -1;
+        }
+    }
 
     protected virtual void Awake()
     {
