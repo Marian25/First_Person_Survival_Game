@@ -151,14 +151,14 @@ public class AIZombieState_Patrol1 : AIZombieState {
 
     }
 
-    public override void OnAnimatorIKUpdated()
-    {
-        base.OnAnimatorIKUpdated();
+    //public override void OnAnimatorIKUpdated()
+    //{
+    //    base.OnAnimatorIKUpdated();
 
-        if (zombieStateMachine == null) return;
+    //    if (zombieStateMachine == null) return;
 
-        zombieStateMachine.GetAnimator.SetLookAtPosition(zombieStateMachine.targetPosition + Vector3.up);
-        zombieStateMachine.GetAnimator.SetLookAtWeight(0.55f);
-    }
+    //    zombieStateMachine.GetAnimator.SetLookAtPosition(zombieStateMachine.targetPosition + Vector3.up);
+    //    zombieStateMachine.GetAnimator.SetLookAtWeight(0.55f);
+    //}
 
 }
