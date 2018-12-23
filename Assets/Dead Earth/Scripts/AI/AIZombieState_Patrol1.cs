@@ -21,7 +21,6 @@ public class AIZombieState_Patrol1 : AIZombieState {
         if (zombieStateMachine == null) return;
 
         zombieStateMachine.NavAgentControl(true, false);
-        zombieStateMachine.speed = speed;
         zombieStateMachine.seeking = 0;
         zombieStateMachine.feeding = false;
         zombieStateMachine.attackType = 0;
@@ -61,6 +60,14 @@ public class AIZombieState_Patrol1 : AIZombieState {
             }
         }
 
+        if (zombieStateMachine.GetNavAgent.pathPending)
+        {
+            zombieStateMachine.speed = 0;
+            return AIStateType.Patrol;
+        }
+        else
+            zombieStateMachine.speed = speed;
+
         float angle = Vector3.Angle(zombieStateMachine.transform.forward, (zombieStateMachine.GetNavAgent.steeringTarget - zombieStateMachine.transform.position));
 
         if (angle > turnOnSpotThreshold)
@@ -78,7 +85,7 @@ public class AIZombieState_Patrol1 : AIZombieState {
             !zombieStateMachine.GetNavAgent.hasPath ||
             zombieStateMachine.GetNavAgent.pathStatus != UnityEngine.AI.NavMeshPathStatus.PathComplete)
         {
-            zombieStateMachine.GetWaypointPosition(true);
+            zombieStateMachine.GetNavAgent.SetDestination(zombieStateMachine.GetWaypointPosition(true));
         }
 
 

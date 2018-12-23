@@ -29,7 +29,6 @@ public class AIZombieState_Pursuit1 : AIZombieState {
         if (zombieStateMachine == null) return;
 
         zombieStateMachine.NavAgentControl(true, false);
-        //zombieStateMachine.speed = speed;
         zombieStateMachine.seeking = 0;
         zombieStateMachine.feeding = false;
         zombieStateMachine.attackType = 0;
