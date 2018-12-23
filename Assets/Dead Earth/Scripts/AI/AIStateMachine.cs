@@ -51,16 +51,21 @@ public abstract class AIStateMachine : MonoBehaviour {
     protected AITarget target = new AITarget();
     protected int rootPositionRefCount = 0;
     protected int rootRotationRefCount = 0;
+    protected bool _isTargetReached = false;
 
     [SerializeField] protected AIStateType currentStateType = AIStateType.Idle;
     [SerializeField] protected SphereCollider targetTrigger = null;
     [SerializeField] protected SphereCollider sensorTrigger = null;
+    [SerializeField] protected AIWaypointNetwork waypointNetwork = null;
+    [SerializeField] protected bool randomPatrol = false;
+    [SerializeField] protected int currentWaypoint = -1;
     [SerializeField] [Range(0, 15)] protected float stoppingDistance = 1.0f;
 
     protected Animator animator = null;
     protected NavMeshAgent navAgent = null;
     protected Collider collider = null;
 
+    public bool isTargetReached {  get { return _isTargetReached; } }
     public bool inMeleeRange { get; set; }
     public Animator GetAnimator { get { return animator; } }
     public NavMeshAgent GetNavAgent { get { return navAgent; } }
@@ -163,6 +168,47 @@ public abstract class AIStateMachine : MonoBehaviour {
         }
     }
 
+    public Vector3 GetWaypointPosition(bool increment)
+    {
+        if (currentWaypoint == -1)
+        {
+            if (randomPatrol)
+                currentWaypoint = Random.Range(0, waypointNetwork.Waypoints.Count);
+            else
+                currentWaypoint = 0;
+        }
+        else if (increment)
+            NextWaypoint();
+        
+        if (waypointNetwork.Waypoints[currentWaypoint] != null)
+        {
+            Transform newWaypoint = waypointNetwork.Waypoints[currentWaypoint];
+            
+            SetTarget(AITargetType.Waypoint,
+                        null,
+                        newWaypoint.position,
+                        Vector3.Distance(newWaypoint.position, transform.position));
+
+            return newWaypoint.position;
+        }
+
+        return Vector3.zero;
+    }
+    
+    private void NextWaypoint()
+    {
+        if (randomPatrol && waypointNetwork.Waypoints.Count > 1)
+        {
+            int oldWaypoint = currentWaypoint;
+            while (currentWaypoint == oldWaypoint)
+            {
+                currentWaypoint = Random.Range(0, waypointNetwork.Waypoints.Count);
+            }
+        }
+        else
+            currentWaypoint = currentWaypoint == waypointNetwork.Waypoints.Count - 1 ? 0 : currentWaypoint + 1;
+    }
+
     public void SetTarget(AITargetType t, Collider c, Vector3 p, float d)
     {
         target.Set(t, c, p, d);
@@ -217,6 +263,8 @@ public abstract class AIStateMachine : MonoBehaviour {
         {
             target.SetDistance = Vector3.Distance(transform.position, target.GetPosition);
         }
+
+        _isTargetReached = false;
     }
 
     protected virtual void Update()
@@ -249,15 +297,26 @@ public abstract class AIStateMachine : MonoBehaviour {
     {
         if (targetTrigger == null || other != targetTrigger) return;
 
+        _isTargetReached = true;
+
         if (currentState != null)
         {
             currentState.OnDestinationReached(true);
         }
     }
 
-    public void OnTriggerExit(Collider other)
+    protected virtual void OnTriggerStay(Collider other)
     {
         if (targetTrigger == null || other != targetTrigger) return;
+
+        _isTargetReached = true;
+    }
+
+    protected void OnTriggerExit(Collider other)
+    {
+        if (targetTrigger == null || other != targetTrigger) return;
+
+        _isTargetReached = false;
 
         if (currentState != null)
         {

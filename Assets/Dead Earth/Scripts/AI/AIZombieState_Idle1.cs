@@ -17,7 +17,7 @@ public class AIZombieState_Idle1 : AIZombieState {
     public override void OnEnterState()
     {
         base.OnEnterState();
-        Debug.Log("Entering idle state");
+        Debug.Log("Entering Idle State");
 
         if (zombieStateMachine == null) return;
 
@@ -63,8 +63,9 @@ public class AIZombieState_Idle1 : AIZombieState {
         timer += Time.deltaTime;
         if (timer > idleTime)
         {
-            Debug.Log("Going to Patrol");
-            return AIStateType.Patrol;
+            zombieStateMachine.GetNavAgent.SetDestination(zombieStateMachine.GetWaypointPosition(false));
+            zombieStateMachine.GetNavAgent.isStopped = true;
+            return AIStateType.Alerted;
         }
 
 
