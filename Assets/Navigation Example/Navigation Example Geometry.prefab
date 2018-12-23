@@ -10,12 +10,12 @@ GameObject:
   - component: {fileID: 428958}
   - component: {fileID: 3349778}
   - component: {fileID: 2392348}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_barrel_023
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100232
 GameObject:
@@ -27,12 +27,12 @@ GameObject:
   - component: {fileID: 400434}
   - component: {fileID: 3381680}
   - component: {fileID: 2385064}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_047
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100370
 GameObject:
@@ -44,12 +44,12 @@ GameObject:
   - component: {fileID: 433930}
   - component: {fileID: 3395164}
   - component: {fileID: 2378152}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100514
 GameObject:
@@ -61,12 +61,12 @@ GameObject:
   - component: {fileID: 432060}
   - component: {fileID: 3355110}
   - component: {fileID: 2375098}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100814
 GameObject:
@@ -78,12 +78,12 @@ GameObject:
   - component: {fileID: 434592}
   - component: {fileID: 3341294}
   - component: {fileID: 2313460}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_083
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &100832
 GameObject:
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 445628}
   - component: {fileID: 3384764}
   - component: {fileID: 2325396}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wire_017
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,7 +112,7 @@ GameObject:
   - component: {fileID: 497618}
   - component: {fileID: 3309154}
   - component: {fileID: 2304278}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wire_002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -129,12 +129,12 @@ GameObject:
   - component: {fileID: 464902}
   - component: {fileID: 3346312}
   - component: {fileID: 2309720}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_015
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &101878
 GameObject:
@@ -146,7 +146,7 @@ GameObject:
   - component: {fileID: 493942}
   - component: {fileID: 3369670}
   - component: {fileID: 2368438}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_024
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -163,12 +163,12 @@ GameObject:
   - component: {fileID: 431124}
   - component: {fileID: 3326446}
   - component: {fileID: 2375986}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_laserFence_B_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &102546
 GameObject:
@@ -180,12 +180,12 @@ GameObject:
   - component: {fileID: 439538}
   - component: {fileID: 3300776}
   - component: {fileID: 2315120}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &102584
 GameObject:
@@ -197,7 +197,7 @@ GameObject:
   - component: {fileID: 458534}
   - component: {fileID: 3334340}
   - component: {fileID: 2323304}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wire_029
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -214,12 +214,12 @@ GameObject:
   - component: {fileID: 431880}
   - component: {fileID: 3315120}
   - component: {fileID: 2397886}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_laserFence_A_005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &102958
 GameObject:
@@ -231,12 +231,12 @@ GameObject:
   - component: {fileID: 448238}
   - component: {fileID: 3384238}
   - component: {fileID: 2329112}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_052
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &103560
 GameObject:
@@ -248,7 +248,7 @@ GameObject:
   - component: {fileID: 492522}
   - component: {fileID: 3363894}
   - component: {fileID: 2317974}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wire_003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -265,7 +265,7 @@ GameObject:
   - component: {fileID: 450646}
   - component: {fileID: 3325712}
   - component: {fileID: 2347736}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -282,12 +282,12 @@ GameObject:
   - component: {fileID: 426340}
   - component: {fileID: 3358200}
   - component: {fileID: 2379224}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_060
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &104154
 GameObject:
@@ -299,7 +299,7 @@ GameObject:
   - component: {fileID: 443104}
   - component: {fileID: 3332866}
   - component: {fileID: 2355308}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wire_014
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -316,12 +316,12 @@ GameObject:
   - component: {fileID: 491260}
   - component: {fileID: 3383284}
   - component: {fileID: 2361312}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_megaphone_003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &104350
 GameObject:
@@ -333,12 +333,12 @@ GameObject:
   - component: {fileID: 478644}
   - component: {fileID: 3375526}
   - component: {fileID: 2304120}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_049
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &104392
 GameObject:
@@ -350,12 +350,12 @@ GameObject:
   - component: {fileID: 453960}
   - component: {fileID: 3349830}
   - component: {fileID: 2352844}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_069
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &104754
 GameObject:
@@ -367,7 +367,7 @@ GameObject:
   - component: {fileID: 478290}
   - component: {fileID: 3306624}
   - component: {fileID: 2333308}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wire_007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -400,7 +400,7 @@ GameObject:
   - component: {fileID: 489704}
   - component: {fileID: 3346146}
   - component: {fileID: 2319738}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wire_012
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -417,12 +417,12 @@ GameObject:
   - component: {fileID: 478494}
   - component: {fileID: 3397316}
   - component: {fileID: 2331850}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_111
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &105182
 GameObject:
@@ -434,12 +434,12 @@ GameObject:
   - component: {fileID: 417222}
   - component: {fileID: 3363810}
   - component: {fileID: 2351588}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_047
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &105448
 GameObject:
@@ -451,12 +451,12 @@ GameObject:
   - component: {fileID: 482944}
   - component: {fileID: 3316930}
   - component: {fileID: 2349842}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_020
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &106190
 GameObject:
@@ -468,12 +468,12 @@ GameObject:
   - component: {fileID: 443386}
   - component: {fileID: 3353252}
   - component: {fileID: 2373244}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_039
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &106204
 GameObject:
@@ -485,12 +485,12 @@ GameObject:
   - component: {fileID: 424442}
   - component: {fileID: 3306122}
   - component: {fileID: 2359830}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_053
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &106424
 GameObject:
@@ -502,7 +502,7 @@ GameObject:
   - component: {fileID: 418924}
   - component: {fileID: 3358530}
   - component: {fileID: 2352284}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_026
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -519,12 +519,12 @@ GameObject:
   - component: {fileID: 423052}
   - component: {fileID: 3394162}
   - component: {fileID: 2371632}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_026
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &106510
 GameObject:
@@ -536,12 +536,12 @@ GameObject:
   - component: {fileID: 472046}
   - component: {fileID: 3339466}
   - component: {fileID: 2372982}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_060
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &106604
 GameObject:
@@ -553,7 +553,7 @@ GameObject:
   - component: {fileID: 414536}
   - component: {fileID: 3328144}
   - component: {fileID: 2341480}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wire_024
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -570,12 +570,12 @@ GameObject:
   - component: {fileID: 480390}
   - component: {fileID: 3369550}
   - component: {fileID: 2393362}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_038
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &107506
 GameObject:
@@ -587,7 +587,7 @@ GameObject:
   - component: {fileID: 426556}
   - component: {fileID: 3377246}
   - component: {fileID: 2307584}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -604,12 +604,12 @@ GameObject:
   - component: {fileID: 449880}
   - component: {fileID: 3379174}
   - component: {fileID: 2312170}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_021
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &107950
 GameObject:
@@ -621,12 +621,12 @@ GameObject:
   - component: {fileID: 494324}
   - component: {fileID: 3376080}
   - component: {fileID: 2372304}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_053
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &108244
 GameObject:
@@ -638,7 +638,7 @@ GameObject:
   - component: {fileID: 492938}
   - component: {fileID: 3372778}
   - component: {fileID: 2368636}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wire_015
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -655,12 +655,12 @@ GameObject:
   - component: {fileID: 455750}
   - component: {fileID: 3373262}
   - component: {fileID: 2348982}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_019
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &108832
 GameObject:
@@ -672,12 +672,12 @@ GameObject:
   - component: {fileID: 458498}
   - component: {fileID: 3361600}
   - component: {fileID: 2318530}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_megaphone_006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &109092
 GameObject:
@@ -689,12 +689,12 @@ GameObject:
   - component: {fileID: 424458}
   - component: {fileID: 3302538}
   - component: {fileID: 2331110}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &109818
 GameObject:
@@ -706,7 +706,7 @@ GameObject:
   - component: {fileID: 457088}
   - component: {fileID: 3349486}
   - component: {fileID: 2384664}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -723,12 +723,12 @@ GameObject:
   - component: {fileID: 459854}
   - component: {fileID: 3307250}
   - component: {fileID: 2376118}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_046
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &110238
 GameObject:
@@ -740,7 +740,7 @@ GameObject:
   - component: {fileID: 410134}
   - component: {fileID: 3324484}
   - component: {fileID: 2339574}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_014
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -757,12 +757,12 @@ GameObject:
   - component: {fileID: 416278}
   - component: {fileID: 3331530}
   - component: {fileID: 2345398}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_117
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &110750
 GameObject:
@@ -774,7 +774,7 @@ GameObject:
   - component: {fileID: 484422}
   - component: {fileID: 3320514}
   - component: {fileID: 2344270}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_031
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -791,12 +791,12 @@ GameObject:
   - component: {fileID: 409968}
   - component: {fileID: 3330562}
   - component: {fileID: 2354750}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_019
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &110868
 GameObject:
@@ -808,12 +808,12 @@ GameObject:
   - component: {fileID: 459608}
   - component: {fileID: 3303348}
   - component: {fileID: 2393040}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_054
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &111392
 GameObject:
@@ -825,12 +825,12 @@ GameObject:
   - component: {fileID: 420814}
   - component: {fileID: 3304900}
   - component: {fileID: 2303970}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: liftshaft_012
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &111400
 GameObject:
@@ -842,12 +842,12 @@ GameObject:
   - component: {fileID: 409186}
   - component: {fileID: 3360722}
   - component: {fileID: 2310220}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: liftshaft_002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &112070
 GameObject:
@@ -859,12 +859,12 @@ GameObject:
   - component: {fileID: 441498}
   - component: {fileID: 3311510}
   - component: {fileID: 2340450}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &112458
 GameObject:
@@ -876,12 +876,12 @@ GameObject:
   - component: {fileID: 498514}
   - component: {fileID: 3357016}
   - component: {fileID: 2326748}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_059
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &112952
 GameObject:
@@ -893,12 +893,12 @@ GameObject:
   - component: {fileID: 424440}
   - component: {fileID: 3350330}
   - component: {fileID: 2383872}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_022
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &113202
 GameObject:
@@ -910,7 +910,7 @@ GameObject:
   - component: {fileID: 447560}
   - component: {fileID: 3335712}
   - component: {fileID: 2364682}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_027
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -927,12 +927,12 @@ GameObject:
   - component: {fileID: 496380}
   - component: {fileID: 3338864}
   - component: {fileID: 2314524}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &113358
 GameObject:
@@ -944,12 +944,12 @@ GameObject:
   - component: {fileID: 409118}
   - component: {fileID: 3340204}
   - component: {fileID: 2377308}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_116
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &113644
 GameObject:
@@ -961,12 +961,12 @@ GameObject:
   - component: {fileID: 410404}
   - component: {fileID: 3381958}
   - component: {fileID: 2392338}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &113746
 GameObject:
@@ -978,12 +978,12 @@ GameObject:
   - component: {fileID: 428616}
   - component: {fileID: 3385064}
   - component: {fileID: 2395018}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_034
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &113750
 GameObject:
@@ -995,12 +995,12 @@ GameObject:
   - component: {fileID: 427446}
   - component: {fileID: 3336934}
   - component: {fileID: 2382722}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_075
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &113896
 GameObject:
@@ -1012,12 +1012,12 @@ GameObject:
   - component: {fileID: 471122}
   - component: {fileID: 3388788}
   - component: {fileID: 2349718}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_055
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &114002
 GameObject:
@@ -1029,12 +1029,12 @@ GameObject:
   - component: {fileID: 457776}
   - component: {fileID: 3319964}
   - component: {fileID: 2351510}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &114116
 GameObject:
@@ -1046,12 +1046,12 @@ GameObject:
   - component: {fileID: 494412}
   - component: {fileID: 3398432}
   - component: {fileID: 2329054}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_033
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &114228
 GameObject:
@@ -1063,12 +1063,12 @@ GameObject:
   - component: {fileID: 423140}
   - component: {fileID: 3354584}
   - component: {fileID: 2343114}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_barrel_019
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &114246
 GameObject:
@@ -1080,7 +1080,7 @@ GameObject:
   - component: {fileID: 449582}
   - component: {fileID: 3375340}
   - component: {fileID: 2387870}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_048
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1097,12 +1097,12 @@ GameObject:
   - component: {fileID: 477840}
   - component: {fileID: 3390734}
   - component: {fileID: 2372916}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_099
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &114354
 GameObject:
@@ -1114,7 +1114,7 @@ GameObject:
   - component: {fileID: 405810}
   - component: {fileID: 3343222}
   - component: {fileID: 2313030}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_049
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1131,7 +1131,7 @@ GameObject:
   - component: {fileID: 447462}
   - component: {fileID: 3336254}
   - component: {fileID: 2336552}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wire_008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1148,12 +1148,12 @@ GameObject:
   - component: {fileID: 430102}
   - component: {fileID: 3378724}
   - component: {fileID: 2371488}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_018
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &115012
 GameObject:
@@ -1165,7 +1165,7 @@ GameObject:
   - component: {fileID: 402220}
   - component: {fileID: 3344262}
   - component: {fileID: 2381648}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wire_022
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1182,12 +1182,12 @@ GameObject:
   - component: {fileID: 472944}
   - component: {fileID: 3356154}
   - component: {fileID: 2363656}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_096
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &115390
 GameObject:
@@ -1199,12 +1199,12 @@ GameObject:
   - component: {fileID: 467966}
   - component: {fileID: 3357966}
   - component: {fileID: 2305716}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &115432
 GameObject:
@@ -1216,12 +1216,12 @@ GameObject:
   - component: {fileID: 418306}
   - component: {fileID: 3313786}
   - component: {fileID: 2367274}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &115474
 GameObject:
@@ -1233,12 +1233,12 @@ GameObject:
   - component: {fileID: 469124}
   - component: {fileID: 3322428}
   - component: {fileID: 2342228}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_052
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &116500
 GameObject:
@@ -1250,12 +1250,12 @@ GameObject:
   - component: {fileID: 407914}
   - component: {fileID: 3314864}
   - component: {fileID: 2327984}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &116510
 GameObject:
@@ -1267,12 +1267,12 @@ GameObject:
   - component: {fileID: 492390}
   - component: {fileID: 3365862}
   - component: {fileID: 2308448}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_065
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &116706
 GameObject:
@@ -1284,12 +1284,12 @@ GameObject:
   - component: {fileID: 497136}
   - component: {fileID: 3303828}
   - component: {fileID: 2384848}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: ground_004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &117060
 GameObject:
@@ -1301,12 +1301,12 @@ GameObject:
   - component: {fileID: 432152}
   - component: {fileID: 3396762}
   - component: {fileID: 2327100}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_037
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &117144
 GameObject:
@@ -1318,12 +1318,12 @@ GameObject:
   - component: {fileID: 461072}
   - component: {fileID: 3394124}
   - component: {fileID: 2357098}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_017
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &117148
 GameObject:
@@ -1335,12 +1335,12 @@ GameObject:
   - component: {fileID: 422074}
   - component: {fileID: 3342970}
   - component: {fileID: 2354700}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_082
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &117218
 GameObject:
@@ -1352,12 +1352,12 @@ GameObject:
   - component: {fileID: 492140}
   - component: {fileID: 3375380}
   - component: {fileID: 2349508}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: ground_003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &117360
 GameObject:
@@ -1369,12 +1369,12 @@ GameObject:
   - component: {fileID: 421000}
   - component: {fileID: 3308530}
   - component: {fileID: 2384940}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: ground_008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &117532
 GameObject:
@@ -1386,12 +1386,12 @@ GameObject:
   - component: {fileID: 442148}
   - component: {fileID: 3334498}
   - component: {fileID: 2306750}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_012
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &117708
 GameObject:
@@ -1403,12 +1403,12 @@ GameObject:
   - component: {fileID: 409514}
   - component: {fileID: 3328524}
   - component: {fileID: 2388534}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_031
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &118222
 GameObject:
@@ -1420,12 +1420,12 @@ GameObject:
   - component: {fileID: 410548}
   - component: {fileID: 3371114}
   - component: {fileID: 2337380}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_telegraphPole_006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &118444
 GameObject:
@@ -1437,12 +1437,12 @@ GameObject:
   - component: {fileID: 416406}
   - component: {fileID: 3306480}
   - component: {fileID: 2330138}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_033
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &118760
 GameObject:
@@ -1454,12 +1454,12 @@ GameObject:
   - component: {fileID: 472870}
   - component: {fileID: 3340644}
   - component: {fileID: 2328888}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_014
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &118886
 GameObject:
@@ -1471,7 +1471,7 @@ GameObject:
   - component: {fileID: 439742}
   - component: {fileID: 3346650}
   - component: {fileID: 2313596}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1488,12 +1488,12 @@ GameObject:
   - component: {fileID: 436086}
   - component: {fileID: 3376234}
   - component: {fileID: 2339400}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_036
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &119238
 GameObject:
@@ -1505,12 +1505,12 @@ GameObject:
   - component: {fileID: 410320}
   - component: {fileID: 3360866}
   - component: {fileID: 2324268}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_045
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &119624
 GameObject:
@@ -1522,12 +1522,12 @@ GameObject:
   - component: {fileID: 409400}
   - component: {fileID: 3318132}
   - component: {fileID: 2388294}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_048
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &119724
 GameObject:
@@ -1539,12 +1539,12 @@ GameObject:
   - component: {fileID: 489322}
   - component: {fileID: 3397074}
   - component: {fileID: 2332080}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_laserFence_A_009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &119964
 GameObject:
@@ -1556,12 +1556,12 @@ GameObject:
   - component: {fileID: 468422}
   - component: {fileID: 3395842}
   - component: {fileID: 2335554}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &119982
 GameObject:
@@ -1573,12 +1573,12 @@ GameObject:
   - component: {fileID: 426684}
   - component: {fileID: 3312126}
   - component: {fileID: 2365316}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_027
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &120038
 GameObject:
@@ -1590,12 +1590,12 @@ GameObject:
   - component: {fileID: 405658}
   - component: {fileID: 3302586}
   - component: {fileID: 2367598}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_fan_005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &120172
 GameObject:
@@ -1607,12 +1607,12 @@ GameObject:
   - component: {fileID: 481988}
   - component: {fileID: 3354392}
   - component: {fileID: 2353722}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &120404
 GameObject:
@@ -1624,12 +1624,12 @@ GameObject:
   - component: {fileID: 410878}
   - component: {fileID: 3390370}
   - component: {fileID: 2344848}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_076
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &120440
 GameObject:
@@ -1641,12 +1641,12 @@ GameObject:
   - component: {fileID: 448072}
   - component: {fileID: 3375644}
   - component: {fileID: 2372994}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_113
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &120482
 GameObject:
@@ -1658,12 +1658,12 @@ GameObject:
   - component: {fileID: 405600}
   - component: {fileID: 3337230}
   - component: {fileID: 2354150}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_laserFence_A_010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &120964
 GameObject:
@@ -1675,12 +1675,12 @@ GameObject:
   - component: {fileID: 490246}
   - component: {fileID: 3364088}
   - component: {fileID: 2382310}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_025
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &121352
 GameObject:
@@ -1692,12 +1692,12 @@ GameObject:
   - component: {fileID: 481802}
   - component: {fileID: 3359274}
   - component: {fileID: 2395504}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_barrel_006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &121386
 GameObject:
@@ -1709,12 +1709,12 @@ GameObject:
   - component: {fileID: 474520}
   - component: {fileID: 3369000}
   - component: {fileID: 2331944}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_060
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &121752
 GameObject:
@@ -1726,12 +1726,12 @@ GameObject:
   - component: {fileID: 496676}
   - component: {fileID: 3334742}
   - component: {fileID: 2394774}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_barrel_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &122208
 GameObject:
@@ -1743,12 +1743,12 @@ GameObject:
   - component: {fileID: 462470}
   - component: {fileID: 3301360}
   - component: {fileID: 2361420}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_058
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &122926
 GameObject:
@@ -1760,7 +1760,7 @@ GameObject:
   - component: {fileID: 470670}
   - component: {fileID: 3317756}
   - component: {fileID: 2381166}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_051
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1777,12 +1777,12 @@ GameObject:
   - component: {fileID: 460800}
   - component: {fileID: 3327568}
   - component: {fileID: 2366268}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_barrel_021
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &123210
 GameObject:
@@ -1794,12 +1794,12 @@ GameObject:
   - component: {fileID: 433858}
   - component: {fileID: 3318216}
   - component: {fileID: 2325844}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_057
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &123412
 GameObject:
@@ -1811,12 +1811,12 @@ GameObject:
   - component: {fileID: 425920}
   - component: {fileID: 3347832}
   - component: {fileID: 2315462}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: liftshaft_006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &124112
 GameObject:
@@ -1828,12 +1828,12 @@ GameObject:
   - component: {fileID: 421466}
   - component: {fileID: 3394042}
   - component: {fileID: 2336648}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: liftshaft_009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &124580
 GameObject:
@@ -1845,12 +1845,12 @@ GameObject:
   - component: {fileID: 455842}
   - component: {fileID: 3359152}
   - component: {fileID: 2359448}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_087
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &125190
 GameObject:
@@ -1862,12 +1862,12 @@ GameObject:
   - component: {fileID: 478790}
   - component: {fileID: 3312034}
   - component: {fileID: 2301998}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_070
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &125312
 GameObject:
@@ -1879,12 +1879,12 @@ GameObject:
   - component: {fileID: 495580}
   - component: {fileID: 3305546}
   - component: {fileID: 2332452}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_073
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &125426
 GameObject:
@@ -1896,12 +1896,12 @@ GameObject:
   - component: {fileID: 460012}
   - component: {fileID: 3330168}
   - component: {fileID: 2342430}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_090
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &125912
 GameObject:
@@ -1913,12 +1913,12 @@ GameObject:
   - component: {fileID: 492182}
   - component: {fileID: 3396280}
   - component: {fileID: 2356136}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &125958
 GameObject:
@@ -1930,12 +1930,12 @@ GameObject:
   - component: {fileID: 496314}
   - component: {fileID: 3322432}
   - component: {fileID: 2376148}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_044
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &126032
 GameObject:
@@ -1947,7 +1947,7 @@ GameObject:
   - component: {fileID: 455170}
   - component: {fileID: 3341030}
   - component: {fileID: 2357834}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_017
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1964,12 +1964,12 @@ GameObject:
   - component: {fileID: 462670}
   - component: {fileID: 3353474}
   - component: {fileID: 2373342}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_022
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &127208
 GameObject:
@@ -1981,12 +1981,12 @@ GameObject:
   - component: {fileID: 443400}
   - component: {fileID: 3384740}
   - component: {fileID: 2384094}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_030
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &127252
 GameObject:
@@ -1998,12 +1998,12 @@ GameObject:
   - component: {fileID: 406936}
   - component: {fileID: 3356698}
   - component: {fileID: 2374886}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: ground_002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &127732
 GameObject:
@@ -2015,12 +2015,12 @@ GameObject:
   - component: {fileID: 425984}
   - component: {fileID: 3365360}
   - component: {fileID: 2310320}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_097
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &127754
 GameObject:
@@ -2032,12 +2032,12 @@ GameObject:
   - component: {fileID: 458530}
   - component: {fileID: 3337784}
   - component: {fileID: 2318610}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &127860
 GameObject:
@@ -2049,12 +2049,12 @@ GameObject:
   - component: {fileID: 442758}
   - component: {fileID: 3300312}
   - component: {fileID: 2356836}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_045
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &128052
 GameObject:
@@ -2066,12 +2066,12 @@ GameObject:
   - component: {fileID: 467004}
   - component: {fileID: 3363122}
   - component: {fileID: 2335186}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &128058
 GameObject:
@@ -2083,7 +2083,7 @@ GameObject:
   - component: {fileID: 474850}
   - component: {fileID: 3360616}
   - component: {fileID: 2353698}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2100,7 +2100,7 @@ GameObject:
   - component: {fileID: 476696}
   - component: {fileID: 3326132}
   - component: {fileID: 2391642}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_042
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2117,12 +2117,12 @@ GameObject:
   - component: {fileID: 419516}
   - component: {fileID: 3328312}
   - component: {fileID: 2309354}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_015
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &128444
 GameObject:
@@ -2134,12 +2134,12 @@ GameObject:
   - component: {fileID: 486156}
   - component: {fileID: 3340926}
   - component: {fileID: 2331916}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_barrel_020
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &128732
 GameObject:
@@ -2151,12 +2151,12 @@ GameObject:
   - component: {fileID: 448232}
   - component: {fileID: 3338858}
   - component: {fileID: 2366954}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &129706
 GameObject:
@@ -2168,12 +2168,12 @@ GameObject:
   - component: {fileID: 451104}
   - component: {fileID: 3398412}
   - component: {fileID: 2373776}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_laserFence_A_012
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &129774
 GameObject:
@@ -2185,12 +2185,12 @@ GameObject:
   - component: {fileID: 462970}
   - component: {fileID: 3394938}
   - component: {fileID: 2385212}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_028
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &130106
 GameObject:
@@ -2200,12 +2200,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 471178}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &130332
 GameObject:
@@ -2217,12 +2217,12 @@ GameObject:
   - component: {fileID: 444766}
   - component: {fileID: 3399902}
   - component: {fileID: 2337730}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_012
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &130644
 GameObject:
@@ -2234,12 +2234,12 @@ GameObject:
   - component: {fileID: 497260}
   - component: {fileID: 3396266}
   - component: {fileID: 2395454}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_025
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &130798
 GameObject:
@@ -2251,12 +2251,12 @@ GameObject:
   - component: {fileID: 489966}
   - component: {fileID: 3368390}
   - component: {fileID: 2335306}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_barrel_014
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &131032
 GameObject:
@@ -2268,7 +2268,7 @@ GameObject:
   - component: {fileID: 462230}
   - component: {fileID: 3398632}
   - component: {fileID: 2382442}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_045
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2285,12 +2285,12 @@ GameObject:
   - component: {fileID: 476694}
   - component: {fileID: 3345678}
   - component: {fileID: 2323332}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_laserFence_A_008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &131718
 GameObject:
@@ -2302,12 +2302,12 @@ GameObject:
   - component: {fileID: 423072}
   - component: {fileID: 3352322}
   - component: {fileID: 2360576}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_015
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &131788
 GameObject:
@@ -2319,12 +2319,12 @@ GameObject:
   - component: {fileID: 470244}
   - component: {fileID: 3372290}
   - component: {fileID: 2301906}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &132036
 GameObject:
@@ -2336,12 +2336,12 @@ GameObject:
   - component: {fileID: 419246}
   - component: {fileID: 3311902}
   - component: {fileID: 2382708}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_047
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &132082
 GameObject:
@@ -2353,7 +2353,7 @@ GameObject:
   - component: {fileID: 444974}
   - component: {fileID: 3340616}
   - component: {fileID: 2399018}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_034
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2370,12 +2370,12 @@ GameObject:
   - component: {fileID: 494236}
   - component: {fileID: 3373926}
   - component: {fileID: 2300158}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_024
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &132338
 GameObject:
@@ -2387,12 +2387,12 @@ GameObject:
   - component: {fileID: 473540}
   - component: {fileID: 3360050}
   - component: {fileID: 2362554}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_014
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &132410
 GameObject:
@@ -2404,12 +2404,12 @@ GameObject:
   - component: {fileID: 433336}
   - component: {fileID: 3301416}
   - component: {fileID: 2313146}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_telegraphPole_009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &132486
 GameObject:
@@ -2421,12 +2421,12 @@ GameObject:
   - component: {fileID: 499792}
   - component: {fileID: 3306322}
   - component: {fileID: 2305092}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_barrel_018
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &133084
 GameObject:
@@ -2438,12 +2438,12 @@ GameObject:
   - component: {fileID: 429368}
   - component: {fileID: 3384416}
   - component: {fileID: 2307450}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_telegraphPole_008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &133130
 GameObject:
@@ -2455,7 +2455,7 @@ GameObject:
   - component: {fileID: 426352}
   - component: {fileID: 3341840}
   - component: {fileID: 2300222}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_037
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2472,12 +2472,12 @@ GameObject:
   - component: {fileID: 466562}
   - component: {fileID: 3385846}
   - component: {fileID: 2387264}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_029
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &133356
 GameObject:
@@ -2489,12 +2489,12 @@ GameObject:
   - component: {fileID: 463472}
   - component: {fileID: 3397688}
   - component: {fileID: 2328666}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_105
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &133682
 GameObject:
@@ -2506,12 +2506,12 @@ GameObject:
   - component: {fileID: 449054}
   - component: {fileID: 3335846}
   - component: {fileID: 2321182}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_laserFence_A_002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &133684
 GameObject:
@@ -2523,12 +2523,12 @@ GameObject:
   - component: {fileID: 478918}
   - component: {fileID: 3361648}
   - component: {fileID: 2347438}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_028
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &134040
 GameObject:
@@ -2540,12 +2540,12 @@ GameObject:
   - component: {fileID: 404284}
   - component: {fileID: 3350030}
   - component: {fileID: 2329996}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &134044
 GameObject:
@@ -2555,7 +2555,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 476692}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decals
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2572,7 +2572,7 @@ GameObject:
   - component: {fileID: 406096}
   - component: {fileID: 3319792}
   - component: {fileID: 2324160}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_023
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2589,12 +2589,12 @@ GameObject:
   - component: {fileID: 435062}
   - component: {fileID: 3325504}
   - component: {fileID: 2355462}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_telegraphPole_005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &134632
 GameObject:
@@ -2606,12 +2606,12 @@ GameObject:
   - component: {fileID: 405516}
   - component: {fileID: 3309456}
   - component: {fileID: 2397626}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_048
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &135612
 GameObject:
@@ -2623,12 +2623,12 @@ GameObject:
   - component: {fileID: 460252}
   - component: {fileID: 3388656}
   - component: {fileID: 2315844}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_023
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &136324
 GameObject:
@@ -2640,7 +2640,7 @@ GameObject:
   - component: {fileID: 411594}
   - component: {fileID: 3335418}
   - component: {fileID: 2324034}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_016
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2657,12 +2657,12 @@ GameObject:
   - component: {fileID: 478342}
   - component: {fileID: 3329656}
   - component: {fileID: 2340742}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_062
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &136566
 GameObject:
@@ -2674,12 +2674,12 @@ GameObject:
   - component: {fileID: 420686}
   - component: {fileID: 3322004}
   - component: {fileID: 2375590}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_077
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &136992
 GameObject:
@@ -2691,12 +2691,12 @@ GameObject:
   - component: {fileID: 421614}
   - component: {fileID: 3330208}
   - component: {fileID: 2355836}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_092
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &137112
 GameObject:
@@ -2708,7 +2708,7 @@ GameObject:
   - component: {fileID: 483684}
   - component: {fileID: 3346380}
   - component: {fileID: 2341312}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_012
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2725,12 +2725,12 @@ GameObject:
   - component: {fileID: 445404}
   - component: {fileID: 3345452}
   - component: {fileID: 2322646}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_barrel_008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &137854
 GameObject:
@@ -2742,12 +2742,12 @@ GameObject:
   - component: {fileID: 414702}
   - component: {fileID: 3300398}
   - component: {fileID: 2343656}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_094
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &137926
 GameObject:
@@ -2759,12 +2759,12 @@ GameObject:
   - component: {fileID: 437566}
   - component: {fileID: 3317416}
   - component: {fileID: 2343996}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_032
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &138002
 GameObject:
@@ -2776,12 +2776,12 @@ GameObject:
   - component: {fileID: 447796}
   - component: {fileID: 3347050}
   - component: {fileID: 2386498}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_025
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &138732
 GameObject:
@@ -2793,12 +2793,12 @@ GameObject:
   - component: {fileID: 471820}
   - component: {fileID: 3316548}
   - component: {fileID: 2303702}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_barrel_003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &139562
 GameObject:
@@ -2810,12 +2810,12 @@ GameObject:
   - component: {fileID: 479614}
   - component: {fileID: 3355734}
   - component: {fileID: 2313910}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_053
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &139834
 GameObject:
@@ -2827,12 +2827,12 @@ GameObject:
   - component: {fileID: 458898}
   - component: {fileID: 3352782}
   - component: {fileID: 2356178}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_042
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &140386
 GameObject:
@@ -2844,7 +2844,7 @@ GameObject:
   - component: {fileID: 434982}
   - component: {fileID: 3376630}
   - component: {fileID: 2351270}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2861,12 +2861,12 @@ GameObject:
   - component: {fileID: 491332}
   - component: {fileID: 3350674}
   - component: {fileID: 2351598}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_115
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &140684
 GameObject:
@@ -2878,12 +2878,12 @@ GameObject:
   - component: {fileID: 413088}
   - component: {fileID: 3352366}
   - component: {fileID: 2354444}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: liftshaft_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &141224
 GameObject:
@@ -2895,12 +2895,12 @@ GameObject:
   - component: {fileID: 408234}
   - component: {fileID: 3364060}
   - component: {fileID: 2332998}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &141278
 GameObject:
@@ -2912,12 +2912,12 @@ GameObject:
   - component: {fileID: 464652}
   - component: {fileID: 3377654}
   - component: {fileID: 2377892}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_megaphone_005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &141372
 GameObject:
@@ -2929,12 +2929,12 @@ GameObject:
   - component: {fileID: 443398}
   - component: {fileID: 3304312}
   - component: {fileID: 2302046}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_barrel_010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &141738
 GameObject:
@@ -2946,12 +2946,12 @@ GameObject:
   - component: {fileID: 443838}
   - component: {fileID: 3355340}
   - component: {fileID: 2317840}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_044
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &142014
 GameObject:
@@ -2963,12 +2963,12 @@ GameObject:
   - component: {fileID: 442722}
   - component: {fileID: 3359288}
   - component: {fileID: 2302528}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_027
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &142430
 GameObject:
@@ -2980,12 +2980,12 @@ GameObject:
   - component: {fileID: 483792}
   - component: {fileID: 3318094}
   - component: {fileID: 2311668}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_051
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &142588
 GameObject:
@@ -2997,12 +2997,12 @@ GameObject:
   - component: {fileID: 492696}
   - component: {fileID: 3339734}
   - component: {fileID: 2304910}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_barrel_007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &142614
 GameObject:
@@ -3014,12 +3014,12 @@ GameObject:
   - component: {fileID: 485006}
   - component: {fileID: 3300952}
   - component: {fileID: 2350486}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_051
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &142636
 GameObject:
@@ -3031,7 +3031,7 @@ GameObject:
   - component: {fileID: 426546}
   - component: {fileID: 3301932}
   - component: {fileID: 2318314}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3048,12 +3048,12 @@ GameObject:
   - component: {fileID: 488554}
   - component: {fileID: 3311856}
   - component: {fileID: 2351936}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_laserFence_A_007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &142908
 GameObject:
@@ -3065,12 +3065,12 @@ GameObject:
   - component: {fileID: 484988}
   - component: {fileID: 3304648}
   - component: {fileID: 2317176}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_megaphone_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &142940
 GameObject:
@@ -3082,12 +3082,12 @@ GameObject:
   - component: {fileID: 456848}
   - component: {fileID: 3315232}
   - component: {fileID: 2352066}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_064
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &143156
 GameObject:
@@ -3099,12 +3099,12 @@ GameObject:
   - component: {fileID: 402496}
   - component: {fileID: 3398046}
   - component: {fileID: 2399490}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_088
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &143410
 GameObject:
@@ -3116,12 +3116,12 @@ GameObject:
   - component: {fileID: 467886}
   - component: {fileID: 3348296}
   - component: {fileID: 2317318}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_016
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &143698
 GameObject:
@@ -3133,12 +3133,12 @@ GameObject:
   - component: {fileID: 474960}
   - component: {fileID: 3324806}
   - component: {fileID: 2355722}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_086
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &144056
 GameObject:
@@ -3150,12 +3150,12 @@ GameObject:
   - component: {fileID: 438296}
   - component: {fileID: 3309338}
   - component: {fileID: 2350704}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: ground_009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &144294
 GameObject:
@@ -3167,12 +3167,12 @@ GameObject:
   - component: {fileID: 482268}
   - component: {fileID: 3382108}
   - component: {fileID: 2380716}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_061
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &144452
 GameObject:
@@ -3184,12 +3184,12 @@ GameObject:
   - component: {fileID: 468494}
   - component: {fileID: 3350494}
   - component: {fileID: 2351164}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_012
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &144830
 GameObject:
@@ -3201,12 +3201,12 @@ GameObject:
   - component: {fileID: 442776}
   - component: {fileID: 3394672}
   - component: {fileID: 2310550}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_018
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &145294
 GameObject:
@@ -3218,12 +3218,12 @@ GameObject:
   - component: {fileID: 493244}
   - component: {fileID: 3304540}
   - component: {fileID: 2308688}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_megaphone_002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &145390
 GameObject:
@@ -3235,12 +3235,12 @@ GameObject:
   - component: {fileID: 450110}
   - component: {fileID: 3338926}
   - component: {fileID: 2318618}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_024
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &146004
 GameObject:
@@ -3252,12 +3252,12 @@ GameObject:
   - component: {fileID: 483862}
   - component: {fileID: 3300046}
   - component: {fileID: 2383906}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &146098
 GameObject:
@@ -3269,12 +3269,12 @@ GameObject:
   - component: {fileID: 495068}
   - component: {fileID: 3311532}
   - component: {fileID: 2332600}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &146228
 GameObject:
@@ -3286,12 +3286,12 @@ GameObject:
   - component: {fileID: 472710}
   - component: {fileID: 3314854}
   - component: {fileID: 2382244}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_barrel_024
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &146244
 GameObject:
@@ -3303,12 +3303,12 @@ GameObject:
   - component: {fileID: 479598}
   - component: {fileID: 3341822}
   - component: {fileID: 2304758}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_050
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &147184
 GameObject:
@@ -3320,12 +3320,12 @@ GameObject:
   - component: {fileID: 462738}
   - component: {fileID: 3372942}
   - component: {fileID: 2317914}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_044
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &147186
 GameObject:
@@ -3337,7 +3337,7 @@ GameObject:
   - component: {fileID: 445092}
   - component: {fileID: 3364964}
   - component: {fileID: 2301420}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_025
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3354,12 +3354,12 @@ GameObject:
   - component: {fileID: 491274}
   - component: {fileID: 3376906}
   - component: {fileID: 2399808}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_108
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &147772
 GameObject:
@@ -3371,12 +3371,12 @@ GameObject:
   - component: {fileID: 412138}
   - component: {fileID: 3341376}
   - component: {fileID: 2344352}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_057
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &147884
 GameObject:
@@ -3388,12 +3388,12 @@ GameObject:
   - component: {fileID: 414276}
   - component: {fileID: 3388014}
   - component: {fileID: 2306460}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_022
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &148000
 GameObject:
@@ -3405,12 +3405,12 @@ GameObject:
   - component: {fileID: 462024}
   - component: {fileID: 3303514}
   - component: {fileID: 2332058}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_016
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &148232
 GameObject:
@@ -3422,7 +3422,7 @@ GameObject:
   - component: {fileID: 405764}
   - component: {fileID: 3314884}
   - component: {fileID: 2369850}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3439,12 +3439,12 @@ GameObject:
   - component: {fileID: 422758}
   - component: {fileID: 3357978}
   - component: {fileID: 2318426}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_barrel_011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &148778
 GameObject:
@@ -3456,12 +3456,12 @@ GameObject:
   - component: {fileID: 465282}
   - component: {fileID: 3314278}
   - component: {fileID: 2320142}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: ground_006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &149102
 GameObject:
@@ -3473,7 +3473,7 @@ GameObject:
   - component: {fileID: 473998}
   - component: {fileID: 3324102}
   - component: {fileID: 2383778}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3490,7 +3490,7 @@ GameObject:
   - component: {fileID: 434402}
   - component: {fileID: 3359150}
   - component: {fileID: 2351566}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wire_016
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3507,12 +3507,12 @@ GameObject:
   - component: {fileID: 413592}
   - component: {fileID: 3304238}
   - component: {fileID: 2330926}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_061
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &149466
 GameObject:
@@ -3524,12 +3524,12 @@ GameObject:
   - component: {fileID: 451692}
   - component: {fileID: 3316162}
   - component: {fileID: 2369418}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_024
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &149806
 GameObject:
@@ -3541,12 +3541,12 @@ GameObject:
   - component: {fileID: 443716}
   - component: {fileID: 3317732}
   - component: {fileID: 2327986}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_080
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &149972
 GameObject:
@@ -3558,12 +3558,12 @@ GameObject:
   - component: {fileID: 463390}
   - component: {fileID: 3390650}
   - component: {fileID: 2399204}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_fan_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &150062
 GameObject:
@@ -3575,12 +3575,12 @@ GameObject:
   - component: {fileID: 431122}
   - component: {fileID: 3365764}
   - component: {fileID: 2331936}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_102
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &150448
 GameObject:
@@ -3592,12 +3592,12 @@ GameObject:
   - component: {fileID: 465060}
   - component: {fileID: 3338692}
   - component: {fileID: 2319696}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &150672
 GameObject:
@@ -3609,7 +3609,7 @@ GameObject:
   - component: {fileID: 403394}
   - component: {fileID: 3335458}
   - component: {fileID: 2355700}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wire_021
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3626,7 +3626,7 @@ GameObject:
   - component: {fileID: 400476}
   - component: {fileID: 3394826}
   - component: {fileID: 2308834}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wire_011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3643,12 +3643,12 @@ GameObject:
   - component: {fileID: 476200}
   - component: {fileID: 3396908}
   - component: {fileID: 2313412}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_052
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &151592
 GameObject:
@@ -3660,7 +3660,7 @@ GameObject:
   - component: {fileID: 400566}
   - component: {fileID: 3387930}
   - component: {fileID: 2347246}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wire_018
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3677,12 +3677,12 @@ GameObject:
   - component: {fileID: 425836}
   - component: {fileID: 3340206}
   - component: {fileID: 2310338}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_107
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &151896
 GameObject:
@@ -3694,12 +3694,12 @@ GameObject:
   - component: {fileID: 461050}
   - component: {fileID: 3367104}
   - component: {fileID: 2364932}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_046
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &152548
 GameObject:
@@ -3711,7 +3711,7 @@ GameObject:
   - component: {fileID: 433680}
   - component: {fileID: 3319942}
   - component: {fileID: 2340432}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_028
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3728,7 +3728,7 @@ GameObject:
   - component: {fileID: 488608}
   - component: {fileID: 3350890}
   - component: {fileID: 2327704}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wire_019
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3745,7 +3745,7 @@ GameObject:
   - component: {fileID: 481070}
   - component: {fileID: 3363168}
   - component: {fileID: 2334006}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_021
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3762,12 +3762,12 @@ GameObject:
   - component: {fileID: 434290}
   - component: {fileID: 3330692}
   - component: {fileID: 2301852}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: liftshaft_004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &153530
 GameObject:
@@ -3779,12 +3779,12 @@ GameObject:
   - component: {fileID: 424444}
   - component: {fileID: 3337064}
   - component: {fileID: 2375906}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_telegraphPole_007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &153670
 GameObject:
@@ -3796,12 +3796,12 @@ GameObject:
   - component: {fileID: 420472}
   - component: {fileID: 3388110}
   - component: {fileID: 2351854}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_barrel_026
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &153802
 GameObject:
@@ -3813,12 +3813,12 @@ GameObject:
   - component: {fileID: 457412}
   - component: {fileID: 3388638}
   - component: {fileID: 2300214}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_063
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &154310
 GameObject:
@@ -3830,12 +3830,12 @@ GameObject:
   - component: {fileID: 421698}
   - component: {fileID: 3334384}
   - component: {fileID: 2367920}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_013
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &154452
 GameObject:
@@ -3847,12 +3847,12 @@ GameObject:
   - component: {fileID: 455672}
   - component: {fileID: 3393926}
   - component: {fileID: 2388732}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_074
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &154744
 GameObject:
@@ -3864,7 +3864,7 @@ GameObject:
   - component: {fileID: 489286}
   - component: {fileID: 3362114}
   - component: {fileID: 2381736}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wire_005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3881,12 +3881,12 @@ GameObject:
   - component: {fileID: 413242}
   - component: {fileID: 3334546}
   - component: {fileID: 2303208}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_064
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &154972
 GameObject:
@@ -3898,12 +3898,12 @@ GameObject:
   - component: {fileID: 464308}
   - component: {fileID: 3325878}
   - component: {fileID: 2382684}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_038
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &155476
 GameObject:
@@ -3915,12 +3915,12 @@ GameObject:
   - component: {fileID: 484382}
   - component: {fileID: 3310366}
   - component: {fileID: 2314762}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_081
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &155796
 GameObject:
@@ -3932,12 +3932,12 @@ GameObject:
   - component: {fileID: 414842}
   - component: {fileID: 3308726}
   - component: {fileID: 2356352}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_043
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &156258
 GameObject:
@@ -3949,12 +3949,12 @@ GameObject:
   - component: {fileID: 462868}
   - component: {fileID: 3338748}
   - component: {fileID: 2313114}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_056
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &156482
 GameObject:
@@ -3966,12 +3966,12 @@ GameObject:
   - component: {fileID: 492836}
   - component: {fileID: 3314406}
   - component: {fileID: 2359852}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_026
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &156550
 GameObject:
@@ -3983,12 +3983,12 @@ GameObject:
   - component: {fileID: 416776}
   - component: {fileID: 3304274}
   - component: {fileID: 2341102}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_095
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &156676
 GameObject:
@@ -4000,12 +4000,12 @@ GameObject:
   - component: {fileID: 418428}
   - component: {fileID: 3398082}
   - component: {fileID: 2348464}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_laserFence_A_006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &157000
 GameObject:
@@ -4017,12 +4017,12 @@ GameObject:
   - component: {fileID: 497714}
   - component: {fileID: 3371660}
   - component: {fileID: 2324080}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_035
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &157288
 GameObject:
@@ -4034,12 +4034,12 @@ GameObject:
   - component: {fileID: 429512}
   - component: {fileID: 3318622}
   - component: {fileID: 2313370}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_045
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &157616
 GameObject:
@@ -4051,12 +4051,12 @@ GameObject:
   - component: {fileID: 465976}
   - component: {fileID: 3339510}
   - component: {fileID: 2363162}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_038
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &157630
 GameObject:
@@ -4068,12 +4068,12 @@ GameObject:
   - component: {fileID: 488638}
   - component: {fileID: 3328478}
   - component: {fileID: 2367044}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_056
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &157656
 GameObject:
@@ -4085,7 +4085,7 @@ GameObject:
   - component: {fileID: 472378}
   - component: {fileID: 3385090}
   - component: {fileID: 2344900}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_029
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4102,12 +4102,12 @@ GameObject:
   - component: {fileID: 453570}
   - component: {fileID: 3358350}
   - component: {fileID: 2333750}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_035
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &158086
 GameObject:
@@ -4119,12 +4119,12 @@ GameObject:
   - component: {fileID: 437610}
   - component: {fileID: 3363704}
   - component: {fileID: 2392604}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_056
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &158200
 GameObject:
@@ -4136,12 +4136,12 @@ GameObject:
   - component: {fileID: 444982}
   - component: {fileID: 3323468}
   - component: {fileID: 2391280}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_037
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &158478
 GameObject:
@@ -4153,12 +4153,12 @@ GameObject:
   - component: {fileID: 467538}
   - component: {fileID: 3317724}
   - component: {fileID: 2379314}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: liftshaft_003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &158662
 GameObject:
@@ -4170,12 +4170,12 @@ GameObject:
   - component: {fileID: 475510}
   - component: {fileID: 3367082}
   - component: {fileID: 2347524}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_013
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &158714
 GameObject:
@@ -4187,12 +4187,12 @@ GameObject:
   - component: {fileID: 419636}
   - component: {fileID: 3396332}
   - component: {fileID: 2337278}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &159084
 GameObject:
@@ -4204,12 +4204,12 @@ GameObject:
   - component: {fileID: 468546}
   - component: {fileID: 3386696}
   - component: {fileID: 2359870}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_059
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &159120
 GameObject:
@@ -4221,12 +4221,12 @@ GameObject:
   - component: {fileID: 463194}
   - component: {fileID: 3332342}
   - component: {fileID: 2311656}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_030
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &159146
 GameObject:
@@ -4238,7 +4238,7 @@ GameObject:
   - component: {fileID: 462902}
   - component: {fileID: 3352964}
   - component: {fileID: 2332410}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_013
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4255,7 +4255,7 @@ GameObject:
   - component: {fileID: 453636}
   - component: {fileID: 3334848}
   - component: {fileID: 2376822}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_019
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4272,12 +4272,12 @@ GameObject:
   - component: {fileID: 466548}
   - component: {fileID: 3381650}
   - component: {fileID: 2394098}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_barrel_013
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &159586
 GameObject:
@@ -4289,12 +4289,12 @@ GameObject:
   - component: {fileID: 469608}
   - component: {fileID: 3350642}
   - component: {fileID: 2397208}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &159588
 GameObject:
@@ -4306,7 +4306,7 @@ GameObject:
   - component: {fileID: 462128}
   - component: {fileID: 3350928}
   - component: {fileID: 2315154}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wire_026
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4323,12 +4323,12 @@ GameObject:
   - component: {fileID: 462688}
   - component: {fileID: 3378774}
   - component: {fileID: 2348328}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_barrel_005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &159852
 GameObject:
@@ -4340,12 +4340,12 @@ GameObject:
   - component: {fileID: 437394}
   - component: {fileID: 3327844}
   - component: {fileID: 2334694}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_035
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &160302
 GameObject:
@@ -4357,12 +4357,12 @@ GameObject:
   - component: {fileID: 435696}
   - component: {fileID: 3323028}
   - component: {fileID: 2345106}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_023
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &160722
 GameObject:
@@ -4374,12 +4374,12 @@ GameObject:
   - component: {fileID: 433862}
   - component: {fileID: 3376302}
   - component: {fileID: 2383284}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_098
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &160962
 GameObject:
@@ -4391,7 +4391,7 @@ GameObject:
   - component: {fileID: 420272}
   - component: {fileID: 3333038}
   - component: {fileID: 2350700}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_052
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4408,12 +4408,12 @@ GameObject:
   - component: {fileID: 498966}
   - component: {fileID: 3382410}
   - component: {fileID: 2349406}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_barrel_025
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &161158
 GameObject:
@@ -4425,12 +4425,12 @@ GameObject:
   - component: {fileID: 481794}
   - component: {fileID: 3347974}
   - component: {fileID: 2367786}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &161392
 GameObject:
@@ -4442,7 +4442,7 @@ GameObject:
   - component: {fileID: 426868}
   - component: {fileID: 3326528}
   - component: {fileID: 2383662}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_047
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4459,12 +4459,12 @@ GameObject:
   - component: {fileID: 461582}
   - component: {fileID: 3341164}
   - component: {fileID: 2383820}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_016
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &161802
 GameObject:
@@ -4476,12 +4476,12 @@ GameObject:
   - component: {fileID: 409724}
   - component: {fileID: 3352388}
   - component: {fileID: 2399734}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_040
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &162070
 GameObject:
@@ -4493,12 +4493,12 @@ GameObject:
   - component: {fileID: 446962}
   - component: {fileID: 3325218}
   - component: {fileID: 2326476}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_barrel_012
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &162316
 GameObject:
@@ -4510,12 +4510,12 @@ GameObject:
   - component: {fileID: 467414}
   - component: {fileID: 3375452}
   - component: {fileID: 2348988}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_laserFence_B_005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &162384
 GameObject:
@@ -4525,12 +4525,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 421142}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: props
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &162800
 GameObject:
@@ -4542,12 +4542,12 @@ GameObject:
   - component: {fileID: 414780}
   - component: {fileID: 3328400}
   - component: {fileID: 2329586}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_telegraphPole_003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &163618
 GameObject:
@@ -4559,12 +4559,12 @@ GameObject:
   - component: {fileID: 413832}
   - component: {fileID: 3348806}
   - component: {fileID: 2350138}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_036
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &163714
 GameObject:
@@ -4576,7 +4576,7 @@ GameObject:
   - component: {fileID: 461862}
   - component: {fileID: 3358916}
   - component: {fileID: 2308816}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wire_006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4593,12 +4593,12 @@ GameObject:
   - component: {fileID: 421068}
   - component: {fileID: 3389478}
   - component: {fileID: 2394724}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_021
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &164072
 GameObject:
@@ -4610,12 +4610,12 @@ GameObject:
   - component: {fileID: 484620}
   - component: {fileID: 3314994}
   - component: {fileID: 2310504}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_110
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &164110
 GameObject:
@@ -4627,12 +4627,12 @@ GameObject:
   - component: {fileID: 456074}
   - component: {fileID: 3307824}
   - component: {fileID: 2376362}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_fan_002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &164302
 GameObject:
@@ -4644,7 +4644,7 @@ GameObject:
   - component: {fileID: 480034}
   - component: {fileID: 3326948}
   - component: {fileID: 2302446}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wire_009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4661,12 +4661,12 @@ GameObject:
   - component: {fileID: 426292}
   - component: {fileID: 3306846}
   - component: {fileID: 2374142}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: liftshaft_007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &164484
 GameObject:
@@ -4678,12 +4678,12 @@ GameObject:
   - component: {fileID: 476608}
   - component: {fileID: 3392624}
   - component: {fileID: 2301144}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_018
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &164728
 GameObject:
@@ -4695,7 +4695,7 @@ GameObject:
   - component: {fileID: 469364}
   - component: {fileID: 3375294}
   - component: {fileID: 2379630}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_039
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4712,12 +4712,12 @@ GameObject:
   - component: {fileID: 492206}
   - component: {fileID: 3319694}
   - component: {fileID: 2321786}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_034
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &165390
 GameObject:
@@ -4729,12 +4729,12 @@ GameObject:
   - component: {fileID: 487080}
   - component: {fileID: 3362174}
   - component: {fileID: 2314294}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_091
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &165468
 GameObject:
@@ -4746,12 +4746,12 @@ GameObject:
   - component: {fileID: 409254}
   - component: {fileID: 3388820}
   - component: {fileID: 2301164}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_043
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &165480
 GameObject:
@@ -4763,12 +4763,12 @@ GameObject:
   - component: {fileID: 450700}
   - component: {fileID: 3308004}
   - component: {fileID: 2304590}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_101
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &167110
 GameObject:
@@ -4780,12 +4780,12 @@ GameObject:
   - component: {fileID: 482132}
   - component: {fileID: 3386638}
   - component: {fileID: 2373576}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_laserFence_B_002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &167686
 GameObject:
@@ -4797,7 +4797,7 @@ GameObject:
   - component: {fileID: 424962}
   - component: {fileID: 3373874}
   - component: {fileID: 2353726}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_018
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4814,12 +4814,12 @@ GameObject:
   - component: {fileID: 483284}
   - component: {fileID: 3370014}
   - component: {fileID: 2305230}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_table_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &168402
 GameObject:
@@ -4831,12 +4831,12 @@ GameObject:
   - component: {fileID: 447798}
   - component: {fileID: 3339912}
   - component: {fileID: 2325760}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: liftshaft_005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &169024
 GameObject:
@@ -4848,12 +4848,12 @@ GameObject:
   - component: {fileID: 499158}
   - component: {fileID: 3364534}
   - component: {fileID: 2322158}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_laserFence_A_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &169162
 GameObject:
@@ -4865,12 +4865,12 @@ GameObject:
   - component: {fileID: 416004}
   - component: {fileID: 3361900}
   - component: {fileID: 2326156}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_062
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &169604
 GameObject:
@@ -4882,12 +4882,12 @@ GameObject:
   - component: {fileID: 475254}
   - component: {fileID: 3320322}
   - component: {fileID: 2321640}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &169996
 GameObject:
@@ -4899,12 +4899,12 @@ GameObject:
   - component: {fileID: 488528}
   - component: {fileID: 3383196}
   - component: {fileID: 2357614}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_laserFence_B_004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &170016
 GameObject:
@@ -4916,12 +4916,12 @@ GameObject:
   - component: {fileID: 497224}
   - component: {fileID: 3384690}
   - component: {fileID: 2313674}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: liftshaft_013
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &170066
 GameObject:
@@ -4933,12 +4933,12 @@ GameObject:
   - component: {fileID: 416420}
   - component: {fileID: 3374958}
   - component: {fileID: 2350078}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_013
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &170076
 GameObject:
@@ -4950,12 +4950,12 @@ GameObject:
   - component: {fileID: 419990}
   - component: {fileID: 3315356}
   - component: {fileID: 2329872}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_laserFence_B_003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &170358
 GameObject:
@@ -4967,12 +4967,12 @@ GameObject:
   - component: {fileID: 457130}
   - component: {fileID: 3314290}
   - component: {fileID: 2308634}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_055
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &170660
 GameObject:
@@ -4984,12 +4984,12 @@ GameObject:
   - component: {fileID: 411576}
   - component: {fileID: 3313602}
   - component: {fileID: 2300388}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_antenna_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &170876
 GameObject:
@@ -5001,7 +5001,7 @@ GameObject:
   - component: {fileID: 446726}
   - component: {fileID: 3329286}
   - component: {fileID: 2361488}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wire_020
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5018,7 +5018,7 @@ GameObject:
   - component: {fileID: 473432}
   - component: {fileID: 3383184}
   - component: {fileID: 2304984}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wire_023
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5035,12 +5035,12 @@ GameObject:
   - component: {fileID: 440522}
   - component: {fileID: 3313154}
   - component: {fileID: 2352436}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_063
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &171298
 GameObject:
@@ -5052,12 +5052,12 @@ GameObject:
   - component: {fileID: 448896}
   - component: {fileID: 3306658}
   - component: {fileID: 2368444}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_laserFence_A_004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &171360
 GameObject:
@@ -5069,7 +5069,7 @@ GameObject:
   - component: {fileID: 474764}
   - component: {fileID: 3332434}
   - component: {fileID: 2340800}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_036
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5086,12 +5086,12 @@ GameObject:
   - component: {fileID: 444708}
   - component: {fileID: 3388848}
   - component: {fileID: 2336806}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_036
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &171810
 GameObject:
@@ -5103,12 +5103,12 @@ GameObject:
   - component: {fileID: 486626}
   - component: {fileID: 3367248}
   - component: {fileID: 2379490}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_laserFence_B_006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &172572
 GameObject:
@@ -5120,12 +5120,12 @@ GameObject:
   - component: {fileID: 446318}
   - component: {fileID: 3344346}
   - component: {fileID: 2377772}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_telegraphPole_002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &172592
 GameObject:
@@ -5137,12 +5137,12 @@ GameObject:
   - component: {fileID: 480784}
   - component: {fileID: 3342268}
   - component: {fileID: 2347474}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_071
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &173010
 GameObject:
@@ -5154,12 +5154,12 @@ GameObject:
   - component: {fileID: 419076}
   - component: {fileID: 3378054}
   - component: {fileID: 2328380}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_014
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &173328
 GameObject:
@@ -5171,12 +5171,12 @@ GameObject:
   - component: {fileID: 414950}
   - component: {fileID: 3377696}
   - component: {fileID: 2386778}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_103
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &173356
 GameObject:
@@ -5193,7 +5193,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &173394
 GameObject:
@@ -5205,12 +5205,12 @@ GameObject:
   - component: {fileID: 493736}
   - component: {fileID: 3329568}
   - component: {fileID: 2314124}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_104
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &173450
 GameObject:
@@ -5222,12 +5222,12 @@ GameObject:
   - component: {fileID: 481428}
   - component: {fileID: 3318110}
   - component: {fileID: 2359450}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_085
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &173462
 GameObject:
@@ -5239,7 +5239,7 @@ GameObject:
   - component: {fileID: 454378}
   - component: {fileID: 3316562}
   - component: {fileID: 2347844}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5256,12 +5256,12 @@ GameObject:
   - component: {fileID: 444686}
   - component: {fileID: 3350756}
   - component: {fileID: 2311870}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: ground_007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &174764
 GameObject:
@@ -5273,12 +5273,12 @@ GameObject:
   - component: {fileID: 492356}
   - component: {fileID: 3377270}
   - component: {fileID: 2302178}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_058
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &175170
 GameObject:
@@ -5290,12 +5290,12 @@ GameObject:
   - component: {fileID: 446720}
   - component: {fileID: 3341778}
   - component: {fileID: 2363970}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_barrel_016
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &175646
 GameObject:
@@ -5305,12 +5305,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 459118}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &176292
 GameObject:
@@ -5322,12 +5322,12 @@ GameObject:
   - component: {fileID: 439518}
   - component: {fileID: 3396648}
   - component: {fileID: 2349196}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_042
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &176298
 GameObject:
@@ -5339,12 +5339,12 @@ GameObject:
   - component: {fileID: 417868}
   - component: {fileID: 3370256}
   - component: {fileID: 2390760}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: ground_005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &176446
 GameObject:
@@ -5356,7 +5356,7 @@ GameObject:
   - component: {fileID: 497974}
   - component: {fileID: 3333114}
   - component: {fileID: 2354812}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_035
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5373,12 +5373,12 @@ GameObject:
   - component: {fileID: 412680}
   - component: {fileID: 3316066}
   - component: {fileID: 2317720}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_109
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &176908
 GameObject:
@@ -5390,7 +5390,7 @@ GameObject:
   - component: {fileID: 469280}
   - component: {fileID: 3369214}
   - component: {fileID: 2380746}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5407,12 +5407,12 @@ GameObject:
   - component: {fileID: 424634}
   - component: {fileID: 3355106}
   - component: {fileID: 2358414}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_084
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &177198
 GameObject:
@@ -5424,7 +5424,7 @@ GameObject:
   - component: {fileID: 420846}
   - component: {fileID: 3384902}
   - component: {fileID: 2367574}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_015
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5441,12 +5441,12 @@ GameObject:
   - component: {fileID: 404518}
   - component: {fileID: 3381796}
   - component: {fileID: 2358194}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &177358
 GameObject:
@@ -5458,12 +5458,12 @@ GameObject:
   - component: {fileID: 458978}
   - component: {fileID: 3353576}
   - component: {fileID: 2334400}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_049
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &177944
 GameObject:
@@ -5475,12 +5475,12 @@ GameObject:
   - component: {fileID: 477922}
   - component: {fileID: 3339212}
   - component: {fileID: 2350816}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_037
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &178242
 GameObject:
@@ -5492,12 +5492,12 @@ GameObject:
   - component: {fileID: 460714}
   - component: {fileID: 3322704}
   - component: {fileID: 2360670}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_100
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &178340
 GameObject:
@@ -5509,7 +5509,7 @@ GameObject:
   - component: {fileID: 485650}
   - component: {fileID: 3384576}
   - component: {fileID: 2344676}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wire_027
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5526,12 +5526,12 @@ GameObject:
   - component: {fileID: 484092}
   - component: {fileID: 3367832}
   - component: {fileID: 2307076}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_030
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &179150
 GameObject:
@@ -5543,7 +5543,7 @@ GameObject:
   - component: {fileID: 429776}
   - component: {fileID: 3308538}
   - component: {fileID: 2313512}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wire_013
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5560,12 +5560,12 @@ GameObject:
   - component: {fileID: 417008}
   - component: {fileID: 3394186}
   - component: {fileID: 2379492}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: liftshaft_008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &179328
 GameObject:
@@ -5577,7 +5577,7 @@ GameObject:
   - component: {fileID: 432184}
   - component: {fileID: 3388834}
   - component: {fileID: 2340214}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_046
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5594,12 +5594,12 @@ GameObject:
   - component: {fileID: 487480}
   - component: {fileID: 3361506}
   - component: {fileID: 2353452}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_079
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &179774
 GameObject:
@@ -5611,7 +5611,7 @@ GameObject:
   - component: {fileID: 406034}
   - component: {fileID: 3345996}
   - component: {fileID: 2322424}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_050
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5628,12 +5628,12 @@ GameObject:
   - component: {fileID: 450204}
   - component: {fileID: 3314014}
   - component: {fileID: 2348546}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_039
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &181602
 GameObject:
@@ -5645,12 +5645,12 @@ GameObject:
   - component: {fileID: 432058}
   - component: {fileID: 3376768}
   - component: {fileID: 2357430}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_fan_003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &182016
 GameObject:
@@ -5662,12 +5662,12 @@ GameObject:
   - component: {fileID: 480680}
   - component: {fileID: 3307880}
   - component: {fileID: 2303564}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_barrel_022
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &182036
 GameObject:
@@ -5679,12 +5679,12 @@ GameObject:
   - component: {fileID: 426064}
   - component: {fileID: 3376358}
   - component: {fileID: 2312802}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_041
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &182192
 GameObject:
@@ -5696,12 +5696,12 @@ GameObject:
   - component: {fileID: 425770}
   - component: {fileID: 3344102}
   - component: {fileID: 2363032}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_020
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &182250
 GameObject:
@@ -5713,12 +5713,12 @@ GameObject:
   - component: {fileID: 410318}
   - component: {fileID: 3386712}
   - component: {fileID: 2399188}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_046
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &182698
 GameObject:
@@ -5730,31 +5730,12 @@ GameObject:
   - component: {fileID: 402656}
   - component: {fileID: 3396642}
   - component: {fileID: 2388356}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_barrel_015
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &183038
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 488808}
-  - component: {fileID: 2030636}
-  - component: {fileID: 9233940}
-  - component: {fileID: 12493474}
-  - component: {fileID: 8194866}
-  m_Layer: 0
-  m_Name: Main Camera
-  m_TagString: MainCamera
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &183156
 GameObject:
@@ -5766,12 +5747,12 @@ GameObject:
   - component: {fileID: 494460}
   - component: {fileID: 3359120}
   - component: {fileID: 2340108}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_066
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &183568
 GameObject:
@@ -5783,12 +5764,12 @@ GameObject:
   - component: {fileID: 447610}
   - component: {fileID: 3337040}
   - component: {fileID: 2354104}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_049
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &183756
 GameObject:
@@ -5800,12 +5781,12 @@ GameObject:
   - component: {fileID: 417256}
   - component: {fileID: 3345430}
   - component: {fileID: 2391876}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_020
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &183934
 GameObject:
@@ -5817,7 +5798,7 @@ GameObject:
   - component: {fileID: 460940}
   - component: {fileID: 3356540}
   - component: {fileID: 2357218}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wire_028
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5834,12 +5815,12 @@ GameObject:
   - component: {fileID: 447278}
   - component: {fileID: 3302380}
   - component: {fileID: 2338394}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_089
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &183994
 GameObject:
@@ -5851,12 +5832,12 @@ GameObject:
   - component: {fileID: 467946}
   - component: {fileID: 3385218}
   - component: {fileID: 2387088}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_039
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &184006
 GameObject:
@@ -5868,12 +5849,12 @@ GameObject:
   - component: {fileID: 411062}
   - component: {fileID: 3321848}
   - component: {fileID: 2306504}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_019
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &184090
 GameObject:
@@ -5885,12 +5866,12 @@ GameObject:
   - component: {fileID: 455380}
   - component: {fileID: 3341474}
   - component: {fileID: 2381712}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &184270
 GameObject:
@@ -5902,7 +5883,7 @@ GameObject:
   - component: {fileID: 404704}
   - component: {fileID: 3370926}
   - component: {fileID: 2310276}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wire_004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5919,7 +5900,7 @@ GameObject:
   - component: {fileID: 416980}
   - component: {fileID: 3327882}
   - component: {fileID: 2383832}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_041
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5936,12 +5917,12 @@ GameObject:
   - component: {fileID: 411136}
   - component: {fileID: 3382526}
   - component: {fileID: 2338538}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_048
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &185496
 GameObject:
@@ -5953,12 +5934,12 @@ GameObject:
   - component: {fileID: 475128}
   - component: {fileID: 3368162}
   - component: {fileID: 2351654}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_041
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &185522
 GameObject:
@@ -5970,12 +5951,12 @@ GameObject:
   - component: {fileID: 452926}
   - component: {fileID: 3365086}
   - component: {fileID: 2358806}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_040
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &185764
 GameObject:
@@ -5987,12 +5968,12 @@ GameObject:
   - component: {fileID: 488200}
   - component: {fileID: 3345258}
   - component: {fileID: 2360100}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_023
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &185822
 GameObject:
@@ -6004,7 +5985,7 @@ GameObject:
   - component: {fileID: 443430}
   - component: {fileID: 3387688}
   - component: {fileID: 2364116}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_044
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6021,12 +6002,12 @@ GameObject:
   - component: {fileID: 402066}
   - component: {fileID: 3359694}
   - component: {fileID: 2397578}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_106
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &186530
 GameObject:
@@ -6038,12 +6019,12 @@ GameObject:
   - component: {fileID: 405376}
   - component: {fileID: 3361596}
   - component: {fileID: 2387054}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_barrel_002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &186970
 GameObject:
@@ -6055,12 +6036,12 @@ GameObject:
   - component: {fileID: 449686}
   - component: {fileID: 3366228}
   - component: {fileID: 2359000}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_055
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &187004
 GameObject:
@@ -6072,12 +6053,12 @@ GameObject:
   - component: {fileID: 403352}
   - component: {fileID: 3346518}
   - component: {fileID: 2369718}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_050
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &187150
 GameObject:
@@ -6089,12 +6070,12 @@ GameObject:
   - component: {fileID: 413934}
   - component: {fileID: 3327516}
   - component: {fileID: 2358680}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_067
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &187270
 GameObject:
@@ -6106,12 +6087,12 @@ GameObject:
   - component: {fileID: 402350}
   - component: {fileID: 3376552}
   - component: {fileID: 2324688}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: liftshaft_011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &187422
 GameObject:
@@ -6123,12 +6104,12 @@ GameObject:
   - component: {fileID: 406706}
   - component: {fileID: 3386374}
   - component: {fileID: 2350312}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_017
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &187438
 GameObject:
@@ -6140,12 +6121,12 @@ GameObject:
   - component: {fileID: 493488}
   - component: {fileID: 3356208}
   - component: {fileID: 2337818}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_telegraphPole_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &187488
 GameObject:
@@ -6157,12 +6138,12 @@ GameObject:
   - component: {fileID: 419592}
   - component: {fileID: 3388260}
   - component: {fileID: 2315996}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_laserFence_A_003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &187890
 GameObject:
@@ -6174,12 +6155,12 @@ GameObject:
   - component: {fileID: 402518}
   - component: {fileID: 3308194}
   - component: {fileID: 2351780}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_028
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &187980
 GameObject:
@@ -6191,7 +6172,7 @@ GameObject:
   - component: {fileID: 444980}
   - component: {fileID: 3316752}
   - component: {fileID: 2333018}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_032
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6208,7 +6189,7 @@ GameObject:
   - component: {fileID: 413788}
   - component: {fileID: 3313226}
   - component: {fileID: 2311906}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_038
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6225,7 +6206,7 @@ GameObject:
   - component: {fileID: 455694}
   - component: {fileID: 3317368}
   - component: {fileID: 2385068}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_040
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6242,12 +6223,12 @@ GameObject:
   - component: {fileID: 435698}
   - component: {fileID: 3387254}
   - component: {fileID: 2337224}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_059
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &189504
 GameObject:
@@ -6259,12 +6240,12 @@ GameObject:
   - component: {fileID: 409764}
   - component: {fileID: 3388334}
   - component: {fileID: 2376384}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_megaphone_004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &189676
 GameObject:
@@ -6276,12 +6257,12 @@ GameObject:
   - component: {fileID: 476440}
   - component: {fileID: 3386294}
   - component: {fileID: 2366736}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_table_002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &189716
 GameObject:
@@ -6291,12 +6272,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 420010}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: walls_boundary
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &189848
 GameObject:
@@ -6308,12 +6289,12 @@ GameObject:
   - component: {fileID: 448666}
   - component: {fileID: 3377656}
   - component: {fileID: 2356002}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_078
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &190214
 GameObject:
@@ -6323,7 +6304,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 461088}
-  m_Layer: 8
+  - component: {fileID: 64919848444756968}
+  m_Layer: 0
   m_Name: Navigation Example Geometry
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6340,7 +6322,7 @@ GameObject:
   - component: {fileID: 443124}
   - component: {fileID: 3347516}
   - component: {fileID: 2324016}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wire_025
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6357,12 +6339,12 @@ GameObject:
   - component: {fileID: 411428}
   - component: {fileID: 3349268}
   - component: {fileID: 2302234}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_barrel_017
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &190726
 GameObject:
@@ -6374,12 +6356,12 @@ GameObject:
   - component: {fileID: 479492}
   - component: {fileID: 3385016}
   - component: {fileID: 2331204}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: ground_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &190984
 GameObject:
@@ -6391,12 +6373,12 @@ GameObject:
   - component: {fileID: 457316}
   - component: {fileID: 3338382}
   - component: {fileID: 2307866}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_057
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &191060
 GameObject:
@@ -6408,12 +6390,12 @@ GameObject:
   - component: {fileID: 472254}
   - component: {fileID: 3398892}
   - component: {fileID: 2327788}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_041
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &191118
 GameObject:
@@ -6425,7 +6407,7 @@ GameObject:
   - component: {fileID: 415830}
   - component: {fileID: 3398548}
   - component: {fileID: 2399038}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wire_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6442,7 +6424,7 @@ GameObject:
   - component: {fileID: 414742}
   - component: {fileID: 3303804}
   - component: {fileID: 2303068}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_033
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6459,7 +6441,7 @@ GameObject:
   - component: {fileID: 410592}
   - component: {fileID: 3304436}
   - component: {fileID: 2364588}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_043
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6476,12 +6458,12 @@ GameObject:
   - component: {fileID: 454084}
   - component: {fileID: 3340728}
   - component: {fileID: 2387090}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &192286
 GameObject:
@@ -6493,12 +6475,12 @@ GameObject:
   - component: {fileID: 401360}
   - component: {fileID: 3314410}
   - component: {fileID: 2367396}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_026
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &192330
 GameObject:
@@ -6510,12 +6492,12 @@ GameObject:
   - component: {fileID: 417990}
   - component: {fileID: 3398966}
   - component: {fileID: 2336588}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_barrel_009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &192334
 GameObject:
@@ -6527,12 +6509,12 @@ GameObject:
   - component: {fileID: 402704}
   - component: {fileID: 3316870}
   - component: {fileID: 2381408}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &192370
 GameObject:
@@ -6544,12 +6526,12 @@ GameObject:
   - component: {fileID: 486146}
   - component: {fileID: 3396054}
   - component: {fileID: 2301560}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_054
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &192440
 GameObject:
@@ -6561,12 +6543,12 @@ GameObject:
   - component: {fileID: 480466}
   - component: {fileID: 3383050}
   - component: {fileID: 2316020}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_058
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &193312
 GameObject:
@@ -6578,7 +6560,7 @@ GameObject:
   - component: {fileID: 423258}
   - component: {fileID: 3364914}
   - component: {fileID: 2331872}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_020
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6595,7 +6577,7 @@ GameObject:
   - component: {fileID: 497854}
   - component: {fileID: 3385322}
   - component: {fileID: 2382372}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_030
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6612,12 +6594,12 @@ GameObject:
   - component: {fileID: 442320}
   - component: {fileID: 3377886}
   - component: {fileID: 2303138}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_antenna_002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &194330
 GameObject:
@@ -6629,12 +6611,12 @@ GameObject:
   - component: {fileID: 431670}
   - component: {fileID: 3397906}
   - component: {fileID: 2301834}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_floodLight_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &194578
 GameObject:
@@ -6646,12 +6628,12 @@ GameObject:
   - component: {fileID: 419356}
   - component: {fileID: 3383282}
   - component: {fileID: 2399792}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_031
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &194802
 GameObject:
@@ -6661,12 +6643,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 498164}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: liftshaft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &195100
 GameObject:
@@ -6678,12 +6660,12 @@ GameObject:
   - component: {fileID: 452272}
   - component: {fileID: 3364670}
   - component: {fileID: 2382470}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_040
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &195200
 GameObject:
@@ -6693,12 +6675,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 418500}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: walls_inner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &195234
 GameObject:
@@ -6708,7 +6690,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 462940}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wires
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6725,12 +6707,12 @@ GameObject:
   - component: {fileID: 473382}
   - component: {fileID: 3378130}
   - component: {fileID: 2394980}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &196002
 GameObject:
@@ -6742,12 +6724,12 @@ GameObject:
   - component: {fileID: 424260}
   - component: {fileID: 3310512}
   - component: {fileID: 2316212}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_072
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &196262
 GameObject:
@@ -6759,12 +6741,12 @@ GameObject:
   - component: {fileID: 422506}
   - component: {fileID: 3339222}
   - component: {fileID: 2362896}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_068
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &196288
 GameObject:
@@ -6776,12 +6758,12 @@ GameObject:
   - component: {fileID: 443318}
   - component: {fileID: 3350234}
   - component: {fileID: 2332808}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_054
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &196536
 GameObject:
@@ -6793,7 +6775,7 @@ GameObject:
   - component: {fileID: 445834}
   - component: {fileID: 3342470}
   - component: {fileID: 2360694}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wire_030
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6810,12 +6792,12 @@ GameObject:
   - component: {fileID: 474402}
   - component: {fileID: 3392108}
   - component: {fileID: 2393532}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_050
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &196970
 GameObject:
@@ -6827,12 +6809,12 @@ GameObject:
   - component: {fileID: 490216}
   - component: {fileID: 3316414}
   - component: {fileID: 2338476}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_032
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &197114
 GameObject:
@@ -6844,12 +6826,12 @@ GameObject:
   - component: {fileID: 461958}
   - component: {fileID: 3395396}
   - component: {fileID: 2373946}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_barrel_004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &197232
 GameObject:
@@ -6861,12 +6843,12 @@ GameObject:
   - component: {fileID: 498806}
   - component: {fileID: 3357724}
   - component: {fileID: 2319034}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_017
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &197238
 GameObject:
@@ -6878,12 +6860,12 @@ GameObject:
   - component: {fileID: 444622}
   - component: {fileID: 3335574}
   - component: {fileID: 2377278}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_112
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &197474
 GameObject:
@@ -6895,12 +6877,12 @@ GameObject:
   - component: {fileID: 417674}
   - component: {fileID: 3378222}
   - component: {fileID: 2362076}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_051
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &197636
 GameObject:
@@ -6912,12 +6894,12 @@ GameObject:
   - component: {fileID: 405626}
   - component: {fileID: 3370946}
   - component: {fileID: 2370616}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &197752
 GameObject:
@@ -6929,12 +6911,12 @@ GameObject:
   - component: {fileID: 448180}
   - component: {fileID: 3333144}
   - component: {fileID: 2341750}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_114
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &198040
 GameObject:
@@ -6946,12 +6928,12 @@ GameObject:
   - component: {fileID: 420092}
   - component: {fileID: 3348092}
   - component: {fileID: 2327894}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_telegraphPole_004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &198210
 GameObject:
@@ -6963,12 +6945,12 @@ GameObject:
   - component: {fileID: 462706}
   - component: {fileID: 3367600}
   - component: {fileID: 2327908}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_021
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &198640
 GameObject:
@@ -6980,12 +6962,12 @@ GameObject:
   - component: {fileID: 474318}
   - component: {fileID: 3388044}
   - component: {fileID: 2343412}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_043
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &198710
 GameObject:
@@ -6997,12 +6979,12 @@ GameObject:
   - component: {fileID: 466388}
   - component: {fileID: 3356036}
   - component: {fileID: 2392238}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_093
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &198716
 GameObject:
@@ -7014,12 +6996,12 @@ GameObject:
   - component: {fileID: 484806}
   - component: {fileID: 3345008}
   - component: {fileID: 2329972}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_027
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &199264
 GameObject:
@@ -7031,12 +7013,12 @@ GameObject:
   - component: {fileID: 496076}
   - component: {fileID: 3334686}
   - component: {fileID: 2305546}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_042
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &199360
 GameObject:
@@ -7048,12 +7030,12 @@ GameObject:
   - component: {fileID: 458240}
   - component: {fileID: 3313358}
   - component: {fileID: 2383040}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_029
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &199374
 GameObject:
@@ -7065,12 +7047,12 @@ GameObject:
   - component: {fileID: 450106}
   - component: {fileID: 3362622}
   - component: {fileID: 2352068}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_laserFence_A_011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &199408
 GameObject:
@@ -7082,12 +7064,12 @@ GameObject:
   - component: {fileID: 495624}
   - component: {fileID: 3304840}
   - component: {fileID: 2326708}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: liftshaft_010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &199440
 GameObject:
@@ -7099,7 +7081,7 @@ GameObject:
   - component: {fileID: 419208}
   - component: {fileID: 3309538}
   - component: {fileID: 2341716}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wire_010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7116,12 +7098,12 @@ GameObject:
   - component: {fileID: 494126}
   - component: {fileID: 3360946}
   - component: {fileID: 2360068}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_fan_004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &400434
 Transform:
@@ -10534,7 +10516,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 461088}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &459854
 Transform:
@@ -10659,7 +10641,6 @@ Transform:
   - {fileID: 418500}
   - {fileID: 462940}
   - {fileID: 423150}
-  - {fileID: 488808}
   - {fileID: 459846}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -12365,19 +12346,6 @@ Transform:
   m_Father: {fileID: 471178}
   m_RootOrder: 50
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &488808
-Transform:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 183038}
-  m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5000001, w: 0.49999994}
-  m_LocalPosition: {x: -13.08, y: 17.7, z: 20.3}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 461088}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &489286
 Transform:
   m_ObjectHideFlags: 1
@@ -13002,46 +12970,6 @@ Transform:
   m_Father: {fileID: 421142}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!20 &2030636
-Camera:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 183038}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 2
-  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0.019607844}
-  m_projectionMatrixMode: 1
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 0
-  orthographic size: 5
-  m_Depth: -1
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 0
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
 --- !u!23 &2300158
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -30453,20 +30381,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 130332}
   m_Mesh: {fileID: 4300884, guid: 8a2d23da643cb0d4a9ca6c6f1fffa66b, type: 3}
---- !u!81 &8194866
-AudioListener:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 183038}
-  m_Enabled: 1
---- !u!92 &9233940
-Behaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 183038}
-  m_Enabled: 1
 --- !u!108 &10841586
 Light:
   m_ObjectHideFlags: 1
@@ -30504,13 +30418,6 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!124 &12493474
-Behaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 183038}
-  m_Enabled: 1
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -30522,3 +30429,17 @@ Prefab:
   m_SourcePrefab: {fileID: 0}
   m_RootGameObject: {fileID: 190214}
   m_IsPrefabAsset: 1
+--- !u!64 &64919848444756968
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 190214}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 7b442f345072f464893ff088a531b9c4, type: 3}
