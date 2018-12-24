@@ -2,18 +2,130 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum PlayerMoveStatus { NotMoving, Walking, Running, NotGrounded, Landing }
+public enum PlayerMoveStatus { NotMoving, Crouching, Walking, Running, NotGrounded, Landing }
+public enum CurveControlledBobCallbackType { Vertical, Horizontal }
+
+public delegate void CurveControlledBobCallback();
+
+[System.Serializable]
+public class CurveControlledBobEvent
+{
+    public float time = 0;
+    public CurveControlledBobCallback function = null;
+    public CurveControlledBobCallbackType type = CurveControlledBobCallbackType.Vertical;
+
+}
+
+[System.Serializable]
+public class CurveControlledBob
+{
+    [SerializeField]
+    AnimationCurve bobcurve = new AnimationCurve(new Keyframe(0f, 0f), new Keyframe(0.5f, 1f),
+                                                 new Keyframe(1f, 0f), new Keyframe(1.5f, -1f),
+                                                 new Keyframe(2f, 0f));
+    [SerializeField] float horizontalMultiplier = 0.01f;
+    [SerializeField] float verticalMultiplier = 0.02f;
+    [SerializeField] float verticalToHorizontalSpeedRatio = 2.0f;
+    [SerializeField] float baseInterval = 1.0f;
+
+    private float prevXPlayHead;
+    private float prevYPlayHead; 
+    private float xPlayHead;
+    private float yPlayHead;
+    private float curveEndTime;
+    private List<CurveControlledBobEvent> events = new List<CurveControlledBobEvent>();
+
+    public void Initialize()
+    {
+        curveEndTime = bobcurve[bobcurve.length - 1].time;
+        xPlayHead = 0;
+        yPlayHead = 0;
+        prevXPlayHead = 0;
+        prevYPlayHead = 0;
+    }
+
+    public void RegisterEventCallback(float time, CurveControlledBobCallback function, CurveControlledBobCallbackType type)
+    {
+        CurveControlledBobEvent ccbeEvent = new CurveControlledBobEvent();
+        ccbeEvent.time = time;
+        ccbeEvent.function = function;
+        ccbeEvent.type = type;
+        events.Add(ccbeEvent);
+
+        events.Sort(
+            delegate (CurveControlledBobEvent t1, CurveControlledBobEvent t2)
+            {
+                return t1.time.CompareTo(t2.time);
+            }
+        );
+    }
+
+    public Vector3 GetVectorOffset(float speed)
+    {
+        xPlayHead += (speed * Time.deltaTime) / baseInterval;
+        yPlayHead += ((speed * Time.deltaTime) / baseInterval) * verticalToHorizontalSpeedRatio;
+
+        if (xPlayHead > curveEndTime)
+        {
+            xPlayHead = 0;
+        }
+
+        if (yPlayHead > curveEndTime)
+        {
+            yPlayHead = 0;
+        }
+        
+        for (int i = 0; i < events.Count; i++)
+        {
+            CurveControlledBobEvent ev = events[i];
+            if (ev != null)
+            {
+                if (ev.type == CurveControlledBobCallbackType.Vertical)
+                {
+                    if ((prevYPlayHead < ev.time && yPlayHead >= ev.time) ||
+                        (prevYPlayHead > yPlayHead && (ev.time > prevYPlayHead || ev.time <= yPlayHead)))
+                    {
+                        ev.function();
+                    }
+                } else if(ev.type == CurveControlledBobCallbackType.Horizontal)
+                {
+                    if ((prevXPlayHead < ev.time && xPlayHead >= ev.time) ||
+                        (prevXPlayHead > xPlayHead && (ev.time > prevXPlayHead || ev.time <= xPlayHead)))
+                    {
+                        ev.function();
+                    }
+                }
+            }
+        }
+
+        float xPos = bobcurve.Evaluate(xPlayHead) * horizontalMultiplier;
+        float yPos = bobcurve.Evaluate(yPlayHead) * verticalMultiplier;
+
+        prevXPlayHead = xPlayHead;
+        prevYPlayHead = yPlayHead;
+
+        return new Vector3(xPos, yPos, 0);
+    }
+
+}
 
 [RequireComponent(typeof(CharacterController))]
 public class FPSController : MonoBehaviour {
 
-    [SerializeField] private float _walkSpeed = 1.0f;
+    public List<AudioSource> audioSources = new List<AudioSource>();
+    private int audioToUse = 0;
+
+    [SerializeField] private float _walkSpeed = 2.0f;
     [SerializeField] private float _runSpeed = 4.5f;
     [SerializeField] private float jumpSpeed = 7.5f;
+    [SerializeField] private float crouchSpeed = 1.0f;
     [SerializeField] private float stickToGroundForce = 5.0f;
     [SerializeField] private float gravityMultiplier = 2.5f;
+    [SerializeField] private float runStepLengthen = 0.75f;
 
     [SerializeField] private UnityStandardAssets.Characters.FirstPerson.MouseLook mouseLook;
+    [SerializeField] private CurveControlledBob headbob = new CurveControlledBob();
+    [SerializeField] private GameObject flashlight = null;
 
     private Camera camera = null;
     private bool jumpButtonPressed = false;
@@ -22,6 +134,9 @@ public class FPSController : MonoBehaviour {
     private bool previoulyGrounded = false;
     private bool isWalking = true;
     private bool isJumping = false;
+    private bool isCrouching = false;
+    private Vector3 localSpaceCameraPos = Vector3.zero;
+    private float controllerHeight = 0;
 
     private float fallingTimer = 0;
 
@@ -35,13 +150,21 @@ public class FPSController : MonoBehaviour {
     protected void Start()
     {
         characterController = GetComponent<CharacterController>();
+        controllerHeight = characterController.height;
+
         camera = Camera.main;
+        localSpaceCameraPos = camera.transform.localPosition;
 
         _movementStatus = PlayerMoveStatus.NotMoving;
 
         fallingTimer = 0;
 
         mouseLook.Init(transform, camera.transform);
+
+        headbob.Initialize();
+        headbob.RegisterEventCallback(1.5f, PlayFootStepSound, CurveControlledBobCallbackType.Vertical);
+
+        if (flashlight) flashlight.SetActive(false);
     }
 
     protected void Update()
@@ -54,10 +177,21 @@ public class FPSController : MonoBehaviour {
             mouseLook.LookRotation(transform, camera.transform);
         }
 
-        if (!jumpButtonPressed)
+        if (Input.GetButtonDown("Flashlight"))
+        {
+            if (flashlight) flashlight.SetActive(!flashlight.activeSelf);
+        }
+
+        if (!jumpButtonPressed && !isCrouching)
         {
             jumpButtonPressed = Input.GetButtonDown("Jump"); 
-        } 
+        }
+
+        if (Input.GetButtonDown("Crouch"))
+        {
+            isCrouching = !isCrouching;
+            characterController.height = isCrouching == true ? controllerHeight / 2 : controllerHeight;
+        }
 
         if (!previoulyGrounded && characterController.isGrounded)
         {
@@ -69,16 +203,24 @@ public class FPSController : MonoBehaviour {
             moveDirection.y = 0;
             isJumping = false;
             _movementStatus = PlayerMoveStatus.Landing;
-        } else if (!characterController.isGrounded)
+        }
+        else if (!characterController.isGrounded)
         {
             _movementStatus = PlayerMoveStatus.NotGrounded;
-        } else if (characterController.velocity.sqrMagnitude < 0.01f)
+        }
+        else if (characterController.velocity.sqrMagnitude < 0.01f)
         {
             _movementStatus = PlayerMoveStatus.NotMoving;
-        } else if (isWalking)
+        }
+        else if (isCrouching)
+        {
+            _movementStatus = PlayerMoveStatus.Crouching;
+        }
+        else if (isWalking)
         {
             _movementStatus = PlayerMoveStatus.Walking;
-        } else
+        }
+        else
         {
             _movementStatus = PlayerMoveStatus.Running;
         }
@@ -94,7 +236,7 @@ public class FPSController : MonoBehaviour {
         bool wasWalking = isWalking;
         isWalking = !Input.GetKey(KeyCode.LeftShift);
 
-        float speed = isWalking ? _walkSpeed : _runSpeed;
+        float speed = isCrouching ? crouchSpeed : isWalking ? _walkSpeed : _runSpeed;
         inputVector = new Vector2(horizontal, vertical);
 
         if (inputVector.sqrMagnitude > 1) inputVector.Normalize();
@@ -127,9 +269,26 @@ public class FPSController : MonoBehaviour {
         }
 
         characterController.Move(moveDirection * Time.fixedDeltaTime);
+
+        Vector3 speedXZ = new Vector3(characterController.velocity.x, 0, characterController.velocity.z);
+        if (speedXZ.magnitude > 0.01f)
+        {
+            camera.transform.localPosition = localSpaceCameraPos + headbob.GetVectorOffset(speedXZ.magnitude * (isCrouching || isWalking ? 1 : runStepLengthen));
+        } else
+        {
+            camera.transform.localPosition = localSpaceCameraPos;
+        }
+
+
     }
 
+    void PlayFootStepSound()
+    {
+        if (isCrouching) return;
 
+        audioSources[audioToUse].Play();
+        audioToUse = (audioToUse == 0) ? 1 : 0;
+    }
 
 
 }
