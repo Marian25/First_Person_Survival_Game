@@ -5,6 +5,7 @@ using UnityEngine;
 public class AIZombieState_Attack1 : AIZombieState {
 
     [SerializeField] [Range(0, 10)] float speed = 0;
+    [SerializeField] float stoppingDistance = 1.0f;
     [SerializeField] [Range(0, 1)] float lookAtWeight = 0.7f;
     [SerializeField] [Range(0, 90)] float lookAtAngleThreshold = 15f;
     [SerializeField] float slerpSpeed = 5f;
@@ -41,6 +42,14 @@ public class AIZombieState_Attack1 : AIZombieState {
     {
         Vector3 targetPos;
         Quaternion newRot;
+
+        if (Vector3.Distance(zombieStateMachine.transform.position, zombieStateMachine.targetPosition) < stoppingDistance)
+        {
+            zombieStateMachine.speed = 0;
+        } else
+        {
+            zombieStateMachine.speed = speed;
+        }
 
         if (zombieStateMachine.visualThreat.GetType == AITargetType.Visual_Player)
         {

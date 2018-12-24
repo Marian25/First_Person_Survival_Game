@@ -493,6 +493,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1282307459986134
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4048060692909762}
+  m_Layer: 0
+  m_Name: Blood Particle Mount
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1288051724008912
 GameObject:
   m_ObjectHideFlags: 1
@@ -1852,6 +1867,8 @@ GameObject:
   - component: {fileID: 114771597351705292}
   - component: {fileID: 114210720603803298}
   - component: {fileID: 114462590939170668}
+  - component: {fileID: 114733938906850192}
+  - component: {fileID: 114632725055285222}
   m_Layer: 8
   m_Name: Jill
   m_TagString: Untagged
@@ -2039,6 +2056,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4170682220750936}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4048060692909762
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1282307459986134}
+  m_LocalRotation: {x: 2.6716403e-11, y: -1, z: 0.0000000074505797, w: -2.7711158e-12}
+  m_LocalPosition: {x: -0.012, y: 0.0061, z: 0.1285}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4485690394922272}
+  m_RootOrder: 42
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4057391902154674
 Transform:
@@ -2834,6 +2864,7 @@ Transform:
   - {fileID: 4203254717417794}
   - {fileID: 4169757469980224}
   - {fileID: 4011431360563298}
+  - {fileID: 4048060692909762}
   m_Father: {fileID: 4908487920834980}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3472,8 +3503,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1943277683394998}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.08, y: 0, z: 19.58}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 14.08, y: 0, z: 19.580002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4569554729779592}
@@ -3481,7 +3512,7 @@ Transform:
   - {fileID: 4638729537775186}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!4 &4878339375414616
 Transform:
   m_ObjectHideFlags: 1
@@ -3712,6 +3743,8 @@ MonoBehaviour:
   maxDuration: 10
   waypointAngleThreshold: 25
   threatAngleThreshold: 10
+  directionChangeTime: 1.5
+  slerpSpeed: 45
 --- !u!114 &114462590939170668
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3723,7 +3756,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22965eb1d5b2a094db8be7400cf72528, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 2
+  lookAtWeight: 0.7
+  lookAtAngleThreshold: 15
   slerpSpeed: 5
   repathDistanceMultiplier: 0.035
   repathVisualMinDuration: 0.05
@@ -3749,13 +3784,30 @@ MonoBehaviour:
   randomPatrol: 0
   currentWaypoint: -1
   stoppingDistance: 1
-  _fov: 50
+  _fov: 120
   _sight: 0.5
   _hearing: 1
   _aggression: 0.5
   _health: 100
-  _intelligence: 0.5
-  _satisfaction: 1
+  _intelligence: 1
+  _satisfaction: 0.408
+  _replenishRate: 2
+  _depletionRate: 0.1
+--- !u!114 &114632725055285222
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1943277683394998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72c103336632cdb4dbb83ce573570d0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  lookAtWeight: 0.7
+  lookAtAngleThreshold: 15
+  slerpSpeed: 5
 --- !u!114 &114639539569414456
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3767,6 +3819,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 799fa5228b0a11147b7c1af3ab10af9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114733938906850192
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1943277683394998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc3fb15dc1734ef459fea55b5120f45f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slerpSpeed: 5
+  bloodParticlesMount: {fileID: 4048060692909762}
+  bloodParticlesBurstTime: 0.5
+  bloodParticlesBurstAmount: 5
 --- !u!114 &114771597351705292
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3778,7 +3845,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7014e4e887a62744cac9d7fa108c7047, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 1
   turnOnSpotThreshold: 90
   slerpSpeed: 5
 --- !u!114 &114970146376677602
