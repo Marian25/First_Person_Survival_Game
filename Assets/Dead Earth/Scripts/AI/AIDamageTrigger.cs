@@ -6,10 +6,12 @@ public class AIDamageTrigger : MonoBehaviour {
 
     [SerializeField] string parameter = "";
     [SerializeField] int bloodParticlesBurstAmount = 10;
+    [SerializeField] float damageAmount = 0.1f;
 
     private AIStateMachine stateMachine = null;
     private Animator animator = null;
     private int parameterHash = -1;
+    private GameSceneManager gameSceneManager = null;
 
     private void Start()
     {
@@ -21,6 +23,8 @@ public class AIDamageTrigger : MonoBehaviour {
         }
 
         parameterHash = Animator.StringToHash(parameter);
+
+        gameSceneManager = GameSceneManager.GetInstance();
     }
 
     private void OnTriggerStay(Collider other)
@@ -42,7 +46,16 @@ public class AIDamageTrigger : MonoBehaviour {
                 system.Emit(bloodParticlesBurstAmount);
             }
 
-            Debug.Log("Player Get Damage");
+            if (gameSceneManager != null)
+            {
+                PlayerInfo info = gameSceneManager.GetPlayerInfo(other.GetInstanceID());
+
+                if (info != null && info.characterManager != null)
+                {
+                    info.characterManager.TakeDamage(damageAmount);
+                }
+            }
+
         }
     }
 }

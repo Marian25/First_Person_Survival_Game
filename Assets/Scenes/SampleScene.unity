@@ -192,6 +192,7 @@ GameObject:
   - component: {fileID: 71558089}
   - component: {fileID: 71558090}
   - component: {fileID: 71558091}
+  - component: {fileID: 71558092}
   m_Layer: 11
   m_Name: FPS Camera
   m_TagString: MainCamera
@@ -260,6 +261,25 @@ AudioListener:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 71558088}
   m_Enabled: 1
+--- !u!114 &71558092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 71558088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1cf6c22cf7bba84fa40026d6d254fd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodTexture: {fileID: 2800000, guid: fa7fc05365be6e44e857d4a0c2b34e49, type: 3}
+  bloodNormalMap: {fileID: 2800000, guid: deb603d43b15f54408d7acff832d653d, type: 3}
+  _bloodAmount: 0
+  _minBloodAmount: 0
+  distortion: 0.2
+  _autoFade: 1
+  _fadeSpeed: 0.05
+  shader: {fileID: 4800000, guid: 59cf92111dfaff54c8b26eae6a4ee11f, type: 3}
 --- !u!1 &133864899
 GameObject:
   m_ObjectHideFlags: 0
@@ -5086,6 +5106,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parameter: mouth
+  bloodParticlesBurstAmount: 10
+  damageAmount: 10
 --- !u!4 &615549789 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4485690394922272, guid: 727fb14999ef70a49a1c685963de120c,
@@ -5496,6 +5518,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parameter: leftHand
+  bloodParticlesBurstAmount: 10
+  damageAmount: 50
 --- !u!4 &1291880261 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400074, guid: ea035ba37d6094b419b549464a5207ab,
@@ -5729,6 +5753,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parameter: rightHand
+  bloodParticlesBurstAmount: 10
+  damageAmount: 50
 --- !u!1 &1667388845
 GameObject:
   m_ObjectHideFlags: 0
@@ -6404,6 +6430,7 @@ GameObject:
   - component: {fileID: 2122004720}
   - component: {fileID: 2122004721}
   - component: {fileID: 2122004722}
+  - component: {fileID: 2122004726}
   - component: {fileID: 2122004724}
   - component: {fileID: 2122004723}
   - component: {fileID: 2122004725}
@@ -6738,6 +6765,21 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!114 &2122004726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2122004719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bfa2e612502cd14a973fe3073c8ae9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  meleeTrigger: {fileID: 1998385683}
+  cameraBloodEffect: {fileID: 71558092}
+  camera: {fileID: 71558090}
+  health: 100
 --- !u!1001 &2134038330
 Prefab:
   m_ObjectHideFlags: 0
