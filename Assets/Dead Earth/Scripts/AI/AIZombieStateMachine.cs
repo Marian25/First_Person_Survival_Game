@@ -52,6 +52,8 @@ public class AIZombieStateMachine : AIStateMachine {
             animator.SetInteger(seekingHash, seeking);
             animator.SetInteger(attackHash, attackType);
         }
+
+        satisfaction = Mathf.Max(0, satisfaction - _depletionRate * Time.deltaTime / 100 * Mathf.Pow(speed, 3));
     }
 
 }

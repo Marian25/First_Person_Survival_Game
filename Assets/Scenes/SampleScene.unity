@@ -5051,6 +5051,19 @@ MonoBehaviour:
   bloodParticlesMount: {fileID: 1102554075}
   bloodParticlesBurstTime: 0.5
   bloodParticlesBurstAmount: 5
+--- !u!114 &487317333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 487317322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72c103336632cdb4dbb83ce573570d0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  slerpSpeed: 5
 --- !u!4 &615549789 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4485690394922272, guid: 727fb14999ef70a49a1c685963de120c,
@@ -6190,6 +6203,60 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1943856389}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1998385681
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1998385682}
+  - component: {fileID: 1998385683}
+  - component: {fileID: 1998385684}
+  m_Layer: 9
+  m_Name: Melee Zone Trigger
+  m_TagString: Melee Zone
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1998385682
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1998385681}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2122004720}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &1998385683
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1998385681}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.8
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1998385684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1998385681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd576d76e91e33c4c9c63be342f9f199, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2015264673
 GameObject:
   m_ObjectHideFlags: 0
@@ -6306,6 +6373,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 71558089}
+  - {fileID: 1998385682}
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
@@ -6612,7 +6680,7 @@ NavMeshObstacle:
   m_Enabled: 1
   serializedVersion: 3
   m_Shape: 0
-  m_Extents: {x: 0.3, y: 1, z: 0.3}
+  m_Extents: {x: 0.1, y: 1, z: 0.1}
   m_MoveThreshold: 0.1
   m_Carve: 0
   m_CarveOnlyStationary: 1
@@ -6747,7 +6815,7 @@ Prefab:
     - target: {fileID: 114557015737656490, guid: 727fb14999ef70a49a1c685963de120c,
         type: 2}
       propertyPath: _replenishRate
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4874257834191764, guid: 727fb14999ef70a49a1c685963de120c, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -6760,7 +6828,7 @@ Prefab:
     - target: {fileID: 114557015737656490, guid: 727fb14999ef70a49a1c685963de120c,
         type: 2}
       propertyPath: _fov
-      value: 180
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 114771597351705292, guid: 727fb14999ef70a49a1c685963de120c,
         type: 2}

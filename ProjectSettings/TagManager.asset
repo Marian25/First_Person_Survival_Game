@@ -8,6 +8,7 @@ TagManager:
   - AI Visual
   - AI Food
   - Flashlight
+  - Melee Zone
   layers:
   - Default
   - TransparentFX
