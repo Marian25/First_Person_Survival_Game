@@ -52,8 +52,11 @@ public abstract class AIStateMachine : MonoBehaviour {
     protected int rootPositionRefCount = 0;
     protected int rootRotationRefCount = 0;
     protected bool _isTargetReached = false;
+    protected List<Rigidbody> bodyParts = new List<Rigidbody>();
+    protected int aiBodyPartLayer = -1;
 
     [SerializeField] protected AIStateType currentStateType = AIStateType.Idle;
+    [SerializeField] protected Transform rootBone = null;
     [SerializeField] protected SphereCollider targetTrigger = null;
     [SerializeField] protected SphereCollider sensorTrigger = null;
     [SerializeField] protected AIWaypointNetwork waypointNetwork = null;
@@ -115,6 +118,8 @@ public abstract class AIStateMachine : MonoBehaviour {
         navAgent = GetComponent<NavMeshAgent>();
         collider = GetComponent<Collider>();
 
+        aiBodyPartLayer = LayerMask.NameToLayer("AI Body Part");
+
         if (GameSceneManager.GetInstance() != null)
         {
             if (collider != null)
@@ -125,6 +130,21 @@ public abstract class AIStateMachine : MonoBehaviour {
             {
                 GameSceneManager.GetInstance().RegisterAIStateMachine(sensorTrigger.GetInstanceID(), this);
             }
+        }
+
+        if (rootBone != null)
+        {
+            Rigidbody[] bodies = rootBone.GetComponentsInChildren<Rigidbody>();
+
+            foreach (Rigidbody bodyPart in bodies)
+            {
+                if (bodyPart != null && bodyPart.gameObject.layer == aiBodyPartLayer)
+                {
+                    bodyParts.Add(bodyPart);
+                    GameSceneManager.GetInstance().RegisterAIStateMachine(bodyPart.GetInstanceID(), this);
+                }
+            }
+
         }
     }
 
@@ -361,6 +381,11 @@ public abstract class AIStateMachine : MonoBehaviour {
     {
         rootPositionRefCount += rootPosition;
         rootRotationRefCount += rootRotation;
+    }
+
+    public virtual void TakeDamage(Vector3 position, Vector3 force, int damage, Rigidbody bodyPart, CharacterManager characterManager, int hitDirection = 0)
+    {
+       
     }
 
 }

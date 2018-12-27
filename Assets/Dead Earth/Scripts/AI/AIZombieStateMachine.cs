@@ -56,4 +56,49 @@ public class AIZombieStateMachine : AIStateMachine {
         satisfaction = Mathf.Max(0, satisfaction - _depletionRate * Time.deltaTime / 100 * Mathf.Pow(speed, 3));
     }
 
+    public override void TakeDamage(Vector3 position, Vector3 force, int damage, Rigidbody bodyPart, CharacterManager characterManager, int hitDirection = 0)
+    {
+        base.TakeDamage(position, force, damage, bodyPart, characterManager, hitDirection);
+
+        if (GameSceneManager.GetInstance() != null && GameSceneManager.GetInstance().bloodParticles != null)
+        {
+            ParticleSystem sys = GameSceneManager.GetInstance().bloodParticles;
+            sys.transform.position = position;
+
+            var settings = sys.main;
+            settings.simulationSpace = ParticleSystemSimulationSpace.World;
+            sys.Emit(60);
+
+        }
+
+        health -= damage;
+        
+        float hitStrength = force.magnitude;
+        bool shouldRagdoll = hitStrength > 1f;
+        if (health <= 0) shouldRagdoll = true;
+
+        if (navAgent)
+            navAgent.speed = 0;
+
+        if (shouldRagdoll)
+        {
+            if (navAgent) navAgent.enabled = false;
+            if (animator) animator.enabled = false;
+            if (collider) collider.enabled = false;
+
+            inMeleeRange = false;
+
+            foreach (Rigidbody body in bodyParts)
+            {
+                if (body) body.isKinematic = false;
+            }
+
+            if (hitStrength > 1.0f)
+            {
+                bodyPart.AddForce(force, ForceMode.Impulse);
+            }
+        }
+
+    }
+
 }

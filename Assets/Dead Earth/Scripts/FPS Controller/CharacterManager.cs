@@ -13,6 +13,7 @@ public class CharacterManager : MonoBehaviour {
     private FPSController fpsController = null;
     private CharacterController characterController = null;
     private GameSceneManager gameSceneManager = null;
+    private int aiBodyPartLayer = -1;
 
 	// Use this for initialization
 	void Start () {
@@ -20,6 +21,8 @@ public class CharacterManager : MonoBehaviour {
         fpsController = GetComponent<FPSController>();
         characterController = GetComponent<CharacterController>();
         gameSceneManager = GameSceneManager.GetInstance();
+
+        aiBodyPartLayer = LayerMask.NameToLayer("AI Body Part");
 
         if (gameSceneManager != null)
         {
@@ -44,8 +47,38 @@ public class CharacterManager : MonoBehaviour {
         }
     }
 	
+    public void DoDamage(int hitDirection = 0)
+    {
+        if (camera == null) return;
+        if (gameSceneManager == null) return;
+
+        Ray ray;
+        RaycastHit hit;
+        bool isSomethingHit = false;
+
+        ray = camera.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2, 0));
+
+        isSomethingHit = Physics.Raycast(ray, out hit, 1000, 1 << aiBodyPartLayer);
+
+        if (isSomethingHit)
+        {
+            AIStateMachine stateMachine = gameSceneManager.GetAIStateMachine(hit.rigidbody.GetInstanceID());
+
+            if (stateMachine)
+            {
+                stateMachine.TakeDamage(hit.point, ray.direction * 1.0f, 25, hit.rigidbody, this, 0);
+            }
+        }
+
+    }
+
 	// Update is called once per frame
 	void Update () {
 		
+        if (Input.GetMouseButtonDown(0))
+        {
+            DoDamage();
+        }
+
 	}
 }
