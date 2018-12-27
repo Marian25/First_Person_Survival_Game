@@ -7209,6 +7209,11 @@ Prefab:
       propertyPath: rootBone
       value: 
       objectReference: {fileID: 2134069348}
+    - target: {fileID: 114557015737656490, guid: 727fb14999ef70a49a1c685963de120c,
+        type: 2}
+      propertyPath: lowerBodyDamage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 727fb14999ef70a49a1c685963de120c, type: 2}
   m_IsPrefabAsset: 0

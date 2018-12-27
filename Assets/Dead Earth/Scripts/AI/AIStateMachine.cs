@@ -54,6 +54,7 @@ public abstract class AIStateMachine : MonoBehaviour {
     protected bool _isTargetReached = false;
     protected List<Rigidbody> bodyParts = new List<Rigidbody>();
     protected int aiBodyPartLayer = -1;
+    protected bool _cinematicEnabled = false;
 
     [SerializeField] protected AIStateType currentStateType = AIStateType.Idle;
     [SerializeField] protected Transform rootBone = null;
@@ -110,6 +111,11 @@ public abstract class AIStateMachine : MonoBehaviour {
             else
                 return -1;
         }
+    }
+    public bool cinematicEnabled
+    {
+        get { return _cinematicEnabled; }
+        set { _cinematicEnabled = value; }
     }
 
     protected virtual void Awake()
