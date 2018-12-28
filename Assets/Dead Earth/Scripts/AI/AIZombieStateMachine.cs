@@ -59,6 +59,7 @@ public class AIZombieStateMachine : AIStateMachine {
     private int lowerBodyDamageHash = Animator.StringToHash("lower body damage");
     private int reanimateFromBackHash = Animator.StringToHash("reanimate from back");
     private int reanimateFromFrontHash = Animator.StringToHash("reanimate from front");
+    private int stateHash = Animator.StringToHash("state");
 
     // Getters
     public float replenishRate  { get { return _replenishRate; } }
@@ -105,6 +106,7 @@ public class AIZombieStateMachine : AIStateMachine {
             animator.SetBool(feedingHash, feeding);
             animator.SetInteger(seekingHash, seeking);
             animator.SetInteger(attackHash, attackType);
+            animator.SetInteger(stateHash, (int)currentStateType);
         }
 
         satisfaction = Mathf.Max(0, satisfaction - _depletionRate * Time.deltaTime / 100 * Mathf.Pow(speed, 3));

@@ -121,7 +121,8 @@ public class AIZombieState_Alerted1 : AIZombieState {
             }
         }
 
-        if (!zombieStateMachine.useRootRotation) zombieStateMachine.transform.Rotate (new Vector3(0.0f, slerpSpeed * zombieStateMachine.seeking * Time.deltaTime, 0.0f ));
+        if (!zombieStateMachine.useRootRotation)
+            zombieStateMachine.transform.Rotate (new Vector3(0.0f, slerpSpeed * zombieStateMachine.seeking * Time.deltaTime, 0.0f ));
 
         return AIStateType.Alerted;
     }
