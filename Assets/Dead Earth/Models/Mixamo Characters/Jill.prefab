@@ -4060,6 +4060,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentStateType: 1
   rootBone: {fileID: 4569554729779592}
+  rootBoneAlignment: 2
   targetTrigger: {fileID: 0}
   sensorTrigger: {fileID: 135257164315272872}
   waypointNetwork: {fileID: 0}
@@ -4080,6 +4081,11 @@ MonoBehaviour:
   _satisfaction: 0.408
   _replenishRate: 2
   _depletionRate: 0.1
+  reanimationBlendTime: 1.5
+  reanimationWaitTime: 3
+  geometryLayers:
+    serializedVersion: 2
+    m_Bits: 1
 --- !u!114 &114632725055285222
 MonoBehaviour:
   m_ObjectHideFlags: 1

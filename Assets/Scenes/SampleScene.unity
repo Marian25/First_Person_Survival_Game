@@ -6998,11 +6998,6 @@ Prefab:
       propertyPath: m_Name
       value: AI Entity
       objectReference: {fileID: 0}
-    - target: {fileID: 114557015737656490, guid: 727fb14999ef70a49a1c685963de120c,
-        type: 2}
-      propertyPath: reanimationBlendTime
-      value: 1.5
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 727fb14999ef70a49a1c685963de120c, type: 2}
   m_IsPrefabAsset: 0

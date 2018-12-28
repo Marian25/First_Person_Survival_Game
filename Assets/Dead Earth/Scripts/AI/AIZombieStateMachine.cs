@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public enum AIBoneControlType { Animated, Ragdoll, RagdollToAnim }
 
@@ -9,7 +10,6 @@ public class BodyPartSnapshop
     public Transform transform;
     public Vector3 position;
     public Quaternion rotation;
-    public Quaternion localRotation;
 }
 
 public class AIZombieStateMachine : AIStateMachine {
@@ -30,6 +30,7 @@ public class AIZombieStateMachine : AIStateMachine {
     [SerializeField] float _depletionRate = 0.1f;
     [SerializeField] float reanimationBlendTime = 1.5f;
     [SerializeField] float reanimationWaitTime = 3f;
+    [SerializeField] LayerMask geometryLayers = 0;
 
     private int _seeking = 0;
     private bool _feeding = false;
@@ -54,6 +55,10 @@ public class AIZombieStateMachine : AIStateMachine {
     private int crawlingHash = Animator.StringToHash("crawling");
     private int hitTriggerHash = Animator.StringToHash("hit");
     private int hitTypeHash = Animator.StringToHash("hitType");
+    private int upperBodyDamageHash = Animator.StringToHash("upper body damage");
+    private int lowerBodyDamageHash = Animator.StringToHash("lower body damage");
+    private int reanimateFromBackHash = Animator.StringToHash("reanimate from back");
+    private int reanimateFromFrontHash = Animator.StringToHash("reanimate from front");
 
     // Getters
     public float replenishRate  { get { return _replenishRate; } }
@@ -110,6 +115,8 @@ public class AIZombieStateMachine : AIStateMachine {
         if (animator != null)
         {
             animator.SetBool(crawlingHash, isCrawling);
+            animator.SetInteger(lowerBodyDamageHash, lowerBodyDamage);
+            animator.SetInteger(upperBodyDamageHash, upperBodyDamage);
         }
     }
 
@@ -259,9 +266,128 @@ public class AIZombieStateMachine : AIStateMachine {
         }
     }
 
-    private IEnumerator Reanimate()
+    protected IEnumerator Reanimate()
     {
+        if (boneControlType != AIBoneControlType.Ragdoll || animator == null) yield break;
 
+        yield return new WaitForSeconds(reanimationWaitTime);
+
+        ragdollEndTime = Time.time;
+
+        foreach (Rigidbody body in bodyParts)
+        {
+            body.isKinematic = true;
+        }
+
+        boneControlType = AIBoneControlType.RagdollToAnim;
+
+        foreach(BodyPartSnapshop snapshop in bodyPartSnapshots)
+        {
+            snapshop.position = snapshop.transform.position;
+            snapshop.rotation = snapshop.transform.rotation;
+        }
+
+        ragdollHeadPosition = animator.GetBoneTransform(HumanBodyBones.Head).position;
+        ragdollFeetPosition = (animator.GetBoneTransform(HumanBodyBones.LeftFoot).position + animator.GetBoneTransform(HumanBodyBones.RightFoot).position) * 0.5f;
+        ragdollHipPosition = rootBone.position;
+
+        animator.enabled = true;
+
+        if (rootBone != null)
+        {
+            float forwardTest;
+
+            switch (rootBoneAlignment)
+            {
+                case AIBoneAlignmentType.ZAxis:
+                    forwardTest = rootBone.forward.y; break;
+                case AIBoneAlignmentType.ZAxisInverted:
+                    forwardTest = -rootBone.forward.y; break;
+                case AIBoneAlignmentType.YAxis:
+                    forwardTest = rootBone.up.y; break;
+                case AIBoneAlignmentType.YAxisInverted:
+                    forwardTest = -rootBone.up.y; break;
+                case AIBoneAlignmentType.XAxis:
+                    forwardTest = rootBone.right.y; break;
+                case AIBoneAlignmentType.XAxisInverted:
+                    forwardTest = -rootBone.right.y; break;
+                default:
+                    forwardTest = rootBone.forward.y; break;
+            }
+
+            if (forwardTest >= 0)
+                animator.SetTrigger(reanimateFromBackHash);
+            else
+                animator.SetTrigger(reanimateFromFrontHash);
+        }
+        
+    }
+
+    protected virtual void LateUpdate()
+    {
+        if (boneControlType == AIBoneControlType.RagdollToAnim)
+        {
+            if (Time.time <= ragdollEndTime + mecanimTransitionTime)
+            {
+                Vector3 animatedToRagdoll = ragdollHipPosition - rootBone.position;
+                Vector3 newRootPosition = transform.position + animatedToRagdoll;
+
+                RaycastHit[] hits = Physics.RaycastAll(newRootPosition + Vector3.up * 0.25f, Vector3.down, float.MaxValue, geometryLayers);
+                newRootPosition.y = float.MinValue;
+
+                foreach (RaycastHit hit in hits)
+                {
+                    if (!hit.transform.IsChildOf(transform))
+                    {
+                        newRootPosition.y = Mathf.Max(hit.point.y, newRootPosition.y);
+                    }
+                }
+
+                NavMeshHit navMeshHit;
+                if (NavMesh.SamplePosition(newRootPosition, out navMeshHit, 2.0f, NavMesh.AllAreas))
+                {
+                    transform.position = navMeshHit.position;
+                }
+
+
+                Vector3 ragdollDirection = ragdollHeadPosition - ragdollFeetPosition;
+                ragdollDirection.y = 0;
+
+                Vector3 meanFeetPosition = (animator.GetBoneTransform(HumanBodyBones.LeftFoot).position + animator.GetBoneTransform(HumanBodyBones.RightFoot).position) * 0.5f;
+                Vector3 animatedDirection = animator.GetBoneTransform(HumanBodyBones.Head).position - meanFeetPosition;
+                animatedDirection.y = 0;
+
+                transform.rotation *= Quaternion.FromToRotation(animatedDirection.normalized, ragdollDirection.normalized);
+            }
+
+            float blendAmount = Mathf.Clamp01((Time.time - ragdollEndTime - mecanimTransitionTime) / reanimationBlendTime);
+
+            foreach (BodyPartSnapshop snapshop in bodyPartSnapshots)
+            {
+                if (snapshop.transform == rootBone)
+                {
+                    snapshop.transform.position = Vector3.Lerp(snapshop.position, snapshop.transform.position, blendAmount);
+                }
+                snapshop.transform.rotation = Quaternion.Slerp(snapshop.rotation, snapshop.transform.rotation, blendAmount);
+            }
+
+            if (blendAmount == 1)
+            {
+                boneControlType = AIBoneControlType.Animated;
+                if (navAgent) navAgent.enabled = true;
+                if (collider) collider.enabled = true;
+
+                AIState newState = null;
+                if (dictStates.TryGetValue(AIStateType.Alerted, out newState))
+                {
+                    if (currentState != null) currentState.OnExitState();
+                    newState.OnEnterState();
+                    currentState = newState;
+                    currentStateType = AIStateType.Alerted;
+                }
+            }
+
+        }
     }
 
 
