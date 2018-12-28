@@ -23,7 +23,7 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 0.3
+  m_AmbientIntensity: 2.03
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
@@ -5146,7 +5146,7 @@ Prefab:
       objectReference: {fileID: 9100000, guid: 29b1da7f753ed3942835916c4ead766d, type: 2}
     - target: {fileID: 100000, guid: ea035ba37d6094b419b549464a5207ab, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea035ba37d6094b419b549464a5207ab, type: 3}
@@ -5179,6 +5179,23 @@ Transform:
   m_Father: {fileID: 1523257488}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &879332030 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1231838043129482, guid: 727fb14999ef70a49a1c685963de120c,
+    type: 2}
+  m_PrefabInternal: {fileID: 2134069303}
+--- !u!135 &879332033
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 879332030}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.15
+  m_Center: {x: 0, y: 0.06, z: 0}
 --- !u!1 &906296380
 GameObject:
   m_ObjectHideFlags: 0
@@ -5551,6 +5568,24 @@ Transform:
   m_Father: {fileID: 1523257488}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1512270146 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1531850347233044, guid: 727fb14999ef70a49a1c685963de120c,
+    type: 2}
+  m_PrefabInternal: {fileID: 2134069303}
+--- !u!136 &1512270149
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1512270146}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.08
+  m_Height: 0.45
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 0.25}
 --- !u!1 &1523257487
 GameObject:
   m_ObjectHideFlags: 0
@@ -6446,6 +6481,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd576d76e91e33c4c9c63be342f9f199, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &2001201591 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1839474036010682, guid: 727fb14999ef70a49a1c685963de120c,
+    type: 2}
+  m_PrefabInternal: {fileID: 2134069303}
+--- !u!135 &2001201594
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2001201591}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.15
+  m_Center: {x: 0, y: 0.06, z: 0}
 --- !u!1 &2015264673
 GameObject:
   m_ObjectHideFlags: 0
@@ -7005,7 +7057,17 @@ Prefab:
     - target: {fileID: 114557015737656490, guid: 727fb14999ef70a49a1c685963de120c,
         type: 2}
       propertyPath: lowerBodyDamage
-      value: 93
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 195520153488671624, guid: 727fb14999ef70a49a1c685963de120c,
+        type: 2}
+      propertyPath: m_BaseOffset
+      value: 0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 114557015737656490, guid: 727fb14999ef70a49a1c685963de120c,
+        type: 2}
+      propertyPath: _satisfaction
+      value: 0.105
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 727fb14999ef70a49a1c685963de120c, type: 2}

@@ -10,6 +10,7 @@ public class AIZombieState_Feeding1 : AIZombieState {
     [SerializeField] [Range(1, 100)] int bloodParticlesBurstAmount = 10;
 
     private int eatingStateHash = Animator.StringToHash("Feeding State");
+    private int crawlEatingStateHash = Animator.StringToHash("Crawl Feeding State");
     private int eatingLayerIndex = -1;
     private float timer = 0;
 
@@ -70,7 +71,8 @@ public class AIZombieState_Feeding1 : AIZombieState {
             return AIStateType.Alerted;
         }
 
-        if (zombieStateMachine.GetAnimator.GetCurrentAnimatorStateInfo(eatingLayerIndex).shortNameHash == eatingStateHash)
+        int currentHash = zombieStateMachine.GetAnimator.GetCurrentAnimatorStateInfo(eatingLayerIndex).shortNameHash;
+        if (currentHash == eatingStateHash || currentHash == crawlEatingStateHash)
         {
             zombieStateMachine.satisfaction = Mathf.Min(zombieStateMachine.satisfaction + Time.deltaTime * zombieStateMachine.replenishRate / 100, 1.0f);
 
@@ -96,6 +98,9 @@ public class AIZombieState_Feeding1 : AIZombieState {
             Quaternion newRot = Quaternion.LookRotation(targetPos - zombieStateMachine.transform.position);
             zombieStateMachine.transform.rotation = Quaternion.Slerp(zombieStateMachine.transform.rotation, newRot, Time.deltaTime * slerpSpeed);
         }
+
+        Vector3 headToTarget = zombieStateMachine.targetPosition - zombieStateMachine.GetAnimator.GetBoneTransform(HumanBodyBones.Head).position;
+        zombieStateMachine.transform.position = Vector3.Lerp(zombieStateMachine.transform.position, zombieStateMachine.transform.position + headToTarget, Time.deltaTime);
 
         return AIStateType.Feeding;
     }
