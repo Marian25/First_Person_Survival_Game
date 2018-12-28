@@ -4,6 +4,14 @@ using UnityEngine;
 
 public enum AIBoneControlType { Animated, Ragdoll, RagdollToAnim }
 
+public class BodyPartSnapshop
+{
+    public Transform transform;
+    public Vector3 position;
+    public Quaternion rotation;
+    public Quaternion localRotation;
+}
+
 public class AIZombieStateMachine : AIStateMachine {
 
     [SerializeField] [Range(10f, 360f)] private float _fov = 50f;
@@ -20,6 +28,8 @@ public class AIZombieStateMachine : AIStateMachine {
     [SerializeField] [Range(0f, 1f)] private float _satisfaction = 1.0f;
     [SerializeField] float _replenishRate = 0.5f;
     [SerializeField] float _depletionRate = 0.1f;
+    [SerializeField] float reanimationBlendTime = 1.5f;
+    [SerializeField] float reanimationWaitTime = 3f;
 
     private int _seeking = 0;
     private bool _feeding = false;
@@ -28,6 +38,13 @@ public class AIZombieStateMachine : AIStateMachine {
     private float _speed = 0;
 
     private AIBoneControlType boneControlType = AIBoneControlType.Animated;
+    private List<BodyPartSnapshop> bodyPartSnapshots = new List<BodyPartSnapshop>();
+    private float ragdollEndTime = float.MinValue;
+    private Vector3 ragdollHipPosition;
+    private Vector3 ragdollFeetPosition;
+    private Vector3 ragdollHeadPosition;
+    private IEnumerator reanimationCoroutine = null;
+    private float mecanimTransitionTime = 0.1f;
 
     // Hashes
     private int speedHash = Animator.StringToHash("speed");
@@ -57,6 +74,18 @@ public class AIZombieStateMachine : AIStateMachine {
     protected override void Start()
     {
         base.Start();
+
+        if (rootBone != null)
+        {
+            Transform[] transforms = rootBone.GetComponentsInChildren<Transform>();
+
+            foreach (Transform tran in transforms)
+            {
+                BodyPartSnapshop snapshop = new BodyPartSnapshop();
+                snapshop.transform = tran;
+                bodyPartSnapshots.Add(snapshop);
+            }
+        }
 
         UpdateAnimatorDamage();
     }
@@ -124,7 +153,11 @@ public class AIZombieStateMachine : AIStateMachine {
 
                 if (health > 0)
                 {
-                    // TODO: reanimate zombie
+                    if (reanimationCoroutine != null)
+                        StopCoroutine(reanimationCoroutine);
+
+                    reanimationCoroutine = Reanimate();
+                    StartCoroutine(reanimationCoroutine);
                 }
             }
             return;
@@ -217,10 +250,19 @@ public class AIZombieStateMachine : AIStateMachine {
 
             if (health > 0)
             {
-                // TODO: Reanimate Zombie
+                if (reanimationCoroutine != null)
+                    StopCoroutine(reanimationCoroutine);
+
+                reanimationCoroutine = Reanimate();
+                StartCoroutine(reanimationCoroutine);
             }
         }
+    }
+
+    private IEnumerator Reanimate()
+    {
 
     }
+
 
 }
