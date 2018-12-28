@@ -445,6 +445,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4309342328761240}
   - component: {fileID: 114646918965601004}
+  - component: {fileID: 135075906212926582}
   m_Layer: 10
   m_Name: LeftHand
   m_TagString: Untagged
@@ -1009,6 +1010,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4557822374318992}
   - component: {fileID: 114359250731827062}
+  - component: {fileID: 136766450249527688}
   m_Layer: 10
   m_Name: Mouth Trigger
   m_TagString: Untagged
@@ -1686,6 +1688,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4455602390743966}
   - component: {fileID: 114165207991171184}
+  - component: {fileID: 135784613090913834}
   m_Layer: 10
   m_Name: RightHand
   m_TagString: Untagged
@@ -4078,7 +4081,7 @@ MonoBehaviour:
   limpThreshold: 30
   crawlThreshold: 90
   _intelligence: 1
-  _satisfaction: 0.408
+  _satisfaction: 0.105
   _replenishRate: 2
   _depletionRate: 0.1
   reanimationBlendTime: 1.5
@@ -4168,6 +4171,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idleTimeRange: {x: 5, y: 10}
+--- !u!135 &135075906212926582
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1231838043129482}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.15
+  m_Center: {x: 0, y: 0.06, z: 0}
 --- !u!135 &135137157762198624
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -4192,6 +4207,18 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 20
   m_Center: {x: 0, y: 1.6, z: 0}
+--- !u!135 &135784613090913834
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1839474036010682}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.15
+  m_Center: {x: 0, y: 0.06, z: 0}
 --- !u!136 &136062375143898720
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -4283,6 +4310,19 @@ CapsuleCollider:
   m_Height: 0.4242142
   m_Direction: 1
   m_Center: {x: 0, y: 0.2121071, z: 0}
+--- !u!136 &136766450249527688
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1531850347233044}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.08
+  m_Height: 0.45
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 0.25}
 --- !u!136 &136774312081752342
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -5356,6 +5396,6 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 2
-  m_BaseOffset: 0
+  m_BaseOffset: 0.07
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
