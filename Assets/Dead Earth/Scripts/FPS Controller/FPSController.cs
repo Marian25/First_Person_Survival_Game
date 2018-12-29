@@ -140,7 +140,7 @@ public class FPSController : MonoBehaviour {
 
     private float fallingTimer = 0;
 
-    private CharacterController characterController = null;
+    private CharacterController _characterController = null;
     private PlayerMoveStatus _movementStatus = PlayerMoveStatus.NotMoving;
 
     public PlayerMoveStatus movementStatus { get { return _movementStatus; } }
@@ -163,10 +163,15 @@ public class FPSController : MonoBehaviour {
         set { _dragMultiplier = Mathf.Min(value, dragMultiplierLimit); }
     }
 
+    public CharacterController characterController
+    {
+        get { return _characterController; }
+    }
+
     protected void Start()
     {
-        characterController = GetComponent<CharacterController>();
-        controllerHeight = characterController.height;
+        _characterController = GetComponent<CharacterController>();
+        controllerHeight = _characterController.height;
 
         camera = Camera.main;
         localSpaceCameraPos = camera.transform.localPosition;
@@ -185,7 +190,7 @@ public class FPSController : MonoBehaviour {
 
     protected void Update()
     {
-        if (characterController.isGrounded) fallingTimer = 0;
+        if (_characterController.isGrounded) fallingTimer = 0;
         else fallingTimer += Time.deltaTime;
 
         if (Time.timeScale > Mathf.Epsilon)
@@ -206,10 +211,10 @@ public class FPSController : MonoBehaviour {
         if (Input.GetButtonDown("Crouch"))
         {
             isCrouching = !isCrouching;
-            characterController.height = isCrouching == true ? controllerHeight / 2 : controllerHeight;
+            _characterController.height = isCrouching == true ? controllerHeight / 2 : controllerHeight;
         }
 
-        if (!previoulyGrounded && characterController.isGrounded)
+        if (!previoulyGrounded && _characterController.isGrounded)
         {
             if (fallingTimer > 0.5f)
             {
@@ -220,11 +225,11 @@ public class FPSController : MonoBehaviour {
             isJumping = false;
             _movementStatus = PlayerMoveStatus.Landing;
         }
-        else if (!characterController.isGrounded)
+        else if (!_characterController.isGrounded)
         {
             _movementStatus = PlayerMoveStatus.NotGrounded;
         }
-        else if (characterController.velocity.sqrMagnitude < 0.01f)
+        else if (_characterController.velocity.sqrMagnitude < 0.01f)
         {
             _movementStatus = PlayerMoveStatus.NotMoving;
         }
@@ -241,7 +246,7 @@ public class FPSController : MonoBehaviour {
             _movementStatus = PlayerMoveStatus.Running;
         }
 
-        previoulyGrounded = characterController.isGrounded;
+        previoulyGrounded = _characterController.isGrounded;
 
         dragMultiplier = Mathf.Min(dragMultiplier + Time.deltaTime, dragMultiplierLimit);
     }
@@ -262,7 +267,7 @@ public class FPSController : MonoBehaviour {
         Vector3 desiredMove = transform.forward * inputVector.y + transform.right * inputVector.x;
 
         RaycastHit hitInfo;
-        if (Physics.SphereCast(transform.position, characterController.radius, Vector3.down, out hitInfo, characterController.height / 2f, 1))
+        if (Physics.SphereCast(transform.position, _characterController.radius, Vector3.down, out hitInfo, _characterController.height / 2f, 1))
         {
             desiredMove = Vector3.ProjectOnPlane(desiredMove, hitInfo.normal).normalized;
         }
@@ -270,7 +275,7 @@ public class FPSController : MonoBehaviour {
         moveDirection.x = desiredMove.x * speed * dragMultiplier;
         moveDirection.z = desiredMove.z * speed * dragMultiplier;
 
-        if (characterController.isGrounded)
+        if (_characterController.isGrounded)
         {
             moveDirection.y = -stickToGroundForce;
 
@@ -286,9 +291,9 @@ public class FPSController : MonoBehaviour {
             moveDirection += Physics.gravity * gravityMultiplier * Time.fixedDeltaTime;
         }
 
-        characterController.Move(moveDirection * Time.fixedDeltaTime);
+        _characterController.Move(moveDirection * Time.fixedDeltaTime);
 
-        Vector3 speedXZ = new Vector3(characterController.velocity.x, 0, characterController.velocity.z);
+        Vector3 speedXZ = new Vector3(_characterController.velocity.x, 0, _characterController.velocity.z);
         if (speedXZ.magnitude > 0.01f)
         {
             camera.transform.localPosition = localSpaceCameraPos + headbob.GetVectorOffset(speedXZ.magnitude * (isCrouching || isWalking ? 1 : runStepLengthen));
@@ -308,5 +313,9 @@ public class FPSController : MonoBehaviour {
         audioToUse = (audioToUse == 0) ? 1 : 0;
     }
 
+    public void DoStickiness()
+    {
+        dragMultiplier = 1.0f - npcStickiness;
+    }
 
 }
