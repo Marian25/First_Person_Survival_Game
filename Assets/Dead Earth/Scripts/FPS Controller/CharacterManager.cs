@@ -45,6 +45,11 @@ public class CharacterManager : MonoBehaviour {
     {
         health = Mathf.Max(health - amount * Time.deltaTime, 0);
 
+        if (fpsController)
+        {
+            fpsController.dragMultiplier = 0;
+        }
+
         if (cameraBloodEffect != null)
         {
             cameraBloodEffect.minBloodAmount = (1f - health / 100f) / 3;
@@ -96,6 +101,8 @@ public class CharacterManager : MonoBehaviour {
             }
 
             soundEmitter.SetRadius(newRadius);
+
+            fpsController.dragMultiplierLimit = Mathf.Max(health / 100.0f, 0.25f);
         }
 
 	}

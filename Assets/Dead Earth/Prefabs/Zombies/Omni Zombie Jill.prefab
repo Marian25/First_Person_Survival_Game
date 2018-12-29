@@ -4117,6 +4117,11 @@ MonoBehaviour:
   crawlThreshold: 90
   _intelligence: 1
   _satisfaction: 0.105
+  _screamChance: 1
+  screamRadius: 12
+  screamPosition: 1
+  screamPrefab: {fileID: 114364428741979834, guid: 71e664bf2d30926438b23541e8267fec,
+    type: 2}
   _replenishRate: 2
   _depletionRate: 0.1
   reanimationBlendTime: 1.5

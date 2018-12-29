@@ -13,7 +13,7 @@ public class AISoundEmitter : MonoBehaviour {
     private float interpolatorSpeed = 0;
 
 	// Use this for initialization
-	void Start () {
+	void Awake () {
         collider = GetComponent<SphereCollider>();
         if (collider == null) return;
 

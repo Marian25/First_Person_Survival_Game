@@ -12,6 +12,7 @@ public class AIZombieState_Alerted1 : AIZombieState {
 
     private float timer = 0f;
     private float directionChangeTimer = 0f;
+    private float screamChance = 0;
 
     public override AIStateType GetStateType()
     {
@@ -33,6 +34,7 @@ public class AIZombieState_Alerted1 : AIZombieState {
 
         timer = maxDuration;
         directionChangeTimer = 0;
+        screamChance = zombieStateMachine.screamChance - Random.value;
     }
 
     public override AIStateType OnUpdate()
@@ -50,6 +52,16 @@ public class AIZombieState_Alerted1 : AIZombieState {
         if (zombieStateMachine.visualThreat.GetType == AITargetType.Visual_Player)
         {
             zombieStateMachine.SetTarget(zombieStateMachine.visualThreat);
+
+            if (screamChance > 0)
+            {
+                if (zombieStateMachine.Scream())
+                {
+                    screamChance = float.MinValue;
+                    return AIStateType.Alerted;
+                }
+            }
+
             return AIStateType.Pursuit;
         }
 

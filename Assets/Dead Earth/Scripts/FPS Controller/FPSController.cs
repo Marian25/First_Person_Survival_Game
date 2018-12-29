@@ -147,6 +147,22 @@ public class FPSController : MonoBehaviour {
     public float walkSpeed { get { return _walkSpeed; } }
     public float runSpeed { get { return _runSpeed; } }
 
+    float _dragMultiplier = 1;
+    float _dragMultiplierLimit = 1;
+    [SerializeField] [Range(0, 1)] float npcStickiness = 0.5f; 
+
+    public float dragMultiplierLimit
+    {
+        get { return _dragMultiplierLimit; }
+        set { _dragMultiplierLimit = Mathf.Clamp01(value); }
+    }
+
+    public float dragMultiplier
+    {
+        get { return _dragMultiplier; }
+        set { _dragMultiplier = Mathf.Min(value, dragMultiplierLimit); }
+    }
+
     protected void Start()
     {
         characterController = GetComponent<CharacterController>();
@@ -226,6 +242,8 @@ public class FPSController : MonoBehaviour {
         }
 
         previoulyGrounded = characterController.isGrounded;
+
+        dragMultiplier = Mathf.Min(dragMultiplier + Time.deltaTime, dragMultiplierLimit);
     }
 
     protected void FixedUpdate()
@@ -249,8 +267,8 @@ public class FPSController : MonoBehaviour {
             desiredMove = Vector3.ProjectOnPlane(desiredMove, hitInfo.normal).normalized;
         }
 
-        moveDirection.x = desiredMove.x * speed;
-        moveDirection.z = desiredMove.z * speed;
+        moveDirection.x = desiredMove.x * speed * dragMultiplier;
+        moveDirection.z = desiredMove.z * speed * dragMultiplier;
 
         if (characterController.isGrounded)
         {
