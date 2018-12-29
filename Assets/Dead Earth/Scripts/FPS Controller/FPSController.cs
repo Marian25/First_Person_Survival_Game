@@ -112,8 +112,8 @@ public class CurveControlledBob
 [RequireComponent(typeof(CharacterController))]
 public class FPSController : MonoBehaviour {
 
-    public List<AudioSource> audioSources = new List<AudioSource>();
-    private int audioToUse = 0;
+    [SerializeField] private AudioCollection footsteps = null;
+    [SerializeField] private float crouchAttenuation = 0.2f;
 
     [SerializeField] private float _walkSpeed = 2.0f;
     [SerializeField] private float _runSpeed = 4.5f;
@@ -307,10 +307,26 @@ public class FPSController : MonoBehaviour {
 
     void PlayFootStepSound()
     {
-        if (isCrouching) return;
+        if (AudioManager.instance != null || footsteps != null)
+        {
+            AudioClip soundToPlay;
+            if (isCrouching)
+                soundToPlay = footsteps[1];
+            else
+                soundToPlay = footsteps[0];
 
-        audioSources[audioToUse].Play();
-        audioToUse = (audioToUse == 0) ? 1 : 0;
+            AudioManager.instance.PlayOneShotSound("Player", 
+                                                    soundToPlay, 
+                                                    transform.position, 
+                                                    isCrouching ? footsteps.volume * crouchAttenuation : footsteps.volume,
+                                                    footsteps.spatialBlend,
+                                                    footsteps.priority);
+
+
+
+        }
+
+
     }
 
     public void DoStickiness()
