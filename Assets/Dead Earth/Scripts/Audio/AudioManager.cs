@@ -254,7 +254,7 @@ public class AudioManager : MonoBehaviour
         return 0;
     }
 
-    public IEnumerator PlayOneShotSound(string track, AudioClip clip, Vector3 position, float volume, float spatialBlend, float duration, int priority = 128)
+    public IEnumerator PlayOneShotSoundDelayed(string track, AudioClip clip, Vector3 position, float volume, float spatialBlend, float duration, int priority = 128)
     {
         yield return new WaitForSeconds(duration);
         PlayOneShotSound(track, clip, position, volume, spatialBlend, priority);

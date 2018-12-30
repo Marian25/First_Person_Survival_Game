@@ -20,11 +20,11 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientSkyColor: {r: 0.1, g: 0.1, b: 0.1, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 2.03
-  m_AmbientMode: 0
+  m_AmbientMode: 4
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   m_HaloStrength: 0.5
@@ -5332,6 +5332,16 @@ Prefab:
       propertyPath: waypointNetwork
       value: 
       objectReference: {fileID: 1575692919}
+    - target: {fileID: 114510586624063296, guid: ffb86d4f038b6ce47a7bf15a3f485def,
+        type: 2}
+      propertyPath: idleTimeRange.x
+      value: 10000
+      objectReference: {fileID: 0}
+    - target: {fileID: 114510586624063296, guid: ffb86d4f038b6ce47a7bf15a3f485def,
+        type: 2}
+      propertyPath: idleTimeRange.y
+      value: 50000
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ffb86d4f038b6ce47a7bf15a3f485def, type: 2}
   m_IsPrefabAsset: 0
@@ -6015,6 +6025,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   footsteps: {fileID: 11400000, guid: 670a2bfd4de361b42b8ad5208401a378, type: 2}
+  crouchAttenuation: 0.2
   _walkSpeed: 2
   _runSpeed: 4.5
   jumpSpeed: 7.5

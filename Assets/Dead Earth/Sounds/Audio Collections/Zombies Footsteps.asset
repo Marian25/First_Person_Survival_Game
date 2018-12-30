@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e14bca3ce1099ca45bd02b1ce7035a10, type: 3}
+  m_Name: Zombies Footsteps
+  m_EditorClassIdentifier: 
+  _audioGroup: Zombies
+  _volume: 0.2
+  _spatialBlend: 0
+  _priority: 128
+  _audioClipBanks:
+  - clips:
+    - {fileID: 8300000, guid: 464b9d6e119f0ff44873beba52b20c39, type: 3}
+    - {fileID: 8300000, guid: 513658ce41c802c47a3d80dc935e5e5c, type: 3}
+    - {fileID: 8300000, guid: 762be0dc9becf2945b1984ba9c3d5405, type: 3}
+    - {fileID: 8300000, guid: 5827795086cabd34593a34ec3622f923, type: 3}
+    - {fileID: 8300000, guid: 19ab68342cdc3fb4faff86bdd63f6b83, type: 3}
+    - {fileID: 8300000, guid: 013478b2d64fee1469d0a8495d01b1fd, type: 3}
+    - {fileID: 8300000, guid: 9aa041b25de27454ab8a81799c4bd063, type: 3}
+    - {fileID: 8300000, guid: 95f404f23d24f3b4d8e452d86dd28d08, type: 3}
+    - {fileID: 8300000, guid: e5029fddbb1331d4eb59007980e9b163, type: 3}
+    - {fileID: 8300000, guid: 30548c33cb7b17948a78c964894a7ed8, type: 3}
+    - {fileID: 8300000, guid: 02f911b051301b044b4a1864b3ada6ba, type: 3}
+  - clips:
+    - {fileID: 8300000, guid: 4190075f2a971a74e8d24991ac769bee, type: 3}
+    - {fileID: 8300000, guid: 3533d0b1294954240a23eb6b99de7165, type: 3}
+    - {fileID: 8300000, guid: cc43fbfedc56427449df00e13e85d734, type: 3}
+    - {fileID: 8300000, guid: 978fd13590fa0604dab706ff1fa9dee1, type: 3}
