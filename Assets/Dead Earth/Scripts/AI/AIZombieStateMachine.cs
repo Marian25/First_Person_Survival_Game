@@ -91,7 +91,7 @@ public class AIZombieStateMachine : AIStateMachine {
     public bool Scream()
     {
         if (isScreaming) return true;
-        if (animator == null || cinematicEnabled || screamPrefab == null) return false;
+        if (animator == null || IsLayerActive("Cinematic Layer") || screamPrefab == null) return false;
 
         animator.SetTrigger(screamHash);
         Vector3 spawnPos = screamPosition == AIScreamPosition.Entity ? transform.position : visualThreat.GetPosition;
@@ -150,7 +150,7 @@ public class AIZombieStateMachine : AIStateMachine {
             animator.SetInteger(attackHash, attackType);
             animator.SetInteger(stateHash, (int)currentStateType);
 
-            _isScreaming = cinematicEnabled ? 0 : animator.GetFloat(screamingHash);
+            _isScreaming = IsLayerActive("Cinematic Layer") ? 0 : animator.GetFloat(screamingHash);
         }
 
         satisfaction = Mathf.Max(0, satisfaction - _depletionRate * Time.deltaTime / 100 * Mathf.Pow(speed, 3));
@@ -173,6 +173,17 @@ public class AIZombieStateMachine : AIStateMachine {
             animator.SetBool(crawlingHash, isCrawling);
             animator.SetInteger(lowerBodyDamageHash, lowerBodyDamage);
             animator.SetInteger(upperBodyDamageHash, upperBodyDamage);
+
+            if (lowerBodyDamage > limpThreshold && lowerBodyDamage < crawlThreshold)
+                SetLayerActive("Lower Body Layer", true);
+            else
+                SetLayerActive("Lower Body Layer", false);
+
+            if (upperBodyDamage > upperBodyThreshold && lowerBodyDamage < crawlThreshold)
+                SetLayerActive("Upper Body Layer", true);
+            else
+                SetLayerActive("Upper Body Layer", false);
+
         }
     }
 
@@ -251,7 +262,7 @@ public class AIZombieStateMachine : AIStateMachine {
             }
         }
 
-        if (boneControlType != AIBoneControlType.Animated || isCrawling || cinematicEnabled || attackerLocPos.z < 0)
+        if (boneControlType != AIBoneControlType.Animated || isCrawling || IsLayerActive("Cinematic Layer") || attackerLocPos.z < 0)
             shouldRagdoll = true;
 
         if (!shouldRagdoll)

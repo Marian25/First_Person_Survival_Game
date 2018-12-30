@@ -5335,12 +5335,12 @@ Prefab:
     - target: {fileID: 114510586624063296, guid: ffb86d4f038b6ce47a7bf15a3f485def,
         type: 2}
       propertyPath: idleTimeRange.x
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114510586624063296, guid: ffb86d4f038b6ce47a7bf15a3f485def,
         type: 2}
       propertyPath: idleTimeRange.y
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 114369753968406158, guid: ffb86d4f038b6ce47a7bf15a3f485def,
         type: 2}

@@ -350,7 +350,7 @@ ModelImporter:
           preInfinity: 3
           postInfinity: 3
           rotationOrder: 0
-      - name: ' ComChannel2'
+      - name: ' comChannel2'
         curve:
           serializedVersion: 2
           curve:

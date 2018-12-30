@@ -55,7 +55,8 @@ public abstract class AIStateMachine : MonoBehaviour {
     protected bool _isTargetReached = false;
     protected List<Rigidbody> bodyParts = new List<Rigidbody>();
     protected int aiBodyPartLayer = -1;
-    protected bool _cinematicEnabled = false;
+
+    protected Dictionary<string, bool> _animLayersActive = new Dictionary<string, bool>();
 
     [SerializeField] protected AIStateType currentStateType = AIStateType.Idle;
     [SerializeField] protected Transform rootBone = null;
@@ -114,10 +115,20 @@ public abstract class AIStateMachine : MonoBehaviour {
                 return -1;
         }
     }
-    public bool cinematicEnabled
+
+    public void SetLayerActive(string layerName, bool active)
     {
-        get { return _cinematicEnabled; }
-        set { _cinematicEnabled = value; }
+        _animLayersActive[layerName] = active;
+    }
+
+    public bool IsLayerActive(string layerName)
+    {
+        bool result;
+        if (_animLayersActive.TryGetValue(layerName, out result))
+        {
+            return result;
+        }
+        return false;
     }
 
     protected virtual void Awake()
