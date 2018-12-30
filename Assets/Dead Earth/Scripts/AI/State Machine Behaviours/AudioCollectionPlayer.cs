@@ -6,6 +6,7 @@ public class AudioCollectionPlayer : AIStateMachineLink {
 
     [SerializeField] ComChannelName commandChannel = ComChannelName.comChannel1;
     [SerializeField] AudioCollection collection = null;
+    [SerializeField] CustomCurve customCurve = null;
 
     private int previousCommand = 0;
     private AudioManager audioManager = null;
@@ -25,7 +26,12 @@ public class AudioCollectionPlayer : AIStateMachineLink {
         if (layerIndex != 0 && animator.GetLayerWeight(layerIndex).Equals(0)) return;
         if (stateMachine == null) return;
 
-        int command = Mathf.FloorToInt(animator.GetFloat(commandChannelHash));
+        int customCommand = customCurve == null ? 0 : Mathf.FloorToInt(customCurve.Evaluate(animatorStateInfo.normalizedTime - (long)animatorStateInfo.normalizedTime));
+
+        int command;
+
+        if (customCommand != 0) command = customCommand;
+        else                    command = Mathf.FloorToInt(animator.GetFloat(commandChannelHash));
 
         if (previousCommand != command && command > 0 && audioManager != null && collection != null)
         {
