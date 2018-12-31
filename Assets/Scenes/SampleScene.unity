@@ -5004,15 +5004,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 95816540723115752, guid: 69985decdd4cf1d4fba32bda2e77ef2c,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 9eca867c845d0bc4487e5850d6b28fcd, type: 2}
     - target: {fileID: 114522289116955832, guid: 69985decdd4cf1d4fba32bda2e77ef2c,
         type: 2}
       propertyPath: waypointNetwork
       value: 
       objectReference: {fileID: 1575692919}
-    - target: {fileID: 1232594415924920, guid: 69985decdd4cf1d4fba32bda2e77ef2c, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69985decdd4cf1d4fba32bda2e77ef2c, type: 2}
   m_IsPrefabAsset: 0
@@ -5155,7 +5156,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &862610260
 Transform:
   m_ObjectHideFlags: 0
@@ -5332,21 +5333,6 @@ Prefab:
       propertyPath: waypointNetwork
       value: 
       objectReference: {fileID: 1575692919}
-    - target: {fileID: 114510586624063296, guid: ffb86d4f038b6ce47a7bf15a3f485def,
-        type: 2}
-      propertyPath: idleTimeRange.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114510586624063296, guid: ffb86d4f038b6ce47a7bf15a3f485def,
-        type: 2}
-      propertyPath: idleTimeRange.y
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114369753968406158, guid: ffb86d4f038b6ce47a7bf15a3f485def,
-        type: 2}
-      propertyPath: lowerBodyDamage
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ffb86d4f038b6ce47a7bf15a3f485def, type: 2}
   m_IsPrefabAsset: 0

@@ -68,6 +68,8 @@ public abstract class AIStateMachine : MonoBehaviour {
     [SerializeField] protected int currentWaypoint = -1;
     [SerializeField] [Range(0, 15)] protected float stoppingDistance = 1.0f;
 
+    protected ILayeredAudioSource _layeredAudioSource = null;
+
     protected Animator animator = null;
     protected NavMeshAgent navAgent = null;
     protected Collider collider = null;
@@ -119,6 +121,8 @@ public abstract class AIStateMachine : MonoBehaviour {
     public void SetLayerActive(string layerName, bool active)
     {
         _animLayersActive[layerName] = active;
+        if (active == false && _layeredAudioSource != null)
+            _layeredAudioSource.Stop(animator.GetLayerIndex(layerName));
     }
 
     public bool IsLayerActive(string layerName)
@@ -131,11 +135,31 @@ public abstract class AIStateMachine : MonoBehaviour {
         return false;
     }
 
+    public bool PlayAudio(AudioCollection clipPool, int bank, int layer, bool looping = true)
+    {
+        if (_layeredAudioSource == null) return false;
+        return _layeredAudioSource.Play(clipPool, bank, layer, looping);
+    }
+
+    public void StopAudio(int layer)
+    {
+        if (_layeredAudioSource != null)
+            _layeredAudioSource.Stop(layer);
+    }
+
+    public void MuteAudio(bool mute)
+    {
+        if (_layeredAudioSource != null)
+            _layeredAudioSource.Mute(mute);
+    }
+
     protected virtual void Awake()
     {
         animator = GetComponent<Animator>();
         navAgent = GetComponent<NavMeshAgent>();
         collider = GetComponent<Collider>();
+
+        AudioSource audioSource = GetComponent<AudioSource>();
 
         aiBodyPartLayer = LayerMask.NameToLayer("AI Body Part");
 
@@ -163,7 +187,11 @@ public abstract class AIStateMachine : MonoBehaviour {
                     GameSceneManager.GetInstance().RegisterAIStateMachine(bodyPart.GetInstanceID(), this);
                 }
             }
+        }
 
+        if (animator && audioSource && AudioManager.instance)
+        {
+            _layeredAudioSource = AudioManager.instance.RegisterLayeredAudioSource(audioSource, animator.layerCount);
         }
     }
 
@@ -422,4 +450,11 @@ public abstract class AIStateMachine : MonoBehaviour {
        
     }
 
+    protected virtual void OnDestroy()
+    {
+        if (_layeredAudioSource != null && AudioManager.instance)
+        {
+            AudioManager.instance.UnregisterLayeredAudioSource(_layeredAudioSource);
+        }
+    }
 }

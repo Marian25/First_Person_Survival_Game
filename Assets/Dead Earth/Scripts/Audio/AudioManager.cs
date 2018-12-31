@@ -42,6 +42,7 @@ public class AudioManager : MonoBehaviour
     Dictionary<string, TrackInfo> tracks = new Dictionary<string, TrackInfo>();
     List<AudioPoolItem> pool = new List<AudioPoolItem>();
     Dictionary<ulong, AudioPoolItem> activePool = new Dictionary<ulong, AudioPoolItem>();
+    List<LayeredAudioSource> _layeredAudio = new List<LayeredAudioSource>();
     ulong idGiver = 0;
     Transform listenerPos = null;
 
@@ -97,7 +98,10 @@ public class AudioManager : MonoBehaviour
 
     private void Update()
     {
-
+        foreach (LayeredAudioSource las in _layeredAudio)
+        {
+            if (las != null) las.Update();
+        }
     }
 
     public float GetTrackVolume(string track)
@@ -258,6 +262,52 @@ public class AudioManager : MonoBehaviour
     {
         yield return new WaitForSeconds(duration);
         PlayOneShotSound(track, clip, position, volume, spatialBlend, priority);
+    }
+
+    public ILayeredAudioSource RegisterLayeredAudioSource(AudioSource source, int layers)
+    {
+        if (source != null && layers > 0)
+        {
+            for (int i = 0; i < _layeredAudio.Count; i++)
+            {
+                LayeredAudioSource item = _layeredAudio[i];
+                if (item != null)
+                {
+                    if (item.audioSource == source)
+                    {
+                        return item;
+                    }
+                }
+            }
+
+            LayeredAudioSource newLayeredAudio = new LayeredAudioSource(source, layers);
+            _layeredAudio.Add(newLayeredAudio);
+
+            return newLayeredAudio;
+        }
+
+        return null;
+    }
+    
+    public void UnregisterLayeredAudioSource(ILayeredAudioSource source)
+    {
+        _layeredAudio.Remove((LayeredAudioSource)source);
+    }
+    
+    public void UnregisterLayeredAudioSource(AudioSource source)
+    {
+        for (int i = 0; i < _layeredAudio.Count; i++)
+        {
+            LayeredAudioSource item = _layeredAudio[i];
+            if (item != null)
+            {
+                if (item.audioSource == source)
+                {
+                    _layeredAudio.Remove(item);
+                    return;
+                }
+            }
+        }
     }
 
 }
