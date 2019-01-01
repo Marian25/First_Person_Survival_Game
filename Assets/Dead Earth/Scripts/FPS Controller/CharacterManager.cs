@@ -22,19 +22,20 @@ public class CharacterManager : MonoBehaviour {
     [SerializeField] private float _painSoundOffset = 0.35f;
 
     private Collider collider = null;
-    private FPSController fpsController = null;
+    private FPSController _fpsController = null;
     private CharacterController characterController = null;
     private GameSceneManager gameSceneManager = null;
     private int aiBodyPartLayer = -1;
     private int _interactiveMask = 0;
 
     public float health { get { return _health; } }
-    public float stamina { get { return fpsController != null ? fpsController.stamina : 0.0f; } }
+    public float stamina { get { return _fpsController != null ? _fpsController.stamina : 0.0f; } }
+    public FPSController fpsController { get { return _fpsController; } }
 
     // Use this for initialization
     void Start () {
         collider = GetComponent<Collider>();
-        fpsController = GetComponent<FPSController>();
+        _fpsController = GetComponent<FPSController>();
         characterController = GetComponent<CharacterController>();
         gameSceneManager = GameSceneManager.GetInstance();
 
@@ -62,9 +63,9 @@ public class CharacterManager : MonoBehaviour {
     {
         _health = Mathf.Max(health - amount * Time.deltaTime, 0);
 
-        if (fpsController)
+        if (_fpsController)
         {
-            fpsController.dragMultiplier = 0;
+            _fpsController.dragMultiplier = 0;
         }
 
         if (cameraBloodEffect != null)
@@ -179,11 +180,11 @@ public class CharacterManager : MonoBehaviour {
             DoDamage();
         }
 
-        if (fpsController)
+        if (_fpsController)
         {
             float newRadius = Mathf.Max(walkRadius, (100.0f - health) / bloodRadiusScale);
 
-            switch (fpsController.movementStatus)
+            switch (_fpsController.movementStatus)
             {
                 case PlayerMoveStatus.Landing: newRadius = Mathf.Max(newRadius, landingRadius); break;
                 case PlayerMoveStatus.Running: newRadius = Mathf.Max(newRadius, runRadius); break;
@@ -191,9 +192,33 @@ public class CharacterManager : MonoBehaviour {
 
             soundEmitter.SetRadius(newRadius);
 
-            fpsController.dragMultiplierLimit = Mathf.Max(health / 100.0f, 0.25f);
+            _fpsController.dragMultiplierLimit = Mathf.Max(health / 100.0f, 0.25f);
         }
 
         if (_playerHUD) _playerHUD.Invalidate(this);
+    }
+
+    public void DoLevelComplete()
+    {
+        if (_fpsController)
+            _fpsController.freezeMovement = true;
+
+        if (_playerHUD)
+        {
+            _playerHUD.Fade(4.0f, ScreenFadeType.FadeOut);
+            _playerHUD.ShowMissionText("Mission Completed");
+            _playerHUD.Invalidate(this);
+        }
+
+        Invoke("GameOver", 4.0f);
+    }
+
+    void GameOver()
+    {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+
+        //if (ApplicationManager.instance)
+        //	ApplicationManager.instance.LoadMainMenu();
     }
 }
