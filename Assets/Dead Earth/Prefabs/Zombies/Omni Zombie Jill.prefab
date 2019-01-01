@@ -4181,6 +4181,8 @@ MonoBehaviour:
   parameter: rightHand
   bloodParticlesBurstAmount: 10
   damageAmount: 50
+  _doDamageSound: 1
+  _doPainSound: 1
 --- !u!114 &114369753968406158
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4210,10 +4212,10 @@ MonoBehaviour:
   upperBodyDamage: 0
   upperBodyThreshold: 30
   limpThreshold: 30
-  crawlThreshold: 90
+  crawlThreshold: 70
   _intelligence: 1
   _satisfaction: 0.105
-  _screamChance: 1
+  _screamChance: 0.5
   screamRadius: 12
   screamPosition: 1
   screamPrefab: {fileID: 114364428741979834, guid: 71e664bf2d30926438b23541e8267fec,
@@ -4288,6 +4290,8 @@ MonoBehaviour:
   parameter: mouth
   bloodParticlesBurstAmount: 10
   damageAmount: 10
+  _doDamageSound: 0
+  _doPainSound: 1
 --- !u!114 &114778301824304312
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4299,7 +4303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7014e4e887a62744cac9d7fa108c7047, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 2
   turnOnSpotThreshold: 90
   slerpSpeed: 5
 --- !u!114 &114885012916372910
@@ -4316,6 +4320,8 @@ MonoBehaviour:
   parameter: leftHand
   bloodParticlesBurstAmount: 10
   damageAmount: 50
+  _doDamageSound: 1
+  _doPainSound: 1
 --- !u!114 &114908851508274012
 MonoBehaviour:
   m_ObjectHideFlags: 1

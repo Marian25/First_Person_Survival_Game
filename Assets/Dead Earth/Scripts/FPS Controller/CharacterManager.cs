@@ -14,6 +14,12 @@ public class CharacterManager : MonoBehaviour {
     [SerializeField] private float landingRadius = 12.0f;
     [SerializeField] private float bloodRadiusScale = 6.0f;
 
+    // Pain Damage Audio
+    [SerializeField] private AudioCollection _damageSounds = null;
+    [SerializeField] private AudioCollection _painSounds = null;
+    [SerializeField] private float _nextPainSoundTime = 0.0f;
+    [SerializeField] private float _painSoundOffset = 0.35f;
+
     private Collider collider = null;
     private FPSController fpsController = null;
     private CharacterController characterController = null;
@@ -41,7 +47,7 @@ public class CharacterManager : MonoBehaviour {
         }
 	}
 
-    public void TakeDamage(float amount)
+    public void TakeDamage(float amount, bool doDamage, bool doPain)
     {
         health = Mathf.Max(health - amount * Time.deltaTime, 0);
 
@@ -52,8 +58,35 @@ public class CharacterManager : MonoBehaviour {
 
         if (cameraBloodEffect != null)
         {
-            cameraBloodEffect.minBloodAmount = (1f - health / 100f) / 3;
+            cameraBloodEffect.minBloodAmount = (1f - health / 100f) * 0.5f;
             cameraBloodEffect.bloodAmount = Mathf.Min(cameraBloodEffect.minBloodAmount + 0.3f, 1f);
+        }
+
+        if (AudioManager.instance)
+        {
+            if (doDamage && _damageSounds != null)
+                AudioManager.instance.PlayOneShotSound(_damageSounds.audioGroup,
+                                                        _damageSounds.audioClip, 
+                                                        transform.position,
+                                                        _damageSounds.volume,
+                                                        _damageSounds.spatialBlend,
+                                                        _damageSounds.priority);
+
+            if (doPain && _painSounds != null && _nextPainSoundTime < Time.time)
+            {
+                AudioClip painClip = _painSounds.audioClip;
+                if (painClip)
+                {
+                    _nextPainSoundTime = Time.time + painClip.length;
+                    StartCoroutine(AudioManager.instance.PlayOneShotSoundDelayed(_painSounds.audioGroup,
+                                                                                      painClip,
+                                                                                      transform.position,
+                                                                                      _painSounds.volume,
+                                                                                      _painSounds.spatialBlend,
+                                                                                      _painSoundOffset,
+                                                                                      _painSounds.priority));
+                }
+            }
         }
     }
 	
