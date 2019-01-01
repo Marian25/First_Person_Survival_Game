@@ -26,6 +26,7 @@ public class CharacterManager : MonoBehaviour {
     private CharacterController characterController = null;
     private GameSceneManager gameSceneManager = null;
     private int aiBodyPartLayer = -1;
+    private int _interactiveMask = 0;
 
     public float health { get { return _health; } }
     public float stamina { get { return fpsController != null ? fpsController.stamina : 0.0f; } }
@@ -38,7 +39,8 @@ public class CharacterManager : MonoBehaviour {
         gameSceneManager = GameSceneManager.GetInstance();
 
         aiBodyPartLayer = LayerMask.NameToLayer("AI Body Part");
-
+        _interactiveMask = 1 << LayerMask.NameToLayer("Interactive");
+         
         if (gameSceneManager != null)
         {
             PlayerInfo info = new PlayerInfo();
@@ -49,6 +51,9 @@ public class CharacterManager : MonoBehaviour {
 
             gameSceneManager.RegisterPlayerInfo(collider.GetInstanceID(), info);
         }
+
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
 
         if (_playerHUD) _playerHUD.Fade(2.0f, ScreenFadeType.FadeIn);
     }
@@ -123,7 +128,52 @@ public class CharacterManager : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		
+
+        Ray ray;
+        RaycastHit hit;
+        RaycastHit[] hits;
+
+        ray = camera.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2, 0));
+        
+        float rayLength = Mathf.Lerp(1.0f, 1.8f, Mathf.Abs(Vector3.Dot(camera.transform.forward, Vector3.up)));
+        
+        hits = Physics.RaycastAll(ray, rayLength, _interactiveMask);
+        
+        if (hits.Length > 0)
+        {
+            int highestPriority = int.MinValue;
+            InteractiveItem priorityObject = null;
+            
+            for (int i = 0; i < hits.Length; i++)
+            {
+                hit = hits[i];
+                
+                InteractiveItem interactiveObject = gameSceneManager.GetInteractiveItem(hit.collider.GetInstanceID());
+                
+                if (interactiveObject != null && interactiveObject.priority > highestPriority)
+                {
+                    priorityObject = interactiveObject;
+                    highestPriority = priorityObject.priority;
+                }
+            }
+            
+            if (priorityObject != null)
+            {
+                if (_playerHUD)
+                    _playerHUD.SetInteractionText(priorityObject.GetText());
+
+                if (Input.GetButtonDown("Use"))
+                {
+                    priorityObject.Activate(this);
+                }
+            }
+        }
+        else
+        {
+            if (_playerHUD)
+                _playerHUD.SetInteractionText(null);
+        }
+
         if (Input.GetMouseButtonDown(0))
         {
             DoDamage();

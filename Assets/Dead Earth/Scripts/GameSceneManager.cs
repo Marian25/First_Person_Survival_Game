@@ -27,6 +27,7 @@ public class GameSceneManager : MonoBehaviour {
 
     private Dictionary<int, AIStateMachine> stateMachines = new Dictionary<int, AIStateMachine>();
     private Dictionary<int, PlayerInfo> playerInfos = new Dictionary<int, PlayerInfo>();
+    private Dictionary<int, InteractiveItem> _interactiveItems = new Dictionary<int, InteractiveItem>();
 
     public ParticleSystem bloodParticles { get { return _bloodParticles; } }
 
@@ -68,5 +69,19 @@ public class GameSceneManager : MonoBehaviour {
         return null;
     }
 
+    public void RegisterInteractiveItem(int key, InteractiveItem script)
+    {
+        if (!_interactiveItems.ContainsKey(key))
+        {
+            _interactiveItems[key] = script;
+        }
+    }
+
+    public InteractiveItem GetInteractiveItem(int key)
+    {
+        InteractiveItem item = null;
+        _interactiveItems.TryGetValue(key, out item);
+        return item;
+    }
 
 }
