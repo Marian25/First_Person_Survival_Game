@@ -119,9 +119,12 @@ public class FPSController : MonoBehaviour {
     [SerializeField] private float _runSpeed = 4.5f;
     [SerializeField] private float jumpSpeed = 7.5f;
     [SerializeField] private float crouchSpeed = 1.0f;
+    [SerializeField] private float _staminaDepletion = 5.0f;
+    [SerializeField] private float _staminaRecovery = 10;
     [SerializeField] private float stickToGroundForce = 5.0f;
     [SerializeField] private float gravityMultiplier = 2.5f;
     [SerializeField] private float runStepLengthen = 0.75f;
+    [SerializeField] private bool _flashlightOnAtStart = true;
 
     [SerializeField] private UnityStandardAssets.Characters.FirstPerson.MouseLook mouseLook;
     [SerializeField] private CurveControlledBob headbob = new CurveControlledBob();
@@ -137,6 +140,8 @@ public class FPSController : MonoBehaviour {
     private bool isCrouching = false;
     private Vector3 localSpaceCameraPos = Vector3.zero;
     private float controllerHeight = 0;
+    private float _stamina = 100;
+    private bool _freezeMovement = false;
 
     private float fallingTimer = 0;
 
@@ -168,6 +173,17 @@ public class FPSController : MonoBehaviour {
         get { return _characterController; }
     }
 
+    public bool freezeMovement
+    {
+        get { return _freezeMovement; }
+        set { _freezeMovement = value; }
+    }
+
+    public float stamina
+    {
+        get { return _stamina; }
+    }
+
     protected void Start()
     {
         _characterController = GetComponent<CharacterController>();
@@ -185,7 +201,7 @@ public class FPSController : MonoBehaviour {
         headbob.Initialize();
         headbob.RegisterEventCallback(1.5f, PlayFootStepSound, CurveControlledBobCallbackType.Vertical);
 
-        if (flashlight) flashlight.SetActive(false);
+        if (flashlight) flashlight.SetActive(_flashlightOnAtStart);
     }
 
     protected void Update()
@@ -248,6 +264,11 @@ public class FPSController : MonoBehaviour {
 
         previoulyGrounded = _characterController.isGrounded;
 
+        if (_movementStatus == PlayerMoveStatus.Running)
+            _stamina = Mathf.Max(_stamina - _staminaDepletion * Time.deltaTime, 0.0f);
+        else
+            _stamina = Mathf.Min(_stamina + _staminaRecovery * Time.deltaTime, 100.0f);
+
         dragMultiplier = Mathf.Min(dragMultiplier + Time.deltaTime, dragMultiplierLimit);
     }
 
@@ -259,7 +280,7 @@ public class FPSController : MonoBehaviour {
         bool wasWalking = isWalking;
         isWalking = !Input.GetKey(KeyCode.LeftShift);
 
-        float speed = isCrouching ? crouchSpeed : isWalking ? _walkSpeed : _runSpeed;
+        float speed = isCrouching ? crouchSpeed : isWalking ? _walkSpeed : Mathf.Lerp(_walkSpeed, _runSpeed, _stamina / 100.0f);
         inputVector = new Vector2(horizontal, vertical);
 
         if (inputVector.sqrMagnitude > 1) inputVector.Normalize();
@@ -272,8 +293,8 @@ public class FPSController : MonoBehaviour {
             desiredMove = Vector3.ProjectOnPlane(desiredMove, hitInfo.normal).normalized;
         }
 
-        moveDirection.x = desiredMove.x * speed * dragMultiplier;
-        moveDirection.z = desiredMove.z * speed * dragMultiplier;
+        moveDirection.x = !_freezeMovement ? desiredMove.x * speed * _dragMultiplier : 0.0f;
+        moveDirection.z = !_freezeMovement ? desiredMove.z * speed * _dragMultiplier : 0.0f;
 
         if (_characterController.isGrounded)
         {

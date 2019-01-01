@@ -7,12 +7,13 @@ public class CharacterManager : MonoBehaviour {
     [SerializeField] private CapsuleCollider meleeTrigger = null;
     [SerializeField] private CameraBloodEffect cameraBloodEffect = null;
     [SerializeField] private Camera camera = null;
-    [SerializeField] private float health = 100f;
+    [SerializeField] private float _health = 100f;
     [SerializeField] private AISoundEmitter soundEmitter = null;
     [SerializeField] private float walkRadius = 0;
     [SerializeField] private float runRadius = 7.0f;
     [SerializeField] private float landingRadius = 12.0f;
     [SerializeField] private float bloodRadiusScale = 6.0f;
+    [SerializeField] private PlayerHUD _playerHUD = null;
 
     // Pain Damage Audio
     [SerializeField] private AudioCollection _damageSounds = null;
@@ -26,8 +27,11 @@ public class CharacterManager : MonoBehaviour {
     private GameSceneManager gameSceneManager = null;
     private int aiBodyPartLayer = -1;
 
-	// Use this for initialization
-	void Start () {
+    public float health { get { return _health; } }
+    public float stamina { get { return fpsController != null ? fpsController.stamina : 0.0f; } }
+
+    // Use this for initialization
+    void Start () {
         collider = GetComponent<Collider>();
         fpsController = GetComponent<FPSController>();
         characterController = GetComponent<CharacterController>();
@@ -45,11 +49,13 @@ public class CharacterManager : MonoBehaviour {
 
             gameSceneManager.RegisterPlayerInfo(collider.GetInstanceID(), info);
         }
-	}
+
+        if (_playerHUD) _playerHUD.Fade(2.0f, ScreenFadeType.FadeIn);
+    }
 
     public void TakeDamage(float amount, bool doDamage, bool doPain)
     {
-        health = Mathf.Max(health - amount * Time.deltaTime, 0);
+        _health = Mathf.Max(health - amount * Time.deltaTime, 0);
 
         if (fpsController)
         {
@@ -138,5 +144,6 @@ public class CharacterManager : MonoBehaviour {
             fpsController.dragMultiplierLimit = Mathf.Max(health / 100.0f, 0.25f);
         }
 
-	}
+        if (_playerHUD) _playerHUD.Invalidate(this);
+    }
 }
