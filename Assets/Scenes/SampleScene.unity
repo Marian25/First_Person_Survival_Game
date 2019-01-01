@@ -5333,6 +5333,26 @@ Prefab:
       propertyPath: waypointNetwork
       value: 
       objectReference: {fileID: 1575692919}
+    - target: {fileID: 114369753968406158, guid: ffb86d4f038b6ce47a7bf15a3f485def,
+        type: 2}
+      propertyPath: lowerBodyDamage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114369753968406158, guid: ffb86d4f038b6ce47a7bf15a3f485def,
+        type: 2}
+      propertyPath: crawlThreshold
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778301824304312, guid: ffb86d4f038b6ce47a7bf15a3f485def,
+        type: 2}
+      propertyPath: speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114369753968406158, guid: ffb86d4f038b6ce47a7bf15a3f485def,
+        type: 2}
+      propertyPath: _screamChance
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ffb86d4f038b6ce47a7bf15a3f485def, type: 2}
   m_IsPrefabAsset: 0

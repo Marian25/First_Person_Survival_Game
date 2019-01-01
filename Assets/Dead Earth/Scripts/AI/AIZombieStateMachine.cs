@@ -308,6 +308,9 @@ public class AIZombieStateMachine : AIStateMachine {
             if (animator) animator.enabled = false;
             if (collider) collider.enabled = false;
 
+            if (_layeredAudioSource != null)
+                _layeredAudioSource.Mute(true);
+
             inMeleeRange = false;
 
             foreach (Rigidbody body in bodyParts)
