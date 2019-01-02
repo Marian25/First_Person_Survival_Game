@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Dead Earth/Scenes/Bootstrapper.unity
+    guid: 7af3ae6f09a01044a95847851b078ac5
+  - enabled: 1
+    path: Assets/Dead Earth/Scenes/Main Menu.unity
+    guid: 6c758a4f867dab343bb1ad1409598a59
+  - enabled: 1
+    path: Assets/Dead Earth/Scenes/The Game.unity
     guid: 99c9720ab356a0642a771bea13969a05
   m_configObjects: {}

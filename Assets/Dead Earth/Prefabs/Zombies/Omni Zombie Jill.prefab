@@ -4220,6 +4220,7 @@ MonoBehaviour:
   screamPosition: 1
   screamPrefab: {fileID: 114364428741979834, guid: 71e664bf2d30926438b23541e8267fec,
     type: 2}
+  _ragdollCollection: {fileID: 11400000, guid: df05ab82810e5be46bf4521347d67a01, type: 2}
   _replenishRate: 2
   _depletionRate: 0.1
   reanimationBlendTime: 1.5

@@ -18,8 +18,11 @@ public class CharacterManager : MonoBehaviour {
     // Pain Damage Audio
     [SerializeField] private AudioCollection _damageSounds = null;
     [SerializeField] private AudioCollection _painSounds = null;
+    [SerializeField] private AudioCollection _tauntSounds = null;
+
     [SerializeField] private float _nextPainSoundTime = 0.0f;
     [SerializeField] private float _painSoundOffset = 0.35f;
+    [SerializeField] private float _tauntRadius = 10.0f;
 
     private Collider collider = null;
     private FPSController _fpsController = null;
@@ -27,6 +30,7 @@ public class CharacterManager : MonoBehaviour {
     private GameSceneManager gameSceneManager = null;
     private int aiBodyPartLayer = -1;
     private int _interactiveMask = 0;
+    private float _nextTauntTime = 0;
 
     public float health { get { return _health; } }
     public float stamina { get { return _fpsController != null ? _fpsController.stamina : 0.0f; } }
@@ -100,6 +104,11 @@ public class CharacterManager : MonoBehaviour {
                 }
             }
         }
+
+        if (_health <= 0.0f)
+        {
+            DoDeath();
+        }
     }
 	
     public void DoDamage(int hitDirection = 0)
@@ -121,7 +130,8 @@ public class CharacterManager : MonoBehaviour {
 
             if (stateMachine)
             {
-                stateMachine.TakeDamage(hit.point, ray.direction * 1.0f, 50, hit.rigidbody, this, 0);
+                int randomDamage = Random.Range(10, 25);
+                stateMachine.TakeDamage(hit.point, ray.direction * 5.0f, randomDamage, hit.rigidbody, this, 0);
             }
         }
 
@@ -195,7 +205,28 @@ public class CharacterManager : MonoBehaviour {
             _fpsController.dragMultiplierLimit = Mathf.Max(health / 100.0f, 0.25f);
         }
 
+        if (Input.GetMouseButtonDown(1))
+        {
+            DoTaunt();
+        }
+
         if (_playerHUD) _playerHUD.Invalidate(this);
+    }
+
+    void DoTaunt()
+    {
+        if (_tauntSounds == null || Time.time < _nextTauntTime || !AudioManager.instance) return;
+        AudioClip taunt = _tauntSounds[0];
+        AudioManager.instance.PlayOneShotSound(_tauntSounds.audioGroup,
+                                                taunt,
+                                                transform.position,
+                                                _tauntSounds.volume,
+                                                _tauntSounds.spatialBlend,
+                                                _tauntSounds.priority
+                                                 );
+        if (soundEmitter != null)
+            soundEmitter.SetRadius(_tauntRadius);
+        _nextTauntTime = Time.time + taunt.length;
     }
 
     public void DoLevelComplete()
@@ -213,12 +244,27 @@ public class CharacterManager : MonoBehaviour {
         Invoke("GameOver", 4.0f);
     }
 
+    public void DoDeath()
+    {
+        if (_fpsController)
+            _fpsController.freezeMovement = true;
+
+        if (_playerHUD)
+        {
+            _playerHUD.Fade(3.0f, ScreenFadeType.FadeOut);
+            _playerHUD.ShowMissionText("Mission Failed");
+            _playerHUD.Invalidate(this);
+        }
+
+        Invoke("GameOver", 3.0f);
+    }
+
     void GameOver()
     {
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
 
-        //if (ApplicationManager.instance)
-        //	ApplicationManager.instance.LoadMainMenu();
+        if (ApplicationManager.instance)
+            ApplicationManager.instance.LoadMainMenu();
     }
 }
