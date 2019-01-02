@@ -6513,11 +6513,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _startingGameStates:
   - Key: POWER
-    Value: TRUE
+    Value: FALSE
   - Key: LOCKDOWN
     Value: FALSE
   - Key: ACCESSCODE
-    Value: TRUE
+    Value: FALSE
 --- !u!4 &1414115963
 Transform:
   m_ObjectHideFlags: 0
@@ -6531,6 +6531,108 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1454288359
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1454288360}
+  - component: {fileID: 1454288362}
+  - component: {fileID: 1454288361}
+  m_Layer: 15
+  m_Name: Switch Trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1454288360
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1454288359}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.229, y: 1.103, z: -1.55}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2057783323}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1454288361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1454288359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a012c0682135d849834b949d307f4d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _priority: 0
+  _requiredStates: []
+  _activateStates:
+  - Key: POWER
+    Value: TRUE
+  _deactivateStates:
+  - Key: POWER
+    Value: FALSE
+  - Key: LOCKDOWN
+    Value: TRUE
+  _stateNotSetText: NOT USED
+  _stateSetText: 'Power Generator: Not Running'
+  _ObjectActiveText: 'Power Generator: Running'
+  _activationDelay: 4.5
+  _deactivationDelay: 1
+  _activationSounds: {fileID: 11400000, guid: eb1ad6c956cca114390c1cc816f03e4f, type: 2}
+  _audioSource: {fileID: 1615016819}
+  _startActivated: 0
+  _canToggle: 1
+  _animations:
+  - Animator: {fileID: 2003767283}
+    AnimatorParams:
+    - Type: 1
+      Name: activate
+      Value: true
+  _materialControllers:
+  - Material: {fileID: 2100000, guid: 271b86e42275a3c43b3620c06fde7c1a, type: 2}
+    _diffuseTexture: {fileID: 0}
+    _diffuseColor: {r: 1, g: 1, b: 1, a: 0}
+    _normalMap: {fileID: 0}
+    _normalStrength: 0
+    _emissiveTexture: {fileID: 0}
+    _emissionColor: {r: 0, g: 1, b: 0.003575325, a: 0}
+    _emissionScale: 1.4
+  - Material: {fileID: 2100000, guid: fe5d4bd0953e3044dab441c6734208d3, type: 2}
+    _diffuseTexture: {fileID: 0}
+    _diffuseColor: {r: 1, g: 1, b: 1, a: 0}
+    _normalMap: {fileID: 0}
+    _normalStrength: 0
+    _emissiveTexture: {fileID: 0}
+    _emissionColor: {r: 1, g: 1, b: 1, a: 0}
+    _emissionScale: 1.66
+  _objectActivators:
+  - {fileID: 1999653436}
+  - {fileID: 1066820954}
+  - {fileID: 272828710}
+  - {fileID: 1330824804}
+  _objectDeactivators:
+  - {fileID: 1642903043}
+--- !u!65 &1454288362
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1454288359}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.55, y: 0.73, z: 1}
+  m_Center: {x: 0, y: 0, z: 0.28}
 --- !u!1 &1471956385
 GameObject:
   m_ObjectHideFlags: 0
