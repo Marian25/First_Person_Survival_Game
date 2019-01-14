@@ -363,7 +363,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1233106870889926
 GameObject:
   m_ObjectHideFlags: 1
@@ -3883,7 +3883,7 @@ Animator:
   m_GameObject: {fileID: 1483201534760788}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: b1dafb6fa2a5f4ac7903c076e57421e2, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 53cc5bbf045ac8a40a540edc6479abfc, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -3919,7 +3919,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22965eb1d5b2a094db8be7400cf72528, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 2
   lookAtWeight: 0.7
   lookAtAngleThreshold: 15
   slerpSpeed: 5
@@ -3955,6 +3955,8 @@ MonoBehaviour:
   parameter: leftHand
   bloodParticlesBurstAmount: 10
   damageAmount: 50
+  _doDamageSound: 1
+  _doPainSound: 1
 --- !u!114 &114353130234109750
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4009,13 +4011,15 @@ MonoBehaviour:
   upperBodyDamage: 0
   upperBodyThreshold: 30
   limpThreshold: 30
-  crawlThreshold: 90
+  crawlThreshold: 70
   _intelligence: 1
   _satisfaction: 0.105
   _screamChance: 1
   screamRadius: 20
   screamPosition: 0
-  screamPrefab: {fileID: 0}
+  screamPrefab: {fileID: 114364428741979834, guid: 71e664bf2d30926438b23541e8267fec,
+    type: 2}
+  _ragdollCollection: {fileID: 11400000, guid: df05ab82810e5be46bf4521347d67a01, type: 2}
   _replenishRate: 2
   _depletionRate: 0.1
   reanimationBlendTime: 1.5
@@ -4037,6 +4041,8 @@ MonoBehaviour:
   parameter: mouth
   bloodParticlesBurstAmount: 10
   damageAmount: 10
+  _doDamageSound: 1
+  _doPainSound: 1
 --- !u!114 &114811074710759108
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4082,6 +4088,8 @@ MonoBehaviour:
   parameter: rightHand
   bloodParticlesBurstAmount: 10
   damageAmount: 50
+  _doDamageSound: 1
+  _doPainSound: 1
 --- !u!135 &135015019625363798
 SphereCollider:
   m_ObjectHideFlags: 1

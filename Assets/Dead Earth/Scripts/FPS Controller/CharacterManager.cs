@@ -130,7 +130,7 @@ public class CharacterManager : MonoBehaviour {
 
             if (stateMachine)
             {
-                int randomDamage = Random.Range(10, 25);
+                int randomDamage = Random.Range(5, 10);
                 stateMachine.TakeDamage(hit.point, ray.direction * 5.0f, randomDamage, hit.rigidbody, this, 0);
             }
         }

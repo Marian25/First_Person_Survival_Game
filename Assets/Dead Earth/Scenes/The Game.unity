@@ -38,13 +38,13 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1911739425}
-  m_IndirectSpecularColor: {r: 0.0032169248, g: 0.0058392896, b: 0.01066327, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -313,7 +313,7 @@ MonoBehaviour:
   _minBloodAmount: 0
   distortion: 0.2
   _autoFade: 1
-  _fadeSpeed: 0.05
+  _fadeSpeed: 0.1
   shader: {fileID: 4800000, guid: 59cf92111dfaff54c8b26eae6a4ee11f, type: 3}
 --- !u!114 &71558093
 MonoBehaviour:
@@ -5810,11 +5810,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 13
       objectReference: {fileID: 0}
-    - target: {fileID: 95816540723115752, guid: 69985decdd4cf1d4fba32bda2e77ef2c,
-        type: 2}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 9eca867c845d0bc4487e5850d6b28fcd, type: 2}
     - target: {fileID: 114522289116955832, guid: 69985decdd4cf1d4fba32bda2e77ef2c,
         type: 2}
       propertyPath: waypointNetwork
@@ -7216,6 +7211,10 @@ Prefab:
       propertyPath: waypointNetwork
       value: 
       objectReference: {fileID: 1575692919}
+    - target: {fileID: 1197200398453278, guid: ffb86d4f038b6ce47a7bf15a3f485def, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ffb86d4f038b6ce47a7bf15a3f485def, type: 2}
   m_IsPrefabAsset: 0
